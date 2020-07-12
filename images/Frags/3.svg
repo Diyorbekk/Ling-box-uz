@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="309" height="309" viewBox="0 0 309 309">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1" y1="0.791" x2="0.123" y2="0.255" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#558cf9"/>
+      <stop offset="1" stop-color="#59e2f3"/>
+    </linearGradient>
+  </defs>
+  <g id="Сгруппировать_2179" data-name="Сгруппировать 2179" transform="translate(-1255 -7196)">
+    <circle id="Эллипс_71" data-name="Эллипс 71" cx="106.5" cy="106.5" r="106.5" transform="translate(1303 7244)" opacity="0.33"/>
+    <ellipse id="Эллипс_72" data-name="Эллипс 72" cx="106.914" cy="106.914" rx="106.914" ry="106.914" transform="translate(1280.647 7430.052) rotate(-76.718)" stroke="#fff" stroke-miterlimit="22.926" stroke-width="3" fill="url(#linear-gradient)"/>
+    <text id="_3" data-name="3" transform="translate(1362.919 7408.716)" fill="#fff" font-size="168" font-family="Roboto-Light, Roboto" font-weight="300"><tspan x="0" y="0">3</tspan></text>
+  </g>
+</svg>

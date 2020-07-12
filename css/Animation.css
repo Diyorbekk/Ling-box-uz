@@ -1,0 +1,481 @@
+.animationText{
+    -webkit-animation: AnimationText 1s linear;
+    animation: AnimationText 1s linear;
+}
+
+.AnimationOrderImg{
+    animation: AnimationOrderImg linear 1s;
+}
+
+@keyframes AnimationOrderImg{
+
+    0%{
+        opacity: 0;
+        transform: scale(0.1);
+    }
+    25%{
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.2);
+    }
+
+    75%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
+
+@-webkit-keyframes AnimationText{
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    from{
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+}
+
+
+@keyframes AnimationText{
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    from{
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+}
+
+
+
+.AnimationOpacity{
+    -webkit-animation: AnimationOpacity 1s linear;
+    animation: AnimationOpacity 1s linear;
+}
+
+@-webkit-keyframes AnimationOpacity{
+    to{
+        opacity: 0.1;
+    }
+    from{
+        opacity: 0;
+    }
+}
+
+@keyframes AnimationOpacity{
+    to{
+        opacity: 0.1;
+    }
+    from{
+        opacity: 0;
+    }
+}
+
+
+.AnimationImg{
+    -webkit-animation: AnimationImg 2s ease-in-out;
+            animation: AnimationImg 2s ease-in-out;
+    /*animation-iteration-count: 2;*/
+}
+
+@-webkit-keyframes AnimationImg{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    25%{
+        transform: translateY(-40px);
+        opacity: 1;
+    }
+    50%{
+        transform: translateY(0);
+    }
+    75%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes AnimationImg{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    25%{
+        transform: translateY(-40px);
+        opacity: 1;
+    }
+    50%{
+        transform: translateY(0);
+    }
+    75%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+
+}
+
+.AnimationNumRoundBox{
+    -webkit-animation: AnimationNumRoundBox 1s ease-in-out;
+            animation: AnimationNumRoundBox 1s ease-in-out;
+    opacity: 1;
+}
+
+@-webkit-keyframes AnimationNumRoundBox {
+    to  {
+        left: 0;
+    }
+
+    from {
+        left: -500px;
+    }
+}
+
+@keyframes AnimationNumRoundBox {
+    to  {
+        left: 0;
+    }
+
+    from {
+        left: -500px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@-webkit-keyframes AnimationPhone {
+    0%{background-position:0 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0 50%}
+}
+
+
+
+
+@keyframes AnimationPhone {
+    0%{background-position:0 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0 50%}
+}
+
+
+
+
+
+@-webkit-keyframes AnimationButton{
+    0%{
+        left: -100%;
+    }
+    100%{
+        left: 120%;
+    }
+}
+@keyframes AnimationButton{
+    0%{
+        left: -100%;
+    }
+    100%{
+        left: 120%;
+    }
+}
+
+
+
+.AnimationBorder{
+    -webkit-animation: AnimationBorder 1s linear;
+    animation: AnimationBorder 1s linear;
+}
+
+.AnimationBorderMedia{
+    -webkit-animation: AnimationBorderMedia 1s linear;
+    animation: AnimationBorderMedia 1s linear;
+    margin-top: 5px;
+}
+
+.AnimationBorder2{
+    -webkit-animation: AnimationBorder2 1s linear;
+    animation: AnimationBorder2 1s linear;
+}
+
+.AnimationBorder3{
+    -webkit-animation: AnimationBorder3 1s linear;
+    animation: AnimationBorder3 1s linear;
+}
+.AnimationBorder4{
+    -webkit-animation: AnimationBorder4 1s linear;
+    animation: AnimationBorder4 1s linear;
+}
+
+@-webkit-keyframes AnimationBorder{
+    to{
+        left: 0;
+        opacity: 1;
+    }
+    from{
+        left: -100%;
+        opacity: 0;
+    }
+}
+@keyframes AnimationBorder{
+    to{
+        left: 0;
+        opacity: 1;
+    }
+    from{
+        left: -500%;
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes AnimationBorderMedia{
+    to{
+        left: 32%;
+        opacity: 1;
+    }
+    from{
+        left: -100%;
+        opacity: 0;
+    }
+}
+@keyframes AnimationBorderMedia{
+    to{
+        left: 32%;
+        opacity: 1;
+    }
+    from{
+        left: -500%;
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes AnimationBorder2{
+    to{
+        left: 8%;
+        opacity: 1;
+    }
+    from{
+        left: -500%;
+        opacity: 0;
+    }
+}
+@keyframes AnimationBorder2{
+    to{
+        left: 8%;
+        opacity: 1;
+    }
+    from{
+        left: -500%;
+        opacity: 0;
+    }
+}
+@-webkit-keyframes AnimationBorder3{
+    to{
+        opacity: 1;
+        left: 10%;
+    }
+    from{
+        left: -500%;
+        opacity: 0;
+    }
+}
+@keyframes AnimationBorder3{
+    to{
+        opacity: 1;
+        left: 10%;
+    }
+    from{
+        left: -500%;
+        opacity: 0;
+    }
+}
+@-webkit-keyframes AnimationBorder4{
+    to{
+        left: 11%;
+        opacity: 1;
+    }
+    from{
+        left: -500%;
+        opacity: 0;
+    }
+}
+@keyframes AnimationBorder4{
+    to{
+        left: 11%;
+        opacity: 1;
+    }
+    from{
+        left: -500%;
+        opacity: 0;
+    }
+}
+
+.StepBoxNum1{
+    -webkit-animation: StepBoxNum1 0.5s linear;
+            animation: StepBoxNum1 0.5s linear;
+}
+.StepBoxNum2{
+    -webkit-animation: StepBoxNum2 1s linear;
+            animation: StepBoxNum2 1s linear;
+}
+.StepBoxNum3{
+    -webkit-animation: StepBoxNum3 1.5s linear;
+            animation: StepBoxNum3 1.5s linear;
+}
+
+
+@-webkit-keyframes StepBoxNum1 {
+    to  {
+        bottom: 0;
+    }
+    from {
+        bottom: 400px;
+    }
+}
+
+
+@keyframes StepBoxNum1 {
+    to  {
+        bottom: 0;
+    }
+    from {
+        bottom: 400px;
+    }
+}
+
+@-webkit-keyframes StepBoxNum2 {
+    to  {
+        bottom: 0;
+    }
+    from {
+        bottom: 400px;
+    }
+}
+
+@keyframes StepBoxNum2 {
+    to  {
+        bottom: 0;
+    }
+    from {
+        bottom: 400px;
+    }
+}
+
+@-webkit-keyframes StepBoxNum3 {
+    to  {
+        bottom: 0;
+    }
+    from {
+        bottom: 400px;
+    }
+}
+
+@keyframes StepBoxNum3 {
+    to  {
+        bottom: 0;
+    }
+    from {
+        bottom: 400px;
+    }
+}
+
+.StepBoxNumText1{
+    -webkit-animation: StepBoxNumText1 0.8s linear;
+            animation: StepBoxNumText1 0.8s linear;
+}
+.StepBoxNumText2{
+    -webkit-animation: StepBoxNumText2 1.3s linear;
+            animation: StepBoxNumText2 1.3s linear;
+}
+.StepBoxNumText3{
+    -webkit-animation: StepBoxNumText3 1.8s linear;
+            animation: StepBoxNumText3 1.8s linear;
+}
+
+@-webkit-keyframes StepBoxNumText1 {
+    to  {
+        opacity: 1;
+    }
+    from {
+        opacity: 0;
+    }
+}
+
+@keyframes StepBoxNumText1 {
+    to  {
+        opacity: 1;
+    }
+    from {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes StepBoxNumText2 {
+    to  {
+        opacity: 1;
+    }
+    from {
+        opacity: 0;
+    }
+}
+
+@keyframes StepBoxNumText2 {
+    to  {
+        bottom: 0;
+        opacity: 1;
+    }
+    from {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes StepBoxNumText3 {
+    to  {
+        opacity: 1;
+    }
+    from {
+        opacity: 0;
+    }
+}
+
+@keyframes StepBoxNumText3 {
+    to  {
+        opacity: 1;
+    }
+    from {
+        opacity: 0;
+    }
+}
+
+
+
+
+
+
+

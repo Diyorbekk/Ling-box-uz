@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <!-- Fonts Css link -->
+    <link rel="stylesheet" href="fonts/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Default Css link -->
+
+    <!-- Bootstrap Css link -->
+    <link rel="stylesheet" href="Bootstrap Css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/Animation.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+
+    <!-- Title -->
+    <title>LingBox WebSite</title>
+
+
+</head>
+<body>
+<header>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="header-box margin-top-3 px-md-4" style="position: relative">
+                <div class="d-flex logo-img-box">
+                    <div class="language-box">
+                        <select class="form-control pl-0 language-box-text border-0 text-white bg-transparent">
+                            <option>O`zbekcha</option>
+                            <option>Ўзбекча</option>
+                            <option>Русский</option>
+                        </select>
+                    </div>
+
+                    <a href="#">
+                        <img src="images/language-choose-logo.svg" class="ling-box-img-icon" alt="svg">
+                    </a>
+                </div>
+
+                <div class="d-flex header-title-box ml-xl-5">
+                    <p class="header-title">
+                        O`ZBEKISTONDA ILK BOR!
+                    </p>
+                </div>
+
+                <div class="d-flex header-text-box ml-xl-5">
+                    <p class="header-text">
+                        ENDI SIZ XORIJIY TILLARNI ATIGI 6 OYDA ISTALGAN USULDA "0" DAN O`RGANA OLASIZ!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</header>
+
+<section class="lesson-section" id="app">
+    <div class="d-flex justify-content-center">
+        <button class="button-order" id="myId"><span class="button-order-text">BUYURTMA BERISH</span>
+            <span class="anim-window"></span></button>
+
+    </div>
+    <div class="d-flex justify-content-center">
+        <div class="lesson-section-titleBox">
+            <h2 class="animation-element lesson-section-title">SIZ XORIJIY TILLARNI
+                <span class="animation-border-block"></span>
+            </h2>
+            <p class="lesson-section-title-back-text">easy learning</p>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center">
+        <div class="lesson-box-width">
+            <div class="d-flex align-items-center LessonBox" v-for="LB in LessonBox">
+                <img :src="LB.LessonBoxImg" class="LessonBoxImg" alt="">
+
+                <p class="lesson-box-text">{{ LB.LessonBoxText}}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="Numbers">
+    <div class="NumbersBoxBG">
+        <div class="d-flex justify-content-center">
+            <h2 class="lesson-section-title line-height-medium">BIZ HAQIMIZDA SONLAR
+                <span class="animation-border-block"></span>
+            </h2>
+
+            <img class="NumbersSectionTitleBackText" src="images/SVG/Figures.png">
+        </div>
+        <div class="d-flex justify-content-center">
+            <div class="NumbersBoxWidth">
+                <div class="d-flex flex-column align-items-center NumbersBox">
+                    <div class="d-flex">
+                        <p class="NumbersBoxTitle" data-count="7"></p>
+                        <span class="NumbersBoxTitleSyb ml-3">million</span>
+                    </div>
+
+
+                    <p class="NumbersBoxText text-lowercase">KISHI TILLARNI AYNAN SHU METOD ORQALI O`RGANGAN</p>
+                </div>
+                <div class="d-flex flex-column align-items-center NumbersBox">
+                    <div class="d-flex">
+                        <span class="NumbersBoxTitleSyb"></span>
+                        <p class="NumbersBoxTitle" data-count="15"></p>
+                    </div>
+
+
+                    <p class="NumbersBoxText text-lowercase">YIL DUNYO BOZORIDA</p>
+                </div>
+                <div class="d-flex flex-column align-items-center NumbersBox">
+                    <div class="d-flex">
+                        <p class="NumbersBoxTitle" data-count="20"></p><span class="NumbersBoxTitleSyb">+</span>
+                    </div>
+
+
+                    <p class="NumbersBoxText text-lowercase">DAVLATLARDA TILLARNI USHBU METODIKA YORDAMIDA
+                        O`RGANISHADI</p>
+                </div>
+                <div class="d-flex flex-column align-items-center NumbersBox">
+                    <div class="d-flex">
+                        <p class="NumbersBoxTitle" data-count="95"></p> <span class="NumbersBoxTitleSyb">%</span>
+                    </div>
+
+
+                    <p class="NumbersBoxText text-lowercase">O`QUVCHILAR METODIKANING 3 ASOSIY QOIDASIGA RIOYA QILgan
+                        holda MUVAFFAQIYATGA ERISHDILAR</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="problems" id="app2">
+    <div class="d-flex justify-content-center mt-5">
+        <div class="problems-section-title-box">
+            <h2 class="lesson-section-title">USHBU MUAMMOLARGA DUCH KELGANMISIZ?
+                <span class="animation-border-block"></span>
+                <p class="lesson-section-title-back-text text-lowercase">PROBLEMS</p>
+            </h2>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-center mt-5">
+        <div class="lesson-box-width">
+            <div class="d-flex flex-column align-items-center LessonBox" v-for="PB in problemsBox">
+                <img :src="PB.problemsBoxImg" class="animation-box-img" alt="">
+
+                <p class="lesson-box-text">{{ PB.problemsBoxText}}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="Product" id="app3">
+    <div class="ProductBoxBG">
+        <div class="ProductBoxBGImg"></div>
+        <div class="d-flex justify-content-center">
+            <div class="ProductSectionTitleBox">
+                <h2 class="lesson-section-title">USHBU METODIKANING AFZALLIK TOMONLARI NIMADA?
+                    <span class="animation-border-block"></span>
+                    <p class="lesson-section-title-back-text text-lowercase">product values</p>
+
+                </h2>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center flex-column ProductSectionFlexBox"
+             style="position: relative;z-index: 4">
+            <div class="d-flex justify-content-start align-items-center  ProductSectionWidthBox"
+                 v-for="PST in ProductSectionTextBox">
+                <div class="ProductSectionTextBox">
+                <span class="ProductSectionTextBoxRound">
+                    {{ PST.ProductSectionTextBoxRound}}
+                </span>
+                </div>
+
+                <div class="d-flex flex-column ml-4">
+                    <p class="ProductSectionText">
+                        {{ PST.ProductSectionText}}
+                    </p>
+
+                    <span class="ProductSectionTextSpan">{{ PST.ProductSectionTextSpan}}</span>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center overflow-hidden mt-0 mt-md-5">
+                <button class="button-order" id="myId2"><span class="BtnORDERText">BUYURTMA BERISH</span>
+                    <span class="anim-window"></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="CupBox">
+            <img src="images/SVG/Cup.png" class="CupImg" alt="">
+
+            <div class="CupBoxRandomImgBox">
+                <img src="images/SVG/random.png" class="CupBoxRandomImg" alt="">
+            </div>
+
+            <div class="CupBoxTitleBox">
+                <h3 class="CupBoxTitle">CHET TILINI O`RGANGANINGIZDA</h3>
+                <p class="CupBoxTitleSpan">SIZNI QANDAY IMKONIYATLAR KUTMOQDA?</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="ProductIcons" id="app4">
+    <div class="d-flex justify-content-center mt-5">
+        <div class="ProductIconsBoxWidth">
+            <div class="d-flex flex-column align-items-center ProductIconsBox" v-for="PRI in ProductIcons">
+                <img :src="PRI.problemsBoxImg" class="animation-box-img ProductIconsBoxImg" alt="">
+
+                <p class="ProductIconsBoxText">{{ PRI.problemsBoxText}}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="Steps">
+    <div class="ProductBoxBG bg-white">
+        <div class="d-flex justify-content-center mb-3 mb-md-5">
+            <div class="ProductSectionTitleBox">
+                <h2 class="lesson-section-title">METODIKANI QO`LGA KIRITISH UCHUN 3 ODDIY QADAM
+                    <span class="animation-border-block"></span>
+                    <p class="lesson-section-title-back-text text-lowercase">3 easy steps</p>
+                </h2>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center StepBoxFlex">
+            <div class="StepBox">
+                <img src="images/SVG/Step1.png" class="StepBoxImg" alt="">
+
+                <p class="StepBoxText">Buyurtma uchun formani to`ldiring</p>
+            </div>
+
+            <img src="images/SVG/Arrow_right.png" class="StepBoxArrow" alt="png">
+
+            <div class="StepBox">
+                <img src="images/SVG/Step2.png" class="StepBoxImg" alt="">
+
+                <p class="StepBoxText">Mutaxassislarimiz siz bilan bog`lanishadi</p>
+            </div>
+
+            <img src="images/SVG/Arrow_right.png" class="StepBoxArrow" alt="png">
+
+            <div class="StepBox">
+                <img src="images/SVG/Step3.png" class="StepBoxImg" alt="">
+
+                <p class="StepBoxText">Chet tilini o`rganishni bugunoq boshlang</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="Sentence mt-4">
+    <div class="d-flex align-items-center flex-column mt-xl-5 pt-xl-5">
+        <p class="text-70">TILLARNI ISTALGAN USULDA O`RGANING</p>
+        <div class="col-xl-6">
+            <p class="text-40">
+                PROGRESSIV KITOBLAR VA INNOVATSION ILOVA. ENDI HAMMASI BIRDA!
+            </p>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center mt-xl-5">
+        <div class="col-xl-11">
+            <div class="d-flex align-items-center">
+                <div class="col-xl-4 img-1"><img src="images/Frags/eng-ru.png" class="blur-filter" alt="png"></div>
+                <div class="col-xl-4 img-2"><img src="images/Frags/eng-ru.png" class="no-blur" alt="png"></div>
+                <div class="col-xl-4 img-3"><img src="images/Frags/eng-ru.png" class="blur-filter" alt="png"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sentence-bg">
+        <div class="d-flex justify-content-center">
+            <div class="form-box col-xl-10 p-xl-4">
+
+                <div class="d-flex justify-content-center form-box-in flex-column align-items-center">
+
+                    <p class="blue-text">
+                        HOZIROQ BUYURTMA BERING
+                    </p>
+
+                    <p class="blue-text-black">
+                        VA <span class="font-weight-bold">55%</span> CHEGIRMAGA EGA BO`LING!
+                    </p>
+
+                    <div class="d-flex SentencePriceBoxWidth px-5 align-items-end">
+
+                        <div class="SentencePriceBox">
+                            <div class="d-flex">
+                                <p class="PriceRubil font-weight-bold">2.200.000 </p>
+                                <span class="PriceRubilSpan font-weight-normal">so`m</span>
+                            </div>
+
+                            <p class="SentencePriceBoxText text-lowercase">METODIKA NARXI
+                            </p>
+                        </div>
+                        <div class="SentencePriceBox">
+                            <div class="d-flex justify-content-center">
+                                <p class="PriceRubil">999.000 </p>
+                                <span class="PriceRubilSpan">so`m</span>
+
+                            </div>
+
+                            <p class="SentencePriceBoxText ml-2 text-lowercase">CHEGIRMADA</p>
+                        </div>
+                        <div class="SentencePriceBox">
+                            <div class="d-flex justify-content-end" style="margin-right: 2px;">
+                                <p class="PriceRubil font-weight-bold">1.201.000</p>
+                                <span class="PriceRubilSpan">so`m</span>
+                            </div>
+
+                            <p class="SentencePriceBoxText text-lowercase">TEJAB QOLASIZ
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-column align-items-center">
+                        <p class="blue-text">SHOSHILING!</p>
+
+                        <p class="blue-text-black">CHEGIRMA 5-AVGUSTGA QADAR DAVOM ETADI</p>
+                    </div>
+
+                    <div class="d-flex SentenceBox">
+
+
+                        <div class="d-flex flex-column align-items-center justify-content-center SentenceBoxGrafica">
+                            <img src="images/SVG/SentersDay.png" class="SentenceBoxImg" alt="">
+
+                            <p class="SentenceBoxText">kun</p>
+                        </div>
+                        <div class="d-flex flex-column align-items-center justify-content-center SentenceBoxGrafica">
+                            <img src="images/SVG/SentersO'clock.png" class="SentenceBoxImg" alt="">
+
+                            <p class="SentenceBoxText">soat</p>
+                        </div>
+                        <div class="d-flex flex-column align-items-center justify-content-center SentenceBoxGrafica">
+                            <img src="images/SVG/SentersMinut.png" class="SentenceBoxImg" alt="">
+
+                            <p class="SentenceBoxText">daqiqa</p>
+                        </div>
+                        <div class="d-flex flex-column align-items-center justify-content-center SentenceBoxGrafica">
+                            <img src="images/SVG/SentersSecond.png" class="SentenceBoxImg" alt="">
+
+                            <p class="SentenceBoxText">soniya</p>
+                        </div>
+                    </div>
+
+
+                    <div class="NowOrder">
+                        <h3 class="NowOrderTitle text-nowrap">BUYURTMA BERISH UCHUN FORMANI TO`LDIRING</h3>
+
+
+                        <div class="NowOrderTextWidth">
+                            <p class="NowOrderText">va yana <span
+                                    class="NowOrderTextSpan">400.000</span> so`mli ilovani bonus sifatida qo`lga
+                                kiriting</p>
+                            <img src="images/SVG/PriceBox.png" class="NowOrderPriceImg">
+                        </div>
+
+                        <div class="d-flex align-items-center justify-content-center w-100">
+                            <div class="col-xl-3 d-flex align-items-center justify-content-center">
+                                <div class="form-group">
+                                    <label class="radio-label">Ingliz tili UZ
+                                        <input type="radio" name="radio">
+                                        <span class="radio-check"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 d-flex align-items-center justify-content-center">
+                                <div class="form-group">
+                                    <label class="radio-label">Ingliz tili RU
+                                        <input type="radio" name="radio">
+                                        <span class="radio-check"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 d-flex align-items-center justify-content-center">
+                                <div class="form-group">
+                                    <label class="radio-label">Rus tili UZ
+                                        <input type="radio" name="radio">
+                                        <span class="radio-check"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="NowOrderBox mt-xl-4" id="id1">
+
+                            <input type="text" id="id2" class="Focus" placeholder="Ismingizni kiriting">
+
+                            <input type="tel" placeholder="+99890 000 00 00">
+
+
+                            <div class="d-flex justify-content-center mb-4 mt-4 overflow-hidden">
+                                <button class="button-order"><span class="button-order-text">BUYURTMA BERISH</span>
+                                    <span class="anim-window"></span></button>
+
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center flex-column justify-content-center NowOrderBox-footer mt-xl-5">
+                            <p class="text-33 mb-0">O`ZBEKISTON BO`YLAB YETKAZIB BERISH </p>
+
+                            <p class="text-33 text-blue font-weight-bold">MUTLAQO BEPUL!</p>
+
+
+                        </div>
+
+                        <p class="text-33 text-blue mt-xl-5 mb-0">ISTALGAN USULDA TO`LASH IMKONI</p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="Question">
+    <div class="QuestionBg">
+        <div class="d-flex justify-content-center">
+            <div class="ProductSectionTitleBox">
+                <h2 class="lesson-section-title">KO`P BERILADIGAN SAVOLLAR
+                    <span class="animation-border-block"></span>
+                </h2>
+            </div>
+        </div>
+
+        <div class="d-flex align-items-center justify-content-center mt-4 flex-column">
+            <div class="QuestionBoxWidth">
+                <div class="QuestionBox">
+                    <img src="images/SVG/QuestionK.png" class="QuestionBoxImg" alt="">
+
+                    <div class="QuestionTextBox">
+                        <p class="QuestionBoxText">Bu qanday metodika?</p>
+                    </div>
+                </div>
+                <div class="QuestionBox">
+                    <div class="QuestionTextBox">
+                        <p class="QuestionBoxText">Bu yangi metodika bilan tillarni oson usulda, eshitib kuzatish orqali
+                            o`rgana olasiz</p>
+                    </div>
+
+                    <img src="images/SVG/QuestionAdmin.png" class="QuestionBoxImg" alt="">
+                </div>
+                <div class="QuestionBox">
+                    <img src="images/SVG/QuestionK.png" class="QuestionBoxImg" alt="">
+                    <div class="QuestionTextBox">
+                        <p class="QuestionBoxText">Ushbu metodika orqali tillarni grammatikasiz, kunning istalgan
+                            vaqtida o`rgansa bo`ladimi?</p>
+                    </div>
+
+
+                </div>
+                <div class="QuestionBox">
+                    <div class="QuestionTextBox">
+                        <p class="QuestionBoxText">Ha, albatta bo`ladi! Bizning audiokurslarimiz tillarni tabiiy usulda
+                            o`rgatadi, shuningdek, siz xorijiy tillarni istalgan vaqtda va istalgan joyda o`rganishingiz
+                            mumkin. Sizdan faqatgina audio darsliklarni kuniga 2 soat e'tibor bilan eshitishingiz talab
+                            qilinadi</p>
+                    </div>
+
+                    <img src="images/SVG/QuestionAdmin.png" class="QuestionBoxImg" alt="">
+                </div>
+                <div class="QuestionBox">
+                    <img src="images/SVG/QuestionK.png" class="QuestionBoxImg" alt="">
+
+                    <div class="QuestionTextBox">
+                        <p class="QuestionBoxText">Men uzoq vaqt davomida grammatikani o`rganaman, lekin haligacha chet
+                            tilida gapira olmayman. Bu metodika menga yordam bera oladimi?</p>
+                    </div>
+
+
+                </div>
+                <div class="QuestionBox">
+                    <div class="QuestionTextBox">
+                        <p class="QuestionBoxText">Albatta, bu metodika aynan siz uchun! U tillarni 6 oy ichida,
+                            grammatikasiz tabiiy usulda o`rganishga mo`ljallangan</p>
+                    </div>
+
+                    <img src="images/SVG/QuestionAdmin.png" class="QuestionBoxImg" alt="">
+                </div>
+                <div class="QuestionBox">
+                    <img src="images/SVG/QuestionK.png" class="QuestionBoxImg" alt="">
+
+
+                    <div class="QuestionTextBox">
+                        <p class="QuestionBoxText">Chet tilida 6 oy ichida erkin gapira olmasam nima bo`ladi? Kafolat
+                            bormi?</p>
+                    </div>
+                </div>
+                <div class="QuestionBox">
+                    <div class="QuestionTextBox">
+                        <p class="QuestionBoxText">Bizning tajribamizda natijaga erishmagan o`quvchi yo`q. chunki
+                            metodikada 3 ta asosiy qoida keltirib o`tilgan. Agar siz ushbu qoidalarga qat'iy amal
+                            qilsangiz, albatta kutilayotgan natijaga erishasiz</p>
+                    </div>
+
+                    <img src="images/SVG/QuestionAdmin.png" class="QuestionBoxImg" alt="">
+                </div>
+                <div class="QuestionBox">
+                    <img src="images/SVG/QuestionK.png" class="QuestionBoxImg" alt="">
+
+
+                    <div class="QuestionTextBox">
+                        <p class="QuestionBoxText">Mening farzandim 11 yoshda. U tillarni o`rgana oladimi?</p>
+                    </div>
+                </div>
+                <div class="QuestionBox">
+                    <div class="QuestionTextBox">
+                        <p class="QuestionBoxText">Ha, o`rgana oladi. Bu metodika 10 yoshdan katta barcha insonlarga
+                            mo`ljallangan</p>
+                    </div>
+
+                    <img src="images/SVG/QuestionAdmin.png" class="QuestionBoxImg" alt="">
+                </div>
+                <div class="QuestionBox">
+                    <img src="images/SVG/QuestionK.png" class="QuestionBoxImg" alt="">
+
+
+                    <div class="QuestionTextBox">
+                        <p class="QuestionBoxText">Bir narsaga tushunmadim, rostan ham menga shu narx evaziga kitob,
+                            disk hamda ilovani taqdim etasizlarmi?</p>
+                    </div>
+                </div>
+                <div class="QuestionBox">
+                    <div class="QuestionTextBox">
+                        <p class="QuestionBoxText">Ha, albatta. Sizga Progressiv audioqo`llanma va innovatsion mobil
+                            ilova taqdim etamiz. Bunda siz kitob, disk hamda ilovaga ega bo`lasiz. Bundan tashqari,
+                            sizga qo`shimcha 400.000 so`mli ilova ham bonus sifatida taqdim etiladi. Hali bu hammasi
+                            emas, mahsulotimizni qo`lingizga kiritganingizdan so`ng sizni ajoyib sirli sovg`a va
+                            bonuslar kutmoqda)</p>
+                    </div>
+
+                    <img src="images/SVG/QuestionAdmin.png" class="QuestionBoxImg" alt="">
+                </div>
+            </div>
+
+            <div class="carouselBox">
+                <div class="d-flex justify-content-center">
+                    <div class="ProductSectionTitleBox">
+                        <h2 class="lesson-section-title mt-4">DUNYO BO`YLAB O`QUVCHILARIMIZNING FIKRLARI
+                            <span class="animation-border-block"></span>
+                        </h2>
+                    </div>
+                </div>
+
+
+                <div class="owl-carousel my-4">
+                    <div class="reviews">
+                        <div class="d-flex align-items-center justify-content-center px-4 pt-4">
+                            <img src="images/SVG/Mixael.png" class="reviewsImg" width="80" height="80" alt="">
+
+                            <div class="d-flex flex-column w-75">
+                                <p class="reviewsTitle">Mixail</p>
+
+                                <p class="reviewsText">Ekaterinburg 28 yosh</p>
+                            </div>
+                        </div>
+
+                        <div class="reviewsBox scroll_style">
+                            Salom! Mening ismim Misha. Audiokurslarni 4 oy oldin sotib olgan edim. Bu metodika hamda u
+                            bilan birga taqdim etilgan etilgan mobil ilova haqiqatdan ham juda qulay ekan. Bunday
+                            ilovani avval uchratmagan edim. Hozirda ingliz tilida yaxshi gaplasha olaman va eng
+                            asosiysi, nutqimdagi ba'zi xatoliklarni to`g`rilab oldim.
+                        </div>
+                    </div>
+                    <div class="reviews">
+                        <div class="d-flex justify-content-center px-4 pt-4">
+                            <img src="images/SVG/Mariya.png" class="reviewsImg" width="80" height="80" alt="">
+
+                            <div class="d-flex align-items-start flex-column w-75">
+                                <p class="reviewsTitle">Мария</p>
+
+                                <p class="reviewsText">Киев</p>
+                                <p class="reviewsText">42 года</p>
+                            </div>
+                        </div>
+
+                        <div class="reviewsBox scroll_style">
+                            Здравствуйте! Меня зовут Мария
+                            Юфимовна. Мне 42 года. Я много
+                            лет работала руководителем отдела
+                            кадров. В прошлом году возникло
+                            желание отправиться в кругосветное
+                            путешествие. Но я не знала
+                            английского языка. Чтобы найти
+                            более быстрый способ обучения
+                            я поискала в интернете и нашла
+                            эту методику. Я закончила её
+                            2 месяца назад, сейчас нахожусь
+                            в Сиднее. У меня очень хорошие
+                            результатыи я уверенно разгова-
+                            риваю с местными жителями. Я
+                            искренне благодарна создателям
+                            этой методики. Советую всем
+                            своим соотечественникам. Очень
+                            лёгкая и интересная методика.
+                        </div>
+                    </div>
+                    <div class="reviews">
+                        <div class="d-flex justify-content-center px-4 pt-4">
+                            <img src="images/SVG/Liza.png" class="reviewsImg" width="80" height="80" alt="">
+
+                            <div class="d-flex align-items-start flex-column w-75">
+                                <p class="reviewsTitle">Лиза</p>
+
+                                <p class="reviewsText">Москва</p>
+                                <p class="reviewsText">17 лет</p>
+                            </div>
+                        </div>
+
+                        <div class="reviewsBox scroll_style">
+                            Вау! Классная методика))
+                            Слушаю аудиоуроки уже 2 месяца.
+                            Если честно я почти севсем не
+                            знала английский, но сейчас
+                            с легкостью переписываюсь с
+                            друзьями из Америки.
+                            Спасибо разработчикам)) Всем
+                            советую. Очень крутая методика!
+                        </div>
+                    </div>
+                    <div class="reviews">
+                        <div class="d-flex justify-content-center px-4 pt-4">
+                            <img src="images/SVG/Almatbek.png" class="reviewsImg" width="80" height="80" alt="">
+
+                            <div class="d-flex align-items-start flex-column w-75">
+                                <p class="reviewsTitle">Алматбек</p>
+
+                                <p class="reviewsText">Шимкент</p>
+                                <p class="reviewsText">24 года</p>
+                            </div>
+                        </div>
+
+                        <div class="reviewsBox scroll_style">
+                            Ассалам алейкум!
+                            Честно сказать я удевлён
+                            результатами. Потому что в начале
+                            я не верил что такое возможно,
+                            за 6 месяцев свободно говорить
+                            на английском просто слушая
+                            аудиоуроки и наблюдая текст.
+                            Но я всё равно решился и купил
+                            методику. В данное время я
+                            закончил аудиокурсы. Мне
+                            понравилось и я свободно говорю
+                            на английском.
+
+                        </div>
+                    </div>
+                    <div class="reviews">
+                        <div class="d-flex justify-content-center px-4 pt-4">
+                            <img src="images/SVG/Anfina.png" class="reviewsImg" width="80" height="80" alt="">
+
+                            <div class="d-flex align-items-start flex-column w-75">
+                                <p class="reviewsTitle">Анфиса</p>
+
+                                <p class="reviewsText w-100">Санкт-Петербург</p>
+                                <p class="reviewsText">30 лет</p>
+                            </div>
+                        </div>
+
+                        <div class="reviewsBox scroll_style">
+                            Доброго времени суток!
+                            Хочу посоветовать вам эту
+                            уникальную методику. Почему
+                            именно эту? Потому что, быстро,
+                            удобно, легко и самое главное
+                            эффективно. Сама я инстаблогер.
+                            Давно хотела вести свой блог на
+                            английском и искала методы
+                            изучения через смартфон. Потому
+                            что я много времени провожу с
+                            телефоном и мне так очень удобно.
+                            Советую всем тем, кто хочет
+                            изучить английский.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="Footer mt-5 mb-2">
+    <div class="d-flex justify-content-center">
+        <div class="ProductSectionTitleBox">
+            <h2 class="lesson-section-title">HAMKORLARIMIZ
+                <span class="animation-border-block"></span>
+
+            </h2>
+        </div>
+    </div>
+
+    <div class="d-flex align-items-center flex-column mt-xl-5">
+        <div class="col-xl-8 mb-xl-5">
+            <div class="d-flex flex-wrap align-items-center justify-content-between">
+                <img src="images/Frags/Hamkorlar/beeline.png" width="260" height="80" alt="png">
+                <img src="images/Frags/Hamkorlar/mobiuz.png" width="225" height="45" alt="png">
+                <img src="images/Frags/Hamkorlar/uzmobile.png" width="190" height="80" alt="png">
+                <img src="images/Frags/Hamkorlar/ucell.png" width="224" height="80" alt="png">
+            </div>
+        </div>
+
+        <div class="col-xl-10 my-xl-5">
+            <div class="d-flex flex-wrap align-items-center justify-content-between">
+                <img src="images/Frags/Hamkorlar/payme.png" width="275" height="80" alt="png">
+                <img src="images/Frags/Hamkorlar/paynet.png" width="376" height="80" alt="png">
+                <img src="images/Frags/Hamkorlar/click.png" width="217" height="80" alt="png">
+                <img src="images/Frags/Hamkorlar/upay.png" width="185" height="80" alt="png">
+                <img src="images/Frags/Hamkorlar/oson.png" width="238" height="60" alt="png">
+            </div>
+        </div>
+
+        <div class="col-xl-9 my-xl-5">
+            <div class="d-flex flex-wrap align-items-center justify-content-between">
+                <img src="images/Frags/Hamkorlar/humans.png" width="166" height="80" alt="png">
+                <img src="images/Frags/Hamkorlar/xojaka.png" width="251" height="80" alt="png">
+                <img src="images/Frags/Hamkorlar/infin.png" width="341" height="70" alt="png">
+                <img src="images/Frags/Hamkorlar/like%20brands.png" width="378" height="60" alt="png">
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-center mt-0 mt-md-5 pt-xl-5">
+        <div class="FooterTextBox mt-xl-5">
+            <h2 class="lesson-section-title text-center mb-4">KOMPANIYA HAQIDA
+            </h2>
+
+            <p class="FooterText">Lingbox kompaniyasi 2018-yildan buyon xorijiy tillarni o`rganishga mo`ljallangan eng
+                effektiv metodikalarni tahlil qilish va sotish bilan shug`ullanadi. Ushbu metodika AQSh va Yevropa
+                ta'lim metodi va texnologialari asosida ishlab chiqilgan.</p>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-center align-items-center mt-5">
+        <div class="FooterSocialBoxWidth">
+            <h5 class="FooterSocialBoxTitle">Biz ijtimoiy tarmoqlarda:</h5>
+            <div class="FooterSocialBox justify-content-xl-around">
+                <a href="#"><img src="images/Frags/icon-telegram.svg" class="FooterSocialBoxImg" alt="svg"></a>
+                <a href="#"><img src="images/Frags/icon-youtube.svg" class="FooterSocialBoxImg" alt="svg"></a>
+                <a href="#"><img src="images/Frags/icon-instagram.svg" class="FooterSocialBoxImg" alt="svg"></a>
+                <a href="#"><img src="images/Frags/icon-facebook.svg" class="FooterSocialBoxImg" alt="svg"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-center align-items-center w-100 my-5 FootterFlex">
+        <a href="https://play.google.com/store"><img src="images/SVG/Playmarket.png" class="FooterMobileStore"
+                                                     alt=""></a>
+        <a href="https://www.apple.com/ios/app-store/"><img src="images/SVG/AppStore.png" class="FooterMobileStore"
+                                                            alt=""></a>
+    </div>
+
+    <div class="d-flex align-items-center justify-content-center w-100">
+        <h6 class="FooterEndTitle">© 2020 Lingbox Inc. Barcha huquqlar himoyalangan</h6>
+    </div>
+
+</footer>
+
+
+<!-- production version, optimized for size and speed Vue Js-->
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="Bootstrap Js/jQuery.min.js"></script>
+<script src="Bootstrap Js/popper.js"></script>
+<script src="Bootstrap Js/bootstrap.js"></script>
+<script src="Js/phoneImg.js"></script>
+<script src="Js/animated.js"></script>
+<script src="Js/owl.carousel.min.js"></script>
+<script src="Js/swiper.min.js"></script>
+
+
+<script>
+    $(".owl-carousel").owlCarousel({
+        autoplay: true,
+        center: true,
+        nav: true,
+        autoplayTimeout: 4000,
+        autoplayHoverPause: true,
+        loop: true,
+        margin: 15,
+
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1,
+                nav: true,
+                dots: true,
+                margin: 25
+            },
+            600: {
+                items: 2,
+                nav: true,
+                dots: true,
+                margin: 25
+            },
+            768: {
+                items: 2.3,
+                nav: true,
+                dots: true,
+                margin: 120
+            },
+            1024: {
+                items: 3,
+                nav: true,
+                dots: true,
+                margin: 120
+            },
+
+            1366: {
+                items: 3.8,
+                nav: true,
+                dots: true,
+                margin: 40
+            },
+            1600: {
+                items: 4.8,
+                nav: true,
+                dots: true,
+                margin: 40
+            }
+        },
+    });
+</script>
+
+<script>
+    $(document).ready(function () {
+        $('.PhoneImgBox').animate({
+            opacity: 1,
+            right: '2%',
+        }, 1000, function () {
+        });
+
+        // $('#myId').click(function() {
+        //     $.scrollTo($('.NowOrderBox'), 1000);
+        // });
+
+        $("#myId").click(function () {
+            if ($(window).height() == 640 && $(window).width() == 360) {
+                $('html, body').animate({
+                    scrollTop: $(".NowOrderBox").offset().top + -350
+                }, 2000)
+            }
+
+            if ($(window).height() <= 650) {
+                $('html, body').animate({
+                    scrollTop: $(".NowOrderBox").offset().top + -120
+                }, 2000)
+            }
+
+            if ($(window).height() >= 651) {
+                $('html, body').animate({
+                    scrollTop: $(".NowOrderBox").offset().top + -120
+                }, 2000)
+            }
+            $('.Focus').focus();
+        });
+
+        $("#myId2").click(function () {
+            if ($(window).height() == 640 && $(window).width() == 360) {
+                $('html, body').animate({
+                    scrollTop: $(".NowOrderBox").offset().top + -350
+                }, 2000)
+            }
+
+            if ($(window).height() <= 650) {
+                $('html, body').animate({
+                    scrollTop: $(".NowOrderBox").offset().top + -120
+                }, 2000)
+            }
+
+            if ($(window).height() >= 651) {
+                $('html, body').animate({
+                    scrollTop: $(".NowOrderBox").offset().top + -120
+                }, 2000)
+            }
+            $('.Focus').focus();
+        });
+
+        $(".owl-prev").html('    <div class="swiper-button-prev">\n' +
+            '            <img src="images/SVG/buttun_prev_img.png" class="carouselButtonImg" alt=""></div>');
+        $(".owl-next").html('<div class="swiper-button-next">\n' +
+            '            <img src="images/SVG/button_next_img.png" class="carouselButtonImg" alt=""></div>');
+
+
+        /* Animation Cup */
+
+        animations('.')
+
+        function animations(ClassAnim) {
+
+
+            $('.CupBoxRandomImg').animate({
+                width: '30px',
+                opacity: '0',
+                left: '10%',
+                bottom: '70%',
+            }, {duration: 500, queue: true});
+
+            $('.CupBoxRandomImg').animate({
+                width: '30px',
+                opacity: '1',
+                left: '10%',
+                bottom: '70%',
+            }, {duration: 500, queue: true});
+
+            $('.CupBoxRandomImg').animate({
+                width: '30px',
+                opacity: '0',
+                left: '10%',
+                bottom: '70%',
+            }, {duration: 500, queue: true});
+
+
+            $('.CupBoxRandomImg').animate({
+                width: '30px',
+                opacity: '0',
+                bottom: '10%'
+            }, {duration: 500, queue: true});
+
+            $('.CupBoxRandomImg').animate({
+                width: '30px',
+                opacity: '1',
+                bottom: '10%'
+            }, {duration: 500, queue: true});
+
+            $('.CupBoxRandomImg').animate({
+                width: '30px',
+                opacity: '0',
+                bottom: '10%'
+            }, {duration: 500, queue: true});
+
+
+            $('.CupBoxRandomImg').animate({
+                width: '30px',
+                opacity: '0',
+                left: '75%',
+                bottom: '10%'
+            }, {duration: 500, queue: true});
+
+            $('.CupBoxRandomImg').animate({
+                width: '30px',
+                opacity: '1',
+                bottom: '10%',
+                left: '75%',
+            }, {duration: 500, queue: true});
+
+            $('.CupBoxRandomImg').animate({
+                width: '30px',
+                opacity: '0',
+                bottom: '10%',
+                left: '75%',
+            }, {duration: 500, queue: true})
+        }
+
+        setInterval(function () {
+            $('.CupBoxRandomImg').animate({
+                width: '30px',
+                opacity: '0',
+                left: '10%',
+                bottom: '70%',
+            }, {duration: 500, queue: true});
+
+            $('.CupBoxRandomImg').animate({
+                width: '30px',
+                opacity: '1',
+                left: '10%',
+                bottom: '70%',
+            }, {duration: 500, queue: true});
+
+            $('.CupBoxRandomImg').animate({
+                width: '30px',
+                opacity: '0',
+                left: '10%',
+                bottom: '70%',
+            }, {duration: 500, queue: true});
+
+
+            $('.CupBoxRandomImg').animate({
+                width: '30px',
+                opacity: '0',
+                bottom: '10%'
+            }, {duration: 500, queue: true});
+
+            $('.CupBoxRandomImg').animate({
+                width: '30px',
+                opacity: '1',
+                bottom: '10%'
+            }, {duration: 500, queue: true});
+
+            $('.CupBoxRandomImg').animate({
+                width: '30px',
+                opacity: '0',
+                bottom: '10%'
+            }, {duration: 500, queue: true});
+
+
+            $('.CupBoxRandomImg').animate({
+                width: '30px',
+                opacity: '0',
+                left: '75%',
+                bottom: '10%'
+            }, {duration: 500, queue: true});
+
+            $('.CupBoxRandomImg').animate({
+                width: '30px',
+                opacity: '1',
+                bottom: '10%',
+                left: '75%',
+            }, {duration: 500, queue: true});
+
+            $('.CupBoxRandomImg').animate({
+                width: '30px',
+                opacity: '0',
+                bottom: '10%',
+                left: '75%',
+            }, {duration: 500, queue: true})
+        }, 5000);
+
+    });
+</script>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            LessonBox: [
+                {
+                    LessonBoxImg: `images/SVG/Bookmark.png`,
+                    LessonBoxText: `hech qanday grammatika va so\`z yodlashlarsiz`
+                },
+                {LessonBoxImg: `images/SVG/HeadPhones.png`, LessonBoxText: `doimiy eshitish metodi bilan`},
+                {
+                    LessonBoxImg: `images/SVG/Books.png`,
+                    LessonBoxText: `odatiy usulda, kitob va audiomaterillar yordamida`
+                },
+                {LessonBoxImg: `images/SVG/HeadPhone.png`, LessonBoxText: `innovatsion usulda, mobil ilova orqali`},
+            ],
+        },
+    })
+    var app2 = new Vue({
+        el: '#app2',
+        data: {
+            problemsBox: [
+                {
+                    problemsBoxImg: `images/Frags/icon-down.svg`,
+                    problemsBoxText: `гxorijiy tillarni bilmaslik tufayli yuqori lavozimga ko\`tarila olmaslik`
+                },
+                {
+                    problemsBoxImg: `images/Frags/icon-book.svg`,
+                    problemsBoxText: `zerikarli grammatik qoidalar va ko\`plab so\`z yodlash`
+                },
+                {
+                    problemsBoxImg: `images/Frags/icon-time.svg`,
+                    problemsBoxText: `repetitor va qo\`shimcha kurslarga borishga vaqt yo\`qligi`
+                },
+                {
+                    problemsBoxImg: `images/Frags/icon-sad.svg`,
+                    problemsBoxText: `til o\`rganish jarayonida qiyinchiliklarga uchrab, tushkunlikka tushish`
+                },
+                {
+                    problemsBoxImg: `images/Frags/icon-audiobook.svg`,
+                    problemsBoxText: `tillarni mustaqil o\`rganish uchun aniq va qulay metodika yo\`qligi`
+                },
+                {
+                    problemsBoxImg: `images/Frags/icon-dislike.svg`,
+                    problemsBoxText: `xorijiy tillarni uzoq vaqt o\`rganib, gapira olmaslik`
+                },
+            ],
+        }
+    })
+    var app3 = new Vue({
+        el: '#app3',
+        data: {
+            ProductSectionTextBox: [
+                {
+                    ProductSectionTextBoxRound: `1`,
+                    ProductSectionText: `Til o\`rganishning eng oson va zamonaviy metodi`,
+                    ProductSectionTextSpan: `(bilimlarning ong ostiga avtomatik tarzda joylanishi, bunda so\`z yodlash hamda grammatikani o\`rganish talab etilmaydi)`,
+                },
+                {
+                    ProductSectionTextBoxRound: `2`,
+                    ProductSectionText: ` Tillarni istalgan usulda o\`rganish imkoniyati`,
+                    ProductSectionTextSpan: ` (siz tillarni progressiv kitob va audioqo\`llanma hamda innovatsion mobil ilova orqali o\`rgana olasiz)`,
+                },
+                {
+                    ProductSectionTextBoxRound: `3`,
+                    ProductSectionText: `Boshlang\`ich bilimga ega bo\`lish shart emas`,
+                    ProductSectionTextSpan: `(siz tillarni boshlang\`ich bilim bazasiga ega bo\`lmay turib ham, noldan boshlab o\`rgana olasiz)`,
+                },
+                {
+                    ProductSectionTextBoxRound: `4`,
+                    ProductSectionText: `Qulay grafik. Tillarni istalgan joyda va istalgan vaqtda o\`rganish imkoniyati`,
+                    ProductSectionTextSpan: `(metroda, uyda, ishda, ko\`chada, ertalab, sayr vaqtida, kechqurun, dam olish kunlari va hokazo)`,
+                },
+
+                {
+                    ProductSectionTextBoxRound: `5`,
+                    ProductSectionText: `Eng qisqa muddatda chet tilida erkin gaplasha olish `,
+                    ProductSectionTextSpan: `(bor yo\`g\`i 6 oyda siz xuddi native speaker kabi gapirasiz)`,
+                },
+                {
+                    ProductSectionTextBoxRound: `6`,
+                    ProductSectionText: `99,9% gaplashish amaliyoti`,
+                    ProductSectionTextSpan: ``,
+                },
+
+
+                {
+                    ProductSectionTextBoxRound: `7`,
+                    ProductSectionText: `Bor yo\`g\`i 2 soat eshitish va kuzatish`,
+                    ProductSectionTextSpan: `(tillarni o\`rganishingiz uchun hech qanday qiyinchiliklarsiz va uy vazifalarisiz kuniga bor yo\`g\`i 2 soat eshitib kuzatishingiz kifoya)`,
+                },
+
+                {
+                    ProductSectionTextBoxRound: `8`,
+                    ProductSectionText: `"0" TRAFIK `,
+                    ProductSectionTextSpan: `(sizga taqdim etilgan ilovadan foydalanganingizda umuman trafik sarflamaysiz)`,
+                },
+
+                {
+                    ProductSectionTextBoxRound: `9`,
+                    ProductSectionText: `Yuqori sifatli audiodarslar`,
+                    ProductSectionTextSpan: `(barcha audiodarslar professional ovoz yozish studiyasida dublyaj qilingan)`,
+                },
+
+
+                {
+                    ProductSectionTextBoxRound: `10`,
+                    ProductSectionText: `Speaking, Listening, Reading`,
+                    ProductSectionTextSpan: `(asosiy ko\`nikmalarni rivojlantirish va mustahkamlash imkoniyati)`,
+                },
+
+
+                {
+                    ProductSectionTextBoxRound: `11`,
+                    ProductSectionText: `Audio effektlar `,
+                    ProductSectionTextSpan: `(yuqori sifatga ega bo\`lgan qiziqarli audio effektlar)`,
+                },
+
+
+            ],
+        }
+    })
+    var app4 = new Vue({
+        el: '#app4',
+        data: {
+            ProductIcons: [
+                {
+                    problemsBoxImg: `images/Frags/icon-talk.svg`,
+                    problemsBoxText: `istalgan tilda o\`z ona tilingizday gaplasha olish`
+                },
+                {
+                    problemsBoxImg: `images/Frags/icon-marshmallow.svg`,
+                    problemsBoxText: `chet tilidagi so\`zlashuvni tushunish va gaplashish qo\`rquvidan halos bo\`lish`
+                },
+                {
+                    problemsBoxImg: `images/Frags/icon-books.svg`,
+                    problemsBoxText: `xorijiy tildagi kitoblarni bemalol o\`qiy olish`
+                },
+                {
+                    problemsBoxImg: `images/Frags/icon-plane.svg`,
+                    problemsBoxText: `dunyo bo\`ylab erkin sayohat qila olish, chet elda o\`qish va ishlash`
+                },
+                {
+                    problemsBoxImg: `images/Frags/icon-building.svg`, problemsBoxText: `yuqori daromadli ishda ishlash`
+                },
+                {
+                    problemsBoxImg: `images/Frags/icon-group.svg`,
+                    problemsBoxText: `chet eldan do\`stlar orttirish va keng dunyoqarashga ega bo\`lish`,
+                },
+                {
+                    problemsBoxImg: `images/Frags/icon-star.svg`, problemsBoxText: `ijtimoiy statusga ega bo\`lish`,
+                },
+            ],
+        }
+    })
+
+</script>
+
+
+</body>
+</html>
