@@ -1,14 +1,34 @@
 @media (min-width: 1366px) and (max-width: 1600px) {
+
+    .completed-box-header-title {
+        font-family: "Gilroy ExtraBold", sans-serif;
+        font-size: 50px;
+        font-weight: 900;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .completed-box-header-text {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .completed-box {
+        background: transparent linear-gradient(246deg, #E2F2FF 0%, #F0C4F5 100%);
+        height: 100vh;
+    }
+
     header {
-        background: url(../images/header-laptop-girl.jpg);
+        background: url(../images/background new.jpg);
         display: block;
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: 100% 100%;
         width: 100%;
-        background-position: 63% 30%;
-        height: 535px;
+        background-position: 100% 100%;
+        height: 580px;
         position: relative;
         z-index: 99999;
+        background-attachment: fixed;
     }
 
     .header-box {
@@ -17,6 +37,25 @@
 
     .margin-top-3 {
         margin-top: 0;
+    }
+
+    .logo-img-box {
+        justify-content: space-between;
+        margin-bottom: 8%;
+        margin-top: 40px;
+    }
+
+    .ling-box-img-icon {
+        width: 100px;
+    }
+
+    .language-box {
+        width: 120px;
+        height: 35px;
+    }
+
+    .form-control.language-box-text {
+        font-size: 18px;
     }
 
     .header-title-box {
@@ -28,20 +67,31 @@
         font-size: 40px;
     }
 
+    .lesson-section {
+        margin-top: 15px;
+        margin-bottom: 70px;
+    }
+
+    .lesson-box-text {
+        font-size: 17px;
+    }
+
+    .yes-learing {
+        font-size: 28px;
+        text-align: center;
+    }
+
     .header-text-box {
-        margin-top: 70px;
-        width: 55%;
+        margin-top: 25px;
+        width: 50%;
+    }
+
+    .header-text {
+        font-size: 30px;
     }
 
     .header-big-text {
         font-size: 43px;
-    }
-
-    .PhoneImgBox {
-        position: absolute;
-        right: -15%;
-        bottom: -46%;
-        opacity: 0;
     }
 
     .lesson-section-titleBox {
@@ -50,16 +100,36 @@
 
     .LessonBox {
         width: 142px;
-        margin-right: 13%;
+        margin-right: 10%;
         flex-direction: column;
+    }
+
+    .LessonBox:nth-child(3) {
+        width: 283px;
     }
 
     .lesson-box-width {
         width: 75%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .LessonBoxImg {
+        width: 90px;
+        height: 90px;
+        margin-bottom: 30px;
     }
 
     .NumbersBoxBG {
         width: 100%;
+    }
+
+    .NumbersBoxTitle {
+        margin-bottom: 0;
+    }
+
+    .NumbersBoxText {
+        font-size: 16px;
     }
 
     .NumbersBoxWidth {
@@ -68,7 +138,7 @@
 
     .problems-section-title-box {
         position: relative;
-        width: 75%;
+        width: 80%;
         display: flex;
         justify-content: center;
     }
@@ -85,10 +155,36 @@
         width: 70%;
     }
 
+    .Product .ProductSectionTitleBox {
+        width: 70%;
+    }
+
+    .Product .lesson-section-title {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .Product .animation-border-block {
+        width: 120px;
+        left: 228px;
+    }
+
+    .ProductSectionFlexBox {
+        margin-bottom: 150px;
+    }
+
+    .ProductSectionFlexBox .ProductSectionWidthBox:nth-child(11) {
+        margin-bottom: 35px;
+    }
+
+    .ProductBoxBGImg {
+        height: 1695px;
+    }
+
     .CupBox {
         background: url(../images/SVG/CupBg.jpg);
         width: 100%;
-        height: 368px;
+        height: 280px;
         position: relative;
         z-index: 6;
         display: flex;
@@ -109,14 +205,14 @@
     }
 
     .CupBoxTitle {
-        font-family: "Arial", sans-serif;
+        font-family: "Gilroy ExtraBold", sans-serif;
         color: white;
-        font-size: 47px;
+        font-size: 50px;
         font-weight: 600;
     }
 
     .CupBoxTitleSpan {
-        font-size: 47px;
+        font-size: 40px;
     }
 
     .ProductIconsBoxWidth {
@@ -146,6 +242,7 @@
     .ProductIconsBox:nth-child(3) .ProductIconsBoxImg,
     .ProductIconsBox:nth-child(4) .ProductIconsBoxImg {
         margin-bottom: 20px;
+        margin-top: 0;
     }
 
     .ProductIconsBoxWidth .ProductIconsBox:nth-child(5),
@@ -171,6 +268,7 @@
     .ProductIconsBox:nth-child(6) .ProductIconsBoxImg,
     .ProductIconsBox:nth-child(7) .ProductIconsBoxImg {
         margin-top: 30px;
+        margin-bottom: 40px;
     }
 
     .Steps .lesson-section-title {
@@ -184,17 +282,112 @@
         position: relative;
     }
 
+    .banner {
+        height: 300px;
+    }
+
+    .dg-container {
+        position: relative;
+        width: 100%;
+        height: 450px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .dg-wrapper {
+        width: 600px;
+        height: 450px;
+        margin: 0;
+        position: relative;
+        transform-style: preserve-3d;
+        perspective: 600px;
+        left: 0;
+    }
+
+    .dg-wrapper p {
+        width: 650px;
+        height: 450px;
+    }
+
+    .blue-text {
+        margin-top: 80px;
+    }
+
     .SentencePriceBoxWidth {
         width: 82%;
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+    }
+
+    .SentencePriceBox .justify-content-center-for-laptop {
+        justify-content: center !important;
+    }
+
+    .SentencePriceBox:nth-child(1) .SentencePriceBoxText {
+        position: relative;
+        right: 0;
+    }
+
+    .SentencePriceBox:nth-child(2) .SentencePriceBoxText {
+        margin-top: -30px;
+        font-size: 26px;
+        width: 100%;
+        margin-left: 0 !important;
+    }
+
+    .SentencePriceBox:nth-child(3) .SentencePriceBoxText {
+        position: relative;
+        left: 0;
+    }
+
+    .SentencePriceBox {
+        width: 100%;
+    }
+
+    .SentenceBoxImg {
+        width: 145px;
+    }
+
+    .SentencePriceBox:nth-child(2) {
+        width: 100%;
+        text-align: center;
     }
 
     .NowOrderTextWidth {
-        width: 79%;
+        width: 100%;
+    }
+
+    .NowOrderTitle {
+        font-size: 40px;
+    }
+
+    .NowOrderText {
+        font-size: 31px;
+    }
+
+    .radio-label {
+        font-size: 25px;
+    }
+
+    .radio-check {
+        height: 25px;
+        width: 25px;
     }
 
     .StepsPrice {
         height: 120px;
         width: 100%;
+    }
+
+    .SentencePriceBox:nth-child(3) {
+        margin-top: 40px;
+        text-align: center;
+        position: relative;
+    }
+
+    .sentence-bg {
+        background-size: 110% 80%;
+        background-position: 45% 100%;
     }
 
     .StepsPriceText {
@@ -213,11 +406,45 @@
         font-size: 25px;
         margin-top: 20px;
     }
+
+    .partners-img-box {
+        justify-content: center !important;
+    }
+
+    .partners-img {
+        margin-right: 60px;
+    }
+
+    .partners-img-last {
+        margin-top: 60px;
+    }
 }
 
 @media (min-width: 1024px) and (max-width: 1365px) {
 
-    .white-button{
+    .completed-box-body{
+        overflow: hidden;
+    }
+
+    .completed-box-header-title {
+        font-family: "Gilroy ExtraBold", sans-serif;
+        font-size: 50px;
+        font-weight: 900;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .completed-box-header-text {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .completed-box {
+        background: transparent linear-gradient(246deg, #E2F2FF 0%, #F0C4F5 100%);
+        height: 50vh;
+    }
+
+    .white-button {
         border: 2px solid white;
         border-radius: 28px;
         color: white;
@@ -240,23 +467,32 @@
         width: 90%;
     }
 
+    .form-control.language-box-text {
+        font-size: 20px;
+    }
+
+    .language-box {
+        width: 130px;
+        height: 35px;
+    }
+
+    .ling-box-img-icon {
+        width: 125px;
+    }
+
     .header-title-box {
-        margin-top: 120px;
+        margin-top: 170px;
         flex-direction: column;
     }
 
     .header-text-box {
-        margin-top: 70px;
+        margin-top: 25px;
         width: 55%;
     }
 
     .header-text {
-        font-size: 16px;
-        font-family: "Arial", sans-serif;
-        color: white;
-        margin-bottom: 0;
-        line-height: 1.2;
-        letter-spacing: 2px;
+        font-size: 23px;
+        font-family: "Roboto", sans-serif;
     }
 
     .header-big-text {
@@ -271,7 +507,7 @@
     }
 
     .header-title {
-        font-size: 25px;
+        font-size: 32px;
     }
 
     .lesson-section-titleBox {
@@ -284,6 +520,12 @@
         margin-right: 5%;
     }
 
+    .LessonBoxImg {
+        width: 90px;
+        height: 90px;
+        margin-bottom: 30px;
+    }
+
     .lesson-box-width {
         width: 85%;
     }
@@ -291,8 +533,12 @@
     .NumbersBoxText {
         font-family: "Roboto", sans-serif;
         text-align: center;
-        line-height: 2.2;
-        font-size: 12px;
+        line-height: 1.2;
+        font-size: 20px;
+    }
+
+    .NumbersBoxTitle {
+        margin-bottom: 0;
     }
 
     .NumbersBoxBG {
@@ -314,21 +560,38 @@
         justify-content: center;
     }
 
+    .problems .lesson-section-title {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .problems .animation-border-block {
+        width: 120px;
+        left: 450px;
+    }
+
     .ProductBoxBG {
         width: 100%;
     }
 
     .ProductBoxBGImg {
         background-position: right 97%;
-        height: 950px;
+        height: 1780px;
     }
 
     .ProductSectionWidthBox {
         width: 70%;
     }
 
+
     .Product .lesson-section-title {
         font-size: 42px;
+        text-align: center;
+    }
+
+    .Product .animation-border-block {
+        width: 120px;
+        left: 450px;
     }
 
     .CupImg {
@@ -362,11 +625,11 @@
     }
 
     .CupBoxTitle {
-        font-size: 48px;
+        font-size: 40px;
     }
 
     .CupBoxTitleSpan {
-        font-size: 38px;
+        font-size: 30px;
     }
 
     .ProductIconsBoxWidth {
@@ -396,6 +659,7 @@
     .ProductIconsBox:nth-child(3) .ProductIconsBoxImg,
     .ProductIconsBox:nth-child(4) .ProductIconsBoxImg {
         margin-bottom: 20px;
+        margin-top: 0;
     }
 
     .ProductIconsBoxWidth .ProductIconsBox:nth-child(5),
@@ -418,13 +682,29 @@
         margin-right: 0;
     }
 
-    .ProductIconsBox:nth-child(6) .ProductIconsBoxImg,
-    .ProductIconsBox:nth-child(7) .ProductIconsBoxImg {
+    .ProductIconsBox:nth-child(6) .ProductIconsBoxImg, .ProductIconsBox:nth-child(7) .ProductIconsBoxImg {
         margin-top: 30px;
+        margin-bottom: 40px;
     }
 
     .Steps .lesson-section-title {
         font-size: 34px;
+    }
+
+    .StepBoxText {
+        font-size: 20px;
+    }
+
+
+    .text-70 {
+        font-size: 47px;
+        margin-bottom: 0;
+        margin-top: 40px;
+    }
+
+    .text-40 {
+        font-size: 30px;
+        line-height: 30px;
     }
 
     .SentenceBox {
@@ -434,6 +714,33 @@
         position: relative;
     }
 
+    .banner {
+        height: 300px;
+    }
+
+    .dg-container {
+        position: relative;
+        width: 100%;
+        height: 450px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .dg-wrapper {
+        width: 655px;
+        height: 450px;
+        margin: 0;
+        position: relative;
+        transform-style: preserve-3d;
+        perspective: 600px;
+        left: 0;
+    }
+
+    .dg-wrapper a {
+        width: 650px;
+        height: 450px;
+    }
+
     .SentenceBoxImg {
         width: 135px;
         margin-bottom: 10px;
@@ -441,26 +748,87 @@
 
     .SentencePriceBoxWidth {
         width: 82%;
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+    }
+
+    .SentencePriceBox .justify-content-center-for-laptop {
+        justify-content: center !important;
     }
 
     .SentencePriceBox:nth-child(1) .SentencePriceBoxText {
-        width: 65%;
+        position: relative;
+        right: 0;
+    }
+
+    .SentencePriceBox:nth-child(2) .SentencePriceBoxText {
+        margin-top: -30px;
+        font-size: 26px;
+        width: 100%;
+        margin-left: 0 !important;
+    }
+
+    .SentencePriceBox:nth-child(3) .SentencePriceBoxText {
+        position: relative;
+        left: 0;
+    }
+
+    .SentencePriceBox {
+        width: 100%;
+    }
+
+    .SentenceBoxImg {
+        width: 107px;
+    }
+
+    .SentencePriceBox:nth-child(2) {
+        width: 100%;
         text-align: center;
     }
 
-    .SentencePriceBox:nth-child(1) .PriceRubilSpan {
-        margin-left: 0;
+    .blue-text {
+        margin-top: 80px;
+        font-size: 45px;
+    }
+
+    .blue-text-black {
+        font-size: 30px;
     }
 
     .NowOrderTextWidth {
-        width: 98%;
+        width: 94%;
+    }
+
+    .NowOrderTitle {
+        font-size: 33px;
     }
 
     .NowOrderText {
         font-family: "Roboto", sans-serif;
-        font-size: 26px;
+        font-size: 24px;
         color: white;
-        padding: 0 20px;
+        padding: 0 28px;
+    }
+
+    .NowOrderPriceImg {
+        width: 110px;
+        height: 110px;
+        position: absolute;
+        right: -50px;
+        top: -35px;
+    }
+
+    .radio-label {
+        font-size: 25px;
+    }
+
+    .radio-check {
+        height: 25px;
+        width: 25px;
+    }
+
+    .text-blue {
+        margin-top: 40px;
     }
 
 
@@ -489,9 +857,32 @@
         background-size: 100% 100%;
     }
 
+    .carouselBox .lesson-section-title {
+        color: white;
+        text-align: center;
+    }
+
+    .Question .animation-border-block {
+        width: 100px;
+        left: 450px;
+    }
+
     .SentenceTitle {
         font-size: 25px;
         margin-top: 20px;
+    }
+
+    .partners-img-box {
+        justify-content: center !important;
+    }
+
+    .partners-img {
+        margin-right: 60px;
+        margin-bottom: 40px;
+    }
+
+    .partners-img:last-child {
+        margin-right: 0;
     }
 
     .FooterTextBox {
@@ -501,7 +892,29 @@
 
 @media (min-width: 768px) and (max-width: 1023px) {
 
-    .white-button{
+    .completed-box-body{
+        overflow: hidden;
+    }
+
+    .completed-box-header-title {
+        font-family: "Gilroy ExtraBold", sans-serif;
+        font-size: 50px;
+        font-weight: 900;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .completed-box-header-text {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .completed-box {
+        background: transparent linear-gradient(246deg, #E2F2FF 0%, #F0C4F5 100%);
+        height: 70vh;
+    }
+
+    .white-button {
         border: 2px solid white;
         border-radius: 28px;
         color: white;
@@ -521,12 +934,27 @@
     }
 
     .ling-box-img-icon {
-        width: 110px;
+        width: 70px;
     }
 
     .logo-img-box {
-        justify-content: flex-end;
+        justify-content: space-between;
+        align-items: center;
         margin-top: 5px;
+        margin-bottom: 12%;
+    }
+
+    .form-control.language-box-text {
+        font-size: 13px;
+    }
+
+    .language-box {
+        width: 100px;
+        height: 35px;
+    }
+
+    .margin-top-3 {
+        margin-top: 1rem;
     }
 
 
@@ -535,7 +963,7 @@
     }
 
     .header-text-box {
-        margin-top: 25px;
+        margin-top: 10px;
         width: 60%;
     }
 
@@ -553,7 +981,7 @@
     }
 
     .header-title {
-        font-size: 21px;
+        font-size: 27px;
     }
 
     .PhoneImg {
@@ -597,35 +1025,54 @@
         font-size: 30px;
     }
 
+    .yes-learing {
+        font-size: 24px;
+        text-align: center;
+    }
+
 
     .LessonBox {
         width: 190px;
         margin-right: 2%;
     }
 
+    .LessonBox:nth-child(3) {
+        width: 190px;
+    }
+
+    .LessonBox:last-child .lesson-box-text {
+        padding-left: 0;
+    }
+
     .lesson-box-width {
-        width: 100%;
+        width: 82%;
     }
 
     .LessonBoxImg {
-        width: 85px;
-        height: 85px;
+        width: 70px;
+        height: 70px;
         margin-bottom: 30px;
     }
 
     .NumbersBoxBG {
         width: 100%;
+        padding: 60px 0;
+    }
+
+    .Numbers .lesson-section-title {
+        font-size: 35px;
     }
 
     .NumbersBoxTitle {
         font-family: "Gilroy ExtraBold", sans-serif;
-        font-size: 50px;
+        font-size: 40px;
         color: #4d4d4d;
+        margin-bottom: 0;
     }
 
     .NumbersBoxTitleSyb {
         font-family: "Gilroy ExtraBold", sans-serif;
-        font-size: 50px;
+        font-size: 40px;
         color: #4d4d4d;
     }
 
@@ -637,17 +1084,23 @@
     }
 
     .NumbersSectionTitleBackText {
-        width: 100%;
+        width: 70%;
+        top: 60%;
     }
 
     .NumbersBoxWidth {
-        width: 100%;
+        width: 88%;
         justify-content: center;
+        margin-top: 40px;
     }
 
     .NumbersBox {
         width: 180px;
         margin-right: 2%;
+    }
+
+    .problems {
+        padding: 20px 0;
     }
 
     .problems-section-title-box {
@@ -670,7 +1123,14 @@
 
     .problems .lesson-section-title {
         font-size: 36px;
+        text-align: center;
     }
+
+    .problems .animation-border-block {
+        width: 120px;
+        left: 320px;
+    }
+
 
     .problems .lesson-box-width {
         justify-content: center;
@@ -685,17 +1145,25 @@
         font-family: "Roboto", sans-serif;
         text-align: center;
         line-height: 1.5;
-        font-weight: 600;
-        font-size: 14px;
+        font-weight: 400;
+        font-size: 12px;
     }
 
     .ProductBoxBG {
         width: 100%;
+        padding-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .StepBoxFlex {
+        width: 90%;
     }
 
     .ProductBoxBGImg {
         background-position: right 97%;
-        height: 830px;
+        height: 1700px;
         background-size: 40%;
     }
 
@@ -707,8 +1175,18 @@
         width: 85%;
     }
 
+    .ProductSectionFlexBox .ProductSectionWidthBox:nth-child(11) {
+        margin-bottom: 40px;
+    }
+
     .Product .lesson-section-title {
         font-size: 30px;
+        text-align: center;
+    }
+
+    .Product .animation-border-block {
+        width: 120px;
+        left: 320px;
     }
 
     .CupBox {
@@ -732,7 +1210,7 @@
     }
 
     .CupBoxTitleBox {
-        width: 65%;
+        width: 70%;
     }
 
     .CupBoxTitle {
@@ -740,11 +1218,11 @@
     }
 
     .CupBoxTitleSpan {
-        font-size: 30px;
+        font-size: 24px;
     }
 
     .ProductIconsBoxWidth {
-        width: 100%;
+        width: 95%;
     }
 
     .ProductIcons {
@@ -795,6 +1273,7 @@
     .ProductIconsBox:nth-child(3) .ProductIconsBoxImg,
     .ProductIconsBox:nth-child(4) .ProductIconsBoxImg {
         margin-bottom: 20px;
+        margin-top: 0;
     }
 
     .ProductIconsBoxWidth .ProductIconsBox:nth-child(5),
@@ -836,6 +1315,8 @@
 
     .StepBoxText {
         width: 100%;
+        font-size: 14px;
+        padding: 0 10px;
     }
 
     .StepBoxArrow {
@@ -858,6 +1339,45 @@
         justify-content: center;
     }
 
+    .text-70 {
+        font-size: 38px;
+        margin-bottom: 0;
+        margin-top: 40px;
+    }
+
+    .text-40 {
+        font-size: 26px;
+        line-height: 26px;
+    }
+
+    .banner {
+        height: 300px;
+        margin-top: 40px;
+    }
+
+    .dg-container {
+        position: relative;
+        width: 100%;
+        height: 450px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .dg-wrapper {
+        width: 655px;
+        height: 450px;
+        margin: 0;
+        position: relative;
+        transform-style: preserve-3d;
+        perspective: 600px;
+        left: 0;
+    }
+
+    .dg-wrapper a {
+        width: 650px;
+        height: 450px;
+    }
+
     .SentenceBox .SentenceBoxGrafica:nth-child(2),
     .SentenceBox .SentenceBoxGrafica:nth-child(4) {
         margin-right: 0;
@@ -867,12 +1387,18 @@
         margin-bottom: 20px;
     }
 
-    .SentenceBox .SentenceBoxGrafica:nth-child(2), .SentenceBox .SentenceBoxGrafica:nth-child(4) {
+    .SentenceBox .SentenceBoxGrafica:nth-child(2),
+    .SentenceBox .SentenceBoxGrafica:nth-child(4) {
         margin-right: 20px;
     }
 
+    .SentenceBox .SentenceBoxGrafica:nth-child(4) {
+        margin-right: 0;
+    }
+
+
     .SentenceBoxImg {
-        width: 125px;
+        width: 113px;
         margin-bottom: 10px;
     }
 
@@ -886,57 +1412,81 @@
     }
 
 
-    .PriceRubil {
-        font-size: 40px;
+    .SentencePriceBox:nth-child(2) .PriceRubil {
+        font-family: "Gilroy ExtraBold", sans-serif;
+        font-size: 70px;
+        text-decoration: none;
+        font-weight: 700;
+        color: #0181FF;
+        transform: translateY(-20px);
     }
 
-    .PriceRubilSpan {
-        font-size: 40px;
+    .SentencePriceBox:nth-child(2) .PriceRubilSpan {
+        font-family: "Gilroy", sans-serif;
+        font-size: 60px;
+        text-decoration: none;
+        font-weight: 400;
+        color: #0181FF;
+        transform: translateY(-10px);
     }
 
-    .SentencePriceBox:nth-child(1) .PriceRubilSpan {
-        margin-left: 37px;
+    .SentencePriceBoxWidth {
+        width: 82%;
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+    }
+
+    .SentencePriceBox .justify-content-center-for-laptop {
+        justify-content: center !important;
+    }
+
+    .SentencePriceBox:nth-child(1) .SentencePriceBoxText {
+        position: relative;
+        right: 0;
     }
 
     .SentencePriceBox:nth-child(1) .PriceRubil:after {
         content: "";
         position: absolute;
-        background: #212529;
-        width: 75px;
-        height: 4px;
+        background: #FF0000;
+        width: 330px;
+        height: 2px;
         left: 0;
-        top: 30px;
+        top: 34px;
     }
 
-    .SentencePriceBoxText {
-        font-size: 14px;
-        font-family: "Roboto", sans-serif;
-        color: #181A96;
-    }
-
-    .SentencePriceBox:nth-child(2) .PriceRubil {
-        font-size: 60px;
-
-    }
-
-    .SentencePriceBox:nth-child(2) .PriceRubilSpan {
-        font-size: 60px;
-    }
-
-    .SentencePriceBox:nth-child(3) .PriceRubil {
+    .blue-text {
+        margin-top: 80px;
         font-size: 40px;
-        margin-right: 5px;
+    }
+
+    .blue-text-black {
+        font-size: 25px;
     }
 
     .SentencePriceBox:nth-child(2) .SentencePriceBoxText {
         margin-top: -30px;
-        font-size: 20px;
-        width: 102%;
-
+        font-size: 26px;
+        width: 100%;
+        margin-left: 0 !important;
     }
 
-    .SentencePriceBox:nth-child(3) .PriceRubilSpan {
-        font-size: 40px;
+    .SentencePriceBox:nth-child(3) .SentencePriceBoxText {
+        position: relative;
+        left: 0;
+    }
+
+    .SentencePriceBox {
+        width: 100%;
+    }
+
+    .SentencePriceBox:nth-child(2) {
+        width: 100%;
+        text-align: center;
+    }
+
+    .SentencePriceBox:nth-child(3) {
+        margin-top: 40px;
     }
 
     .NowOrderTextWidth {
@@ -944,16 +1494,40 @@
     }
 
     .NowOrderTitle {
-        font-size: 35px;
+        font-size: 25px;
+    }
+
+    .NowOrderPriceImg {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        right: -50px;
+        top: -35px;
     }
 
     .NowOrderText {
         font-family: "Roboto", sans-serif;
-        font-size: 19px;
+        font-size: 18px;
         color: white;
         padding: 0 20px;
-        margin-bottom: 0px;
-        margin-top: 5px;
+        margin-bottom: 0;
+    }
+
+    .radio-label {
+        font-size: 19px;
+        padding-left: 30px;
+    }
+
+    .radio-check {
+        height: 22px;
+        width: 22px;
+        top: 4px;
+    }
+
+
+    .text-33 {
+        font-size: 28px;
+        text-align: center;
     }
 
 
@@ -982,9 +1556,47 @@
         background-size: 100% 100%;
     }
 
+
     .SentenceTitle {
         font-size: 25px;
         margin-top: 20px;
+    }
+
+    .partners-img-box {
+        justify-content: center !important;
+    }
+
+    .partners-img {
+        margin-right: 60px;
+        margin-bottom: 40px;
+    }
+
+    .two-partners .partners-img:nth-child(1) {
+        margin-right: 0;
+    }
+
+    .two-partners .partners-img:nth-child(2) {
+        margin-right: 0;
+        margin-left: 60px;
+    }
+
+    .two-partners .partners-img:nth-child(4) {
+        margin-right: 0;
+        margin-left: 60px;
+    }
+
+    .three-partners .partners-img:nth-child(2) {
+        margin-right: 0;
+        margin-left: 60px;
+    }
+
+    .three-partners .partners-img:nth-child(3) {
+        margin-right: 0;
+        margin-left: 60px;
+    }
+
+    .partners-img:last-child {
+        margin-right: 0;
     }
 
     .FooterTextBox {
@@ -994,920 +1606,66 @@
 
 @media (min-width: 416px) and (max-width: 767px) {
 
-    .language-choose-title{
-        font-size: 25px;
-        font-weight: 500;
+    .completed-box-body{
+        overflow-x: hidden;
+    }
+
+    .text-back {
+        font-size: 20px;
+        color: black;
+        text-decoration: none;
+    }
+
+    .completed-box-header-title {
+        font-family: "Gilroy ExtraBold", sans-serif;
+        font-size: 40px;
+        font-weight: 900;
         text-align: center;
-        color: white;
+        margin-bottom: 0;
+        margin-top: 35px;
     }
 
-    .white-button{
-        border: 2px solid white;
-        border-radius: 28px;
-        color: white;
-        padding: 10px 60px;
-        font-size: 22px;
-    }
-
-    header {
-        background: url(../images/Mobile.jpg);
-        display: block;
-        background-repeat: no-repeat;
-        background-size: 100%;
-        height: 800px;
-        width: 100%;
-        background-position: 100% 40%;
-        position: relative;
-        z-index: 99999;
-    }
-
-
-    .margin-top-3 {
-        margin-top: 1rem;
-    }
-
-
-    .ling-box-img-icon {
-        width: 60px;
-        margin-left: 20px;
-    }
-
-    .logo-img-box {
-        justify-content: flex-start;
-        margin-top: 5px;
-    }
-
-
-    .header-box {
-        width: 90%;
-    }
-
-    .header-text-box {
-        padding-top: 18px;
-        margin-top: 18px;
-        width: 100%;
-        position: relative;
-        display: flex;
-        justify-content: center;
-    }
-
-    .header-text-box:before {
-        content: '';
-        width: 40%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 2px;
-        border-top: 1px solid #ffffff;
-        position: absolute;
-        top: 0;
-    }
-
-    .header-big-text {
-        font-size: 18px;
-        letter-spacing: 1px;
-    }
-
-    .header-text {
-        font-size: 13px;
-        text-align: center;
-        letter-spacing: 1px;
-    }
-
-    .header-title-box {
-        margin-top: 20px;
-        flex-direction: column;
-    }
-
-    .header-title {
+    .completed-box-header-text {
         font-size: 18px;
         text-align: center;
-        letter-spacing: 1px;
     }
 
-    .PhoneImgBox {
-        position: absolute;
-        right: -15%;
-        opacity: 0;
-        bottom: -370%;
+    .completed-box {
+        background: transparent linear-gradient(246deg, #E2F2FF 0%, #F0C4F5 100%);
+        height: 570px;
+        overflow-x: hidden;
     }
 
-    .PhoneImg {
-        width: 90px;
+    .completed-box-body .FooterSocialBoxWidth {
+        padding: 20px 0;
     }
 
-    .lesson-section .button-order {
-        width: 200px;
-        height: 35px;
-        font-size: 22px;
-        margin-right: 5%;
-    }
-
-    .lesson-section {
-        margin-top: 15px;
-        overflow: hidden;
-        margin-bottom: 0;
-    }
-
-    .anim-window {
-        display: block;
-        background: linear-gradient(90deg, transparent 0%, #ffffffb8 51%, transparent 100%);
-        width: 90px;
-        position: absolute;
-        top: -60px;
-        height: 445%;
-        z-index: 5;
-    }
-
-    .animation-border-block {
-        display: block;
-        position: absolute;
-        width: 95px;
-        height: 3px;
-        background: #4400FF;
-        left: 32%;
-    }
-
-    .lesson-section-titleBox {
-        width: 85%;
-        margin-top: 105px;
-    }
-
-    .lesson-section-title-back-text {
-        font-size: 100px;
-        display: none;
-    }
-
-    .lesson-section-title {
-        font-size: 25px;
-        text-align: center;
-    }
-
-    .LessonBox {
-        width: 100%;
-        margin-right: 0;
-        flex-direction: unset;
-        justify-content: center;
-        margin-top: 40px;
-    }
-
-    .LessonBox:nth-child(3) {
-        width: 100%;
-    }
-
-    .lesson-box-width {
-        width: 100%;
-        flex-direction: column;
-        transform: translateY(-55px);
-    }
-
-    .LessonBoxImg {
-        width: 15%;
-        height: 15%;
-        margin-bottom: 17px;
-    }
-
-    .Numbers .animation-border-block {
-        left: 24%;
-        margin-top: 5%;
-    }
-
-    .NumbersBoxBG {
-        width: 100%;
-        padding: 40px 0;
-    }
-
-    .NumbersBoxTitleSyb {
-        font-family: "Gilroy ExtraBold", sans-serif;
-        font-size: 50px;
-        color: #4d4d4d;
-        transform: translateY(10px);
-    }
-
-    .NumbersBoxTitle {
-        font-family: "Gilroy ExtraBold", sans-serif;
-        font-size: 50px;
-        color: #4d4d4d;
-        margin-bottom: 0;
-        transform: translateY(10px);
-    }
-
-    .NumbersSectionTitleBackText {
-        width: 100%;
-        display: none;
-    }
-
-    .NumbersBoxWidth {
-        width: 100%;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .NumbersBox {
-        width: 80%;
-        margin-right: 2%;
-    }
-
-    .problems {
-        overflow: hidden;
-        padding-bottom: 45px;
-
-    }
-
-    .problems-section-title-box {
-        position: relative;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
-    .problems .animation-border-block {
-        width: 120px;
-        left: 32%;
-    }
-
-    .problems .lesson-section-title {
-        font-size: 28px;
-    }
-
-    .problems .lesson-box-width {
-        justify-content: center;
-        width: 100%;
-        flex-direction: unset;
-        margin-top: 10px;
-    }
-
-    .problems .LessonBox {
-        width: 40%;
-        margin-right: 5%;
-        border: 1px solid #b3b3b3;
-        border-radius: 20px;
-        padding-top: 10px;
-        height: 186px;
-        box-sizing: content-box;
-    }
-
-    .problems .LessonBox:nth-child(2),
-    .problems .LessonBox:nth-child(4),
-    .problems .LessonBox:nth-child(6) {
-        margin-right: 0;
-    }
-
-    .problems .LessonBox:nth-child(1),
-    .problems .LessonBox:nth-child(3),
-    .problems .LessonBox:nth-child(5) {
-        margin-right: 5%;
-    }
-
-    .problems .LessonBox:last-child .lesson-box-text {
-        padding-left: 10px;
-    }
-
-
-    .problems .lesson-box-text {
-        font-family: "Roboto", sans-serif;
-        text-align: center;
-        line-height: 1.2;
-        font-weight: 500;
-        font-size: 13px;
-        height: 80px;
-        width: 100%;
-        padding: 30px 3px 0 3px;
-    }
-
-    .problems .LessonBox:nth-child(1) .animation-box-img, .problems .LessonBox:nth-child(2) .animation-box-img, .problems .LessonBox:nth-child(5) .animation-box-img {
-        width: 70px;
-        height: 50px;
-    }
-
-    .problems .LessonBox:nth-child(1), .problems .LessonBox:nth-child(2), .problems .LessonBox:nth-child(3) {
-        margin-bottom: -20px;
-    }
-
-    .problems .LessonBox:nth-child(5),
-    .problems .LessonBox:nth-child(6) {
-        margin-top: 20px;
-    }
-
-    .problems .animation-box-img {
-        width: 60px;
-        height: 60px;
-        margin-bottom: 0;
-    }
-
-
-    .lesson-box-text {
-        font-family: "Roboto-med", sans-serif;
-        text-align: left;
-        line-height: 1.6;
-        font-weight: 500;
-        font-size: 16px;
-        width: 60%;
-        padding-left: 30px;
-    }
-
-    .LessonBox:last-child .lesson-box-text {
-        padding-left: 30px;
-    }
-
-    .ProductBoxBG {
-        width: 100%;
-        padding-top: 50px;
-    }
-
-    .ProductBoxBGImg {
-        background-position: right 97%;
-        height: 830px;
-        display: none;
-        background-size: 40%;
-    }
-
-    .ProductSectionText {
-        font-family: "Roboto-med", sans-serif;
-        margin-bottom: 0;
-        font-weight: 600;
-        font-size: 15px;
-    }
-
-    .ProductSectionTextSpan {
-        font-family: "Arial", sans-serif;
-        font-size: 13px;
-    }
-
-    .ProductSectionFlexBox {
-        margin-bottom: 70px;
-    }
-
-    .ProductSectionTextBoxRound {
-        width: 30px;
+    .completed-box-logo {
+        width: 28px;
         height: 30px;
+    }
+
+    .completed-box-logo-text {
         font-size: 20px;
     }
 
-    .ProductSectionWidthBox {
-        width: 85%;
-        align-items: flex-start;
-    }
-
-    .Product .lesson-section-title {
-        font-size: 25px;
-    }
-
-    .CupBox {
-        height: 115px;
-        background-size: 100%;
-    }
-
-    .CupImg {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 130px;
-    }
-
-    .CupBoxRandomImgBox {
-        width: 41px;
-        height: 70px;
-        top: -55%;
-        left: -14%;
-    }
-
-    .CupBoxTitleBox {
-        width: 62%;
-    }
-
-    .CupBoxTitle {
-        font-size: 16px;
-        margin-bottom: 0;
-    }
-
-    .CupBoxTitleSpan {
-        font-size: 15px;
-        margin-bottom: 0;
-    }
-
-    .Product .animation-border-block {
-        width: 120px;
-        left: 32%;
-    }
-
-    .ProductIcons {
-        margin: 0px 0;
-    }
-
-    .ProductIconsBoxWidth {
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .ProductIconsBoxWidth .ProductIconsBox:nth-child(1),
-    .ProductIconsBoxWidth .ProductIconsBox:nth-child(2),
-    .ProductIconsBoxWidth .ProductIconsBox:nth-child(3),
-    .ProductIconsBoxWidth .ProductIconsBox:nth-child(4),
-    .ProductIconsBoxWidth .ProductIconsBox:nth-child(5),
-    .ProductIconsBoxWidth .ProductIconsBox:nth-child(6),
-    .ProductIconsBoxWidth .ProductIconsBox:nth-child(7) {
-        width: 100%;
-        margin-right: 2%;
-        height: 175px;
-    }
-
-    .ProductIconsBox:nth-child(6) .ProductIconsBoxImg {
-        width: 110px;
-    }
-
-    .ProductIconsBox:nth-child(5) .ProductIconsBoxImg {
-        width: 90px;
-        margin-bottom: 0;
-        height: 110px;
-    }
-
-    .ProductIconsBoxWidth .ProductIconsBox:nth-child(4) {
-        margin-right: 0;
-        width: 100%;
-    }
-
-    .ProductIconsBox:nth-child(1) .ProductIconsBoxText,
-    .ProductIconsBox:nth-child(2) .ProductIconsBoxText,
-    .ProductIconsBox:nth-child(3) .ProductIconsBoxText,
-    .ProductIconsBox:nth-child(4) .ProductIconsBoxText {
-        width: 90%;
-        margin-right: 0;
-        font-size: 15px;
-        font-weight: 500;
-    }
-
-    .ProductIconsBox:nth-child(1) .ProductIconsBoxImg,
-    .ProductIconsBox:nth-child(2) .ProductIconsBoxImg,
-    .ProductIconsBox:nth-child(3) .ProductIconsBoxImg,
-    .ProductIconsBox:nth-child(4) .ProductIconsBoxImg,
-    .ProductIconsBox:nth-child(5) .ProductIconsBoxImg,
-    .ProductIconsBox:nth-child(6) .ProductIconsBoxImg,
-    .ProductIconsBox:nth-child(7) .ProductIconsBoxImg {
-        margin-bottom: 20px;
-    }
-
-    .ProductIconsBoxWidth .ProductIconsBox:nth-child(5),
-    .ProductIconsBoxWidth .ProductIconsBox:nth-child(6) {
-        width: 100%;
-        margin-right: 25px;
-    }
-
-    .ProductIconsBoxWidth .ProductIconsBox:nth-child(7) {
-        width: 100%;
-        margin-right: 0;
-    }
-
-    .ProductIconsBox:nth-child(5) .ProductIconsBoxText,
-    .ProductIconsBox:nth-child(6) .ProductIconsBoxText,
-    .ProductIconsBox:nth-child(7) .ProductIconsBoxText {
-        width: 90%;
-        margin-right: 0;
-        font-size: 15px;
-        font-weight: 500;
-    }
-
-    .ProductIconsBoxImg {
-        width: 75px;
-        margin-bottom: 20px;
-        height: 65px;
-    }
-
-    .ProductIconsBox:nth-child(6) .ProductIconsBoxImg,
-    .ProductIconsBox:nth-child(7) .ProductIconsBoxImg {
-        margin-top: 30px;
-    }
-
-    .StepBoxFlex {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .Steps .lesson-section-title {
-        font-size: 22px;
-    }
-
-    .Steps .animation-border-block {
-        width: 120px;
-        left: 32%;
-    }
-
-    .StepBoxFlex .StepBox:nth-child(3) {
-        position: relative;
-        overflow: unset;
-    }
-
-    .StepBoxFlex .StepBox:nth-child(3)::after {
-        content: "";
-        display: block;
-        width: 12px;
-        position: absolute;
-        height: 205px;
-        background: #e2e2e2;
-        top: -52%;
-        left: 17%;
-        -webkit-animation: StepBoxNumrow1 1.5s linear;
-        animation: StepBoxNumrow1 1.5s linear;
-    }
-
-    .StepBox {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        overflow: unset;
-        width: 350px;
-        height: 300px;
-        margin-bottom: 80px;
-    }
-
-    .StepBoxImg {
-        width: 110px;
-        margin-bottom: 0;
-        position: relative;
-        z-index: 7;
-    }
-
-    .StepBoxText {
-        width: 100%;
-        text-align: left;
-        font-size: 16px;
-        margin-bottom: 0;
-    }
-
-    .StepBoxArrow {
-        margin-top: 105px;
-        width: 100px;
-        display: none;
-        height: 50px;
-    }
-
-    .StepBox {
-        height: 98px;
-        margin-bottom: 25px;
-        flex-direction: unset;
-        width: 300px;
-    }
-
-    .Sentence {
+    .completed-box .first-banner{
         overflow: hidden;
     }
 
-    .SentenceBox {
-        width: 82%;
-        margin-top: 20px;
-        padding-bottom: 10px;
-        position: relative;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .SentenceBoxText {
-        font-size: 14px;
-    }
-
-    .SentenceBox .SentenceBoxGrafica:nth-child(2),
-    .SentenceBox .SentenceBoxGrafica:nth-child(4) {
-        margin-right: 0;
-    }
-
-    .SentenceBoxGrafica {
-        margin-bottom: 20px;
-    }
-
-    .SentenceBoxImg {
-        width: 63px;
-        margin-bottom: 10px;
-    }
-
-    .SentenceBoxGrafica {
-        margin-right: 10px;
-    }
-
-    .SentenceBox .SentenceBoxGrafica:nth-child(2),
-    .SentenceBox .SentenceBoxGrafica:nth-child(4) {
-        margin-right: 10px;
-    }
-
-    .SentencePriceBox {
-        width: 100%;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .SentencePriceBox:nth-child(2) {
-        width: 100%;
-        text-align: center;
-        margin: 10px 0;
-    }
-
-    .SentencePriceBox:nth-child(3) {
-        width: 100%;
-        text-align: center;
-    }
-
-    .SentencePriceBoxText {
-        font-size: 16px;
-        font-family: "Roboto", sans-serif;
-        color: #181A96;
-    }
-
-    .SentencePriceBoxWidth {
-        width: 82%;
-        flex-direction: column;
-        padding-bottom: 20px;
-    }
-
-    .PriceRubil {
-        font-size: 40px;
-        font-family: "Roboto-li", sans-serif;
-    }
-
-    .PriceRubilSpan {
-        font-size: 40px;
-        margin-left: 0;
-    }
-
-    .SentencePriceBox:nth-child(1) .PriceRubil:after {
-        content: "";
-        position: absolute;
-        background: #212529;
-        width: 75px;
-        height: 3px;
-        left: 0;
-        top: 29px;
-    }
-
-    .SentencePriceBox:nth-child(1) .PriceRubilSpan {
-        margin-left: 0;
-    }
-
-    .SentencePriceBox:nth-child(2) .PriceRubil {
-        font-size: 60px;
-    }
-
-    .SentencePriceBox:nth-child(2) .PriceRubilSpan {
-        font-size: 60px;
-    }
-
-    .SentencePriceBox:nth-child(3) .PriceRubil {
-        font-family: "Roboto-li", sans-serif;
-        font-size: 40px;
-    }
-
-    .SentencePriceBox:nth-child(3) .PriceRubilSpan {
-        font-size: 40px;
-    }
-
-    .NowOrderTextWidth {
-        width: 95%;
-        background: linear-gradient(69deg, rgba(48, 132, 200, 1) 14%, rgba(70, 189, 219, 1) 100%);
-        border-bottom-left-radius: 50px;
-        border-top-left-radius: 50px;
-        border-top-right-radius: 50px;
-        border-bottom-right-radius: 50px;
-        height: 85px;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-    }
-
-    .NowOrderTextSpan {
-        font-family: "Arial", sans-serif;
-        font-weight: 600;
-    }
-
-    .NowOrderPriceImg {
-        width: 100px;
-        height: 100px;
-        position: absolute;
-        right: 0px;
-        top: -8px;
-    }
-
-    .NowOrderBox input:nth-child(2) {
-        margin: 5px 0;
-        margin-top: 0;
-    }
-
-    .NowOrderBox input {
-        margin: 25px 0;
-        border-radius: 8px;
-        height: 50px;
-        border: 1px solid #a1a1a1;
-        width: 78%;
-        padding: 0 10px;
-    }
-
-    .NowOrderBox .button-order {
-        background: linear-gradient(69deg, #10c02d 14%, #56f470 100%);
-        color: white;
-        border-radius: 7px;
-        width: 238px;
-        height: 45px;
-        padding-bottom: 5px;
-        border: 1px solid #56f470;
-        font-weight: 600;
-        font-size: 25px;
-        position: relative;
-        z-index: 100;
-    }
-
-    .NowOrderTitle {
-        font-size: 22px;
-    }
-
-    .NowOrderBox .button-order {
-        margin-left: 0;
-    }
-
-    .NowOrderText {
-        font-family: "Roboto", sans-serif;
-        font-size: 18px;
-        color: white;
-        padding-left: 10px;
-        padding-right: 10px;
-        margin-bottom: 0px;
-        margin-top: 5px;
-        width: 78%;
-        text-align: center;
-        transform: translateX(-10px);
-    }
-
-    .StepsPriceTextSpan {
-        font-family: "Arial", sans-serif;
-        font-weight: 700;
-    }
-
-    .StepBoxText {
-        width: 100%;
-        text-align: left;
-        font-size: 16px;
-        margin-bottom: 0;
-        margin-left: 15px;
-        font-weight: 500;
+    .completed-box .banner-mobile {
+        margin-top: 50px;
     }
 
 
-    .StepsPrice {
-        height: 80px;
-        width: 100%;
-    }
-
-    .StepsPriceText {
-        font-size: 25px;
-    }
-
-    .NowOrderBox {
-        margin-top: 40px;
-        width: 100%;
-    }
-
-    .NowOrder {
-        width: 85%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 80px;
-        margin-bottom: 20px;
-        position: relative;
-        z-index: 999;
-    }
-
-    .QuestionBg {
-        width: 100%;
-    }
-
-    .QuestionBoxWidth {
-        width: 95%;
-    }
-
-    .QuestionBoxImg {
-        width: 40px;
-        margin-right: 15px;
-        margin-left: 15px;
-    }
-
-    .swiper-button-next {
-        display: none;
-    }
-
-    .swiper-button-prev {
-        display: none;
-    }
-
-    .QuestionBoxText {
-        font-size: 11px;
-    }
-
-    .Question .animation-border-block {
-        width: 100px;
-        left: 37%;
-    }
-
-    .QuestionBox:nth-child(4) .QuestionTextBox,
-    .QuestionBox:nth-child(8) .QuestionTextBox {
-        width: 72%;
-    }
-
-    .QuestionBox:nth-child(7) .QuestionTextBox {
-        width: 54%;
-    }
-
-    .owl-item.active.center {
-        opacity: 1;
-        transform: translateX(-40px);
-        transition: all 0.5s;
-    }
-
-    .reviews {
-        margin-left: 50px;
-    }
-
-    .owl-item.active.center .reviews {
-        height: 550px;
-        width: 300px;
-    }
-
-    .owl-item.active.center .reviewsBox {
-        -webkit-line-clamp: 13;
-        height: 420px;
-        width: 300px;
-
-    }
-
-    .carouselBox {
-        background-size: 100% 100%;
-    }
-
-    .SentenceTitle {
-        font-size: 17px;
-        margin-top: 20px;
-    }
-
-    .FooterSocialBoxWidth {
-        width: 85%;
-    }
-
-    .FooterSocialBox {
-        width: 85%;
-        align-items: baseline;
-    }
-
-    .FooterTextBox {
-        width: 92%;
-    }
-
-    .FooterText {
-        font-family: "Roboto", sans-serif;
-        text-align: center;
-        font-size: 14px;
-        color: #4d4d4d;
-    }
-
-    .FooterSocialBoxImg {
-        width: 30px;
-        margin: 0 10px;
-    }
-
-    .FooterMobileStore {
-        width: 150px;
-        margin: 0 25px;
-        margin-top: 20px;
-    }
-
-    .FootterFlex {
-        flex-direction: column;
-    }
-
-    .FooterEndTitle {
-        font-size: 10px;
-        color: #4d4d4d;
-        font-family: "Roboto", sans-serif;
-    }
-
-    .carouselBox .lesson-section-title {
-        font-size: 27px;
-        margin-top: 17px;
-        text-align: center;
-    }
-}
-
-@media (min-width: 360px) and (max-width: 415px) {
-
-    .language-choose-title{
+    .language-choose-title {
         font-size: 20px;
         font-weight: 500;
         text-align: center;
         color: white;
     }
 
-    .white-button{
+    .white-button {
         border: 2px solid white;
         border-radius: 28px;
         color: white;
@@ -1915,9 +1673,10 @@
         font-size: 18px;
     }
 
-    .language-choose-logo{
+    .language-choose-logo {
         position: absolute;
-        bottom: 50px;
+        bottom: 130px;
+        width: 100px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1929,9 +1688,9 @@
         display: block;
         background-repeat: no-repeat;
         background-size: 100%;
-        height: 600px;
+        height: 650px;
         width: 100%;
-        background-position: 100% 40%;
+        background-position: 100%;
         position: relative;
         z-index: 99999;
     }
@@ -1940,15 +1699,26 @@
         margin-top: 0;
     }
 
+    .form-control.language-box-text {
+        font-size: 16px;
+    }
 
-    .ling-box-img-icon {
-        width: 40px;
-        margin-left: 20px;
+    .language-box {
+        width: 110px;
+        height: 35px;
     }
 
     .logo-img-box {
-        justify-content: flex-start;
-        margin-top: 5px;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 7%;
+    }
+
+
+    .ling-box-img-icon {
+        width: 60px;
+        margin-left: 20px;
     }
 
 
@@ -1958,7 +1728,7 @@
 
     .header-text-box {
         padding-top: 18px;
-        margin-top: 15px;
+        margin-top: 0;
         width: 100%;
         position: relative;
         display: flex;
@@ -1974,7 +1744,7 @@
         height: 2px;
         border-top: 1px solid #ffffff;
         position: absolute;
-        top: 0;
+        top: 5px;
     }
 
     .header-big-text {
@@ -1983,18 +1753,18 @@
     }
 
     .header-text {
-        font-size: 13px;
+        font-size: 18px;
         text-align: center;
         letter-spacing: 1px;
     }
 
     .header-title-box {
-        margin-top: 20px;
+        margin-top: 0;
         flex-direction: column;
     }
 
     .header-title {
-        font-size: 19px;
+        font-size: 30px;
         text-align: center;
         letter-spacing: 1px;
     }
@@ -2011,10 +1781,9 @@
     }
 
     .lesson-section .button-order {
-        width: 200px;
-        height: 35px;
-        font-size: 22px;
-        margin-right: 31%;
+        width: 230px;
+        height: 40px;
+        font-size: 21px;
     }
 
     .button-order {
@@ -2047,7 +1816,8 @@
 
     .lesson-section-titleBox {
         width: 85%;
-        margin-top: 105px;
+        margin-top: 50px;
+        margin-bottom: 30px;
     }
 
     .lesson-section-title-back-text {
@@ -2068,6 +1838,10 @@
         margin-top: 40px;
     }
 
+    .LessonBox:first-child {
+        margin-top: 0;
+    }
+
     .LessonBox:nth-child(3) {
         width: 100%;
     }
@@ -2075,7 +1849,6 @@
     .lesson-box-width {
         width: 100%;
         flex-direction: column;
-        transform: translateY(-55px);
     }
 
     .LessonBoxImg {
@@ -2084,9 +1857,18 @@
         margin-bottom: 17px;
     }
 
+    .yes-learing {
+        font-size: 25px;
+        text-align: center;
+    }
+
     .Numbers .animation-border-block {
         left: 24%;
         margin-top: 5%;
+    }
+
+    .Numbers .lesson-section-title {
+        font-size: 27px;
     }
 
     .NumbersBoxBG {
@@ -2119,6 +1901,7 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
+        margin-top: 40px;
     }
 
     .NumbersBox {
@@ -2129,6 +1912,7 @@
     .problems {
         overflow: hidden;
         padding-bottom: 45px;
+        padding-top: 0;
 
     }
 
@@ -2156,9 +1940,9 @@
     }
 
     .problems .LessonBox {
-        width: 40%;
+        width: 85%;
         margin-right: 5%;
-        border: 1px solid #b3b3b3;
+        border: unset;
         border-radius: 20px;
         padding-top: 10px;
         height: 186px;
@@ -2174,7 +1958,7 @@
     .problems .LessonBox:nth-child(1),
     .problems .LessonBox:nth-child(3),
     .problems .LessonBox:nth-child(5) {
-        margin-right: 5%;
+        margin-right: 0;
     }
 
     .problems .LessonBox:last-child .lesson-box-text {
@@ -2186,21 +1970,22 @@
         font-family: "Roboto", sans-serif;
         text-align: center;
         line-height: 1.2;
-        font-weight: 500;
-        font-size: 13px;
+        font-weight: 400;
+        font-size: 20px;
         height: 80px;
         width: 100%;
         padding: 30px 3px 0 3px;
     }
 
     .problems .LessonBox:nth-child(1) .animation-box-img, .problems .LessonBox:nth-child(2) .animation-box-img, .problems .LessonBox:nth-child(5) .animation-box-img {
-        width: 70px;
-        height: 50px;
+        width: 90px;
+        height: 70px;
     }
 
     .problems .LessonBox:nth-child(1), .problems .LessonBox:nth-child(2), .problems .LessonBox:nth-child(3) {
         margin-bottom: -20px;
     }
+
 
     .problems .LessonBox:nth-child(5),
     .problems .LessonBox:nth-child(6) {
@@ -2208,8 +1993,8 @@
     }
 
     .problems .animation-box-img {
-        width: 60px;
-        height: 60px;
+        width: 80px;
+        height: 80px;
         margin-bottom: 0;
     }
 
@@ -2219,7 +2004,7 @@
         text-align: left;
         line-height: 1.2;
         font-weight: 500;
-        font-size: 17px;
+        font-size: 18px;
         width: 60%;
         padding-left: 30px;
     }
@@ -2244,12 +2029,20 @@
         font-family: "Roboto-med", sans-serif;
         margin-bottom: 0;
         font-weight: 600;
-        font-size: 15px;
+        font-size: 18px;
+        line-height: 21px;
     }
 
     .ProductSectionTextSpan {
         font-family: "Arial", sans-serif;
-        font-size: 13px;
+        font-size: 15px;
+        line-height: 19px;
+    }
+
+    .button-order {
+        width: 230px;
+        height: 40px;
+        font-size: 21px;
     }
 
     .ProductSectionFlexBox {
@@ -2257,9 +2050,9 @@
     }
 
     .ProductSectionTextBoxRound {
-        width: 30px;
-        height: 30px;
-        font-size: 20px;
+        width: 40px;
+        height: 40px;
+        font-size: 30px;
     }
 
     .ProductSectionWidthBox {
@@ -2291,16 +2084,16 @@
     }
 
     .CupBoxTitleBox {
-        width: 69%;
+        width: 72%;
     }
 
     .CupBoxTitle {
-        font-size: 19px;
+        font-size: 21px;
         margin-bottom: 0;
     }
 
     .CupBoxTitleSpan {
-        font-size: 17px;
+        font-size: 19px;
         margin-bottom: 0;
     }
 
@@ -2310,7 +2103,7 @@
     }
 
     .ProductIcons {
-        margin: 0px 0;
+        margin: 0;
     }
 
     .ProductIconsBoxWidth {
@@ -2358,7 +2151,7 @@
     .ProductIconsBox:nth-child(4) .ProductIconsBoxText {
         width: 80%;
         margin-right: 0;
-        font-size: 16px;
+        font-size: 19px;
         font-weight: 500;
     }
 
@@ -2378,6 +2171,18 @@
         margin-right: 25px;
     }
 
+    .ProductIconsBoxWidth .ProductIconsBox:nth-child(5) {
+        margin-top: 20px;
+    }
+
+    .ProductIconsBox:nth-child(3) .ProductIconsBoxImg {
+        margin-top: 0;
+    }
+
+    .ProductIconsBox:nth-child(4) .ProductIconsBoxImg {
+        margin-top: 0;
+    }
+
     .ProductIconsBoxWidth .ProductIconsBox:nth-child(7) {
         width: 100%;
         margin-right: 0;
@@ -2388,7 +2193,7 @@
     .ProductIconsBox:nth-child(7) .ProductIconsBoxText {
         width: 80%;
         margin-right: 0;
-        font-size: 16px;
+        font-size: 19px;
         font-weight: 500;
     }
 
@@ -2409,7 +2214,7 @@
     }
 
     .Steps .lesson-section-title {
-        font-size: 24px;
+        font-size: 27px;
     }
 
     .Steps .animation-border-block {
@@ -2447,6 +2252,27 @@
         margin-bottom: 80px;
     }
 
+    .form-box {
+        border-radius: 25px;
+    }
+
+    .form-box-in {
+        border-radius: 25px;
+    }
+
+    .blue-text {
+        margin-top: 30px;
+        font-size: 27px;
+        line-height: 32px;
+        text-align: center;
+    }
+
+    .blue-text-black {
+        font-size: 23px;
+        text-align: center;
+        line-height: 25px;
+    }
+
     .StepBoxImg {
         width: 110px;
         margin-bottom: 0;
@@ -2479,6 +2305,18 @@
         overflow: hidden;
     }
 
+    .sentence-bg {
+        background-image: url(../images/Frags/triangle.png);
+        background-repeat: no-repeat;
+        padding-top: 130px;
+        padding-bottom: 60px;
+        width: 100%;
+        height: 100%;
+        -webkit-background-size: 100%;
+        background-size: 100%;
+        background-position: 100%;
+    }
+
     .SentenceBox {
         width: 82%;
         margin-top: 20px;
@@ -2497,12 +2335,51 @@
         margin-right: 0;
     }
 
+    .text-70 {
+        font-size: 27px;
+        margin-top: 30px;
+    }
+
+    .text-40 {
+        font-size: 22px;
+        text-align: center;
+        line-height: 24px;
+    }
+
+    .banner {
+        display: none;
+    }
+
+    .banner-mobile {
+        margin-top: 40px;
+        display: flex;
+        position: relative;
+        left: -35px;
+    }
+
+    .first-banner {
+        position: absolute;
+        z-index: 5;
+    }
+
+    .two-banner{
+        position: relative;
+        top: 50px;
+        z-index: 3;
+        filter: blur(1px);
+    }
+
+    .banner-mobile img {
+        width: 120%;
+    }
+
+
     .SentenceBoxGrafica {
         margin-bottom: 20px;
     }
 
     .SentenceBoxImg {
-        width: 66px;
+        width: 53px;
         margin-bottom: 10px;
     }
 
@@ -2513,6 +2390,10 @@
     .SentenceBox .SentenceBoxGrafica:nth-child(2),
     .SentenceBox .SentenceBoxGrafica:nth-child(4) {
         margin-right: 10px;
+    }
+
+    .SentenceBox .SentenceBoxGrafica:nth-child(4) {
+        margin-right: 0;
     }
 
     .SentencePriceBox {
@@ -2531,50 +2412,58 @@
     }
 
     .SentencePriceBox:nth-child(3) {
+        margin-top: 20px;
         width: 100%;
         text-align: center;
     }
 
     .SentencePriceBoxText {
-        font-size: 16px;
+        font-size: 17px;
         font-family: "Roboto", sans-serif;
-        color: #181A96;
+        text-align: center;
+        display: block;
+        width: 100%;
+        position: unset;
+    }
+
+    .SentencePriceBox:nth-child(1) .SentencePriceBoxText {
+        position: unset;
     }
 
     .SentencePriceBoxWidth {
         width: 82%;
         flex-direction: column;
-        padding-bottom: 20px;
+        padding-bottom: 0;
         margin-top: 35px;
     }
 
     .PriceRubil {
-        font-size: 40px;
+        font-size: 30px;
         font-family: "Roboto-li", sans-serif;
     }
 
     .PriceRubilSpan {
-        font-size: 40px;
+        font-size: 30px;
         margin-left: 0;
     }
+
 
     .SentencePriceBox:nth-child(1) .PriceRubil:after {
         content: "";
         position: absolute;
-        background: #212529;
-        width: 70px;
+        background: #FF0000;
+        width: 150%;
         height: 2px;
-        left: 0;
-        top: 29px;
+        transform: translateY(-15px);
     }
 
     .SentencePriceBoxWidth .SentencePriceBox:nth-child(1) .PriceRubilSpan,
-    .SentencePriceBoxWidth .SentencePriceBox:nth-child(1) .PriceRubil{
+    .SentencePriceBoxWidth .SentencePriceBox:nth-child(1) .PriceRubil {
         opacity: 0.7;
     }
 
     .SentencePriceBoxWidth .SentencePriceBox:nth-child(3) .PriceRubilSpan,
-    .SentencePriceBoxWidth .SentencePriceBox:nth-child(3) .PriceRubil{
+    .SentencePriceBoxWidth .SentencePriceBox:nth-child(3) .PriceRubil {
         opacity: 0.7;
     }
 
@@ -2583,33 +2472,48 @@
     }
 
     .SentencePriceBox:nth-child(2) .PriceRubil {
-        font-size: 60px;
+        font-size: 50px;
     }
 
     .SentencePriceBox:nth-child(2) .PriceRubilSpan {
-        font-size: 60px;
+        font-size: 35px;
+    }
+
+    .SentencePriceBox:nth-child(2) .SentencePriceBoxText {
+        margin-top: -30px;
+        font-size: 19px;
+        width: 100%;
+    }
+
+    .SentencePriceBox:nth-child(2) .PriceRubilSpan {
+        transform: translateY(-5px);
     }
 
     .SentencePriceBox:nth-child(3) .PriceRubil {
         font-family: "Roboto-li", sans-serif;
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .SentencePriceBox:nth-child(3) .PriceRubilSpan {
-        font-size: 40px;
+        font-size: 30px;
+    }
+
+    .SentencePriceBox:nth-child(3) .SentencePriceBoxText {
+        position: unset;
     }
 
     .NowOrderTextWidth {
-        width: 95%;
+        width: 110%;
         background: linear-gradient(69deg, rgba(48, 132, 200, 1) 14%, rgba(70, 189, 219, 1) 100%);
         border-bottom-left-radius: 50px;
         border-top-left-radius: 50px;
         border-top-right-radius: 50px;
         border-bottom-right-radius: 50px;
-        height: 85px;
+        height: 52px;
         display: flex;
         align-items: center;
         justify-content: flex-start;
+        margin-bottom: 40px;
     }
 
     .NowOrderTextSpan {
@@ -2621,8 +2525,8 @@
         width: 100px;
         height: 100px;
         position: absolute;
-        right: 0px;
-        top: -8px;
+        right: -5px;
+        top: -23px;
     }
 
     .NowOrderBox input:nth-child(2) {
@@ -2635,7 +2539,7 @@
         border-radius: 8px;
         height: 50px;
         border: 1px solid #a1a1a1;
-        width: 78%;
+        width: 90%;
         padding: 0 10px;
     }
 
@@ -2653,8 +2557,20 @@
         z-index: 100;
     }
 
-    .NowOrderTitle {
-        font-size: 22px;
+    .NowOrderTitle.text-nowrap {
+        font-size: 23px;
+        white-space: unset !important;
+        text-align: center;
+    }
+
+    .radio-label {
+        font-size: 25px;
+    }
+
+    .radio-check {
+        top: 4px;
+        height: 25px;
+        width: 25px;
     }
 
     .NowOrderBox .button-order {
@@ -2663,12 +2579,12 @@
 
     .NowOrderText {
         font-family: "Roboto", sans-serif;
-        font-size: 15px;
+        font-size: 14px;
         color: white;
         padding-left: 15px;
         padding-right: 15px;
-        margin-bottom: 0px;
-        margin-top: 5px;
+        margin-bottom: 0;
+        margin-top: 0;
         width: 83%;
         text-align: center;
         transform: translateX(-10px);
@@ -2682,10 +2598,11 @@
     .StepBoxText {
         width: 100%;
         text-align: left;
-        font-size: 16px;
+        font-size: 18px;
         margin-bottom: 0;
         margin-left: 15px;
-        font-weight: 500;
+        font-weight: 400;
+        padding: 0;
     }
 
 
@@ -2694,12 +2611,18 @@
         width: 100%;
     }
 
+    .text-33 {
+        font-size: 27px;
+        font-weight: 500;
+        text-align: center;
+    }
+
     .StepsPriceText {
         font-size: 30px;
     }
 
     .NowOrderBox {
-        margin-top: 40px;
+        margin-top: 10px;
         width: 100%;
     }
 
@@ -2709,10 +2632,16 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-bottom: 80px;
+        padding-bottom: 0px;
         margin-bottom: 20px;
         position: relative;
         z-index: 999;
+    }
+
+    .NowOrderBox-footer {
+        width: 100%;
+        padding-bottom: 0;
+        position: relative;
     }
 
     .QuestionBg {
@@ -2725,7 +2654,7 @@
 
     .QuestionBox:nth-child(3) .QuestionTextBox,
     .QuestionBox:nth-child(5) .QuestionTextBox,
-    .QuestionBox:nth-child(7) .QuestionTextBox{
+    .QuestionBox:nth-child(7) .QuestionTextBox {
         width: 72%;
     }
 
@@ -2791,6 +2720,7 @@
 
     .FooterSocialBoxWidth {
         width: 85%;
+        padding-top: 30px;
     }
 
     .FooterSocialBox {
@@ -2800,18 +2730,41 @@
 
     .FooterTextBox {
         width: 92%;
+        position: relative;
+        margin-top: 10px;
+    }
+
+    .FooterTextBox .lesson-section-title{
+        margin-top: 40px;
+    }
+
+    .FooterTextBox:before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        height: 2px;
+        background: linear-gradient(40.82deg, #00DDFF 0%, #4400FF 46.48%, #F600E7 90.06%);
+        background-size: 300% 100%;
+        -webkit-animation: AnimationPhone 10s linear infinite;
+        animation: AnimationPhone 10s linear infinite;
     }
 
     .FooterText {
         font-family: "Roboto", sans-serif;
         text-align: center;
-        font-size: 14px;
+        font-size: 16px;
         color: #4d4d4d;
     }
 
     .FooterSocialBoxImg {
-        width: 30px;
+        width: 45px;
         margin: 0 10px;
+    }
+
+    .FooterSocialBoxTitle {
+        font-size: 27px;
     }
 
     .FooterMobileStore {
@@ -2825,7 +2778,7 @@
     }
 
     .FooterEndTitle {
-        font-size: 10px;
+        font-size: 14px;
         color: #4d4d4d;
         font-family: "Roboto", sans-serif;
     }
@@ -2835,18 +2788,75 @@
         margin-top: 17px;
         text-align: center;
     }
+
+    .partners-img{
+        padding: 0 10px;
+        margin: 20px 0;
+    }
 }
 
-@media (max-width: 320px) {
+@media (min-width: 360px) and (max-width: 415px) {
 
-    .language-choose-title{
+    .completed-box-body{
+        overflow-x: hidden;
+    }
+
+    .text-back {
+        font-size: 20px;
+        color: black;
+        text-decoration: none;
+    }
+
+    .completed-box-header-title {
+        font-family: "Gilroy ExtraBold", sans-serif;
+        font-size: 40px;
+        font-weight: 900;
+        text-align: center;
+        margin-bottom: 0;
+        margin-top: 35px;
+    }
+
+    .completed-box-header-text {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .completed-box {
+        background: transparent linear-gradient(246deg, #E2F2FF 0%, #F0C4F5 100%);
+        height: 570px;
+        overflow-x: hidden;
+    }
+
+    .completed-box-body .FooterSocialBoxWidth {
+        padding: 20px 0;
+    }
+
+    .completed-box-logo {
+        width: 28px;
+        height: 30px;
+    }
+
+    .completed-box-logo-text {
+        font-size: 20px;
+    }
+
+    .completed-box .first-banner{
+        overflow: hidden;
+    }
+
+    .completed-box .banner-mobile {
+        margin-top: 50px;
+    }
+
+
+    .language-choose-title {
         font-size: 20px;
         font-weight: 500;
         text-align: center;
         color: white;
     }
 
-    .white-button{
+    .white-button {
         border: 2px solid white;
         border-radius: 28px;
         color: white;
@@ -2854,39 +2864,52 @@
         font-size: 18px;
     }
 
-    .language-choose-logo{
+    .language-choose-logo {
         position: absolute;
-        bottom: 50px;
+        bottom: 130px;
+        width: 100px;
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
+
     header {
-        background: url(../images/Mobile_header.jpg);
+        background: url(../images/Mobile.jpg);
         display: block;
         background-repeat: no-repeat;
         background-size: 100%;
-        height: 550px;
+        height: 650px;
         width: 100%;
-        background-position: 100% 55%;
+        background-position: 100%;
         position: relative;
         z-index: 99999;
     }
 
     .margin-top-3 {
-        margin-top: 1rem;
+        margin-top: 0;
+    }
+
+    .form-control.language-box-text {
+        font-size: 16px;
+    }
+
+    .language-box {
+        width: 110px;
+        height: 35px;
+    }
+
+    .logo-img-box {
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 7%;
     }
 
 
     .ling-box-img-icon {
         width: 60px;
         margin-left: 20px;
-    }
-
-    .logo-img-box {
-        justify-content: flex-start;
-        margin-top: 5px;
     }
 
 
@@ -2896,7 +2919,7 @@
 
     .header-text-box {
         padding-top: 18px;
-        margin-top: 18px;
+        margin-top: 0;
         width: 100%;
         position: relative;
         display: flex;
@@ -2912,7 +2935,7 @@
         height: 2px;
         border-top: 1px solid #ffffff;
         position: absolute;
-        top: 0;
+        top: 5px;
     }
 
     .header-big-text {
@@ -2921,18 +2944,18 @@
     }
 
     .header-text {
-        font-size: 13px;
+        font-size: 18px;
         text-align: center;
         letter-spacing: 1px;
     }
 
     .header-title-box {
-        margin-top: 20px;
+        margin-top: 0;
         flex-direction: column;
     }
 
     .header-title {
-        font-size: 18px;
+        font-size: 30px;
         text-align: center;
         letter-spacing: 1px;
     }
@@ -2941,7 +2964,7 @@
         position: absolute;
         right: -15%;
         opacity: 0;
-        bottom: -175%;
+        bottom: -255%;
     }
 
     .PhoneImg {
@@ -2949,10 +2972,13 @@
     }
 
     .lesson-section .button-order {
-        width: 200px;
-        height: 35px;
-        font-size: 22px;
-        margin-right: 35%;
+        width: 230px;
+        height: 40px;
+        font-size: 21px;
+    }
+
+    .button-order {
+        padding-bottom: 0;
     }
 
     .lesson-section {
@@ -2963,7 +2989,7 @@
 
     .anim-window {
         display: block;
-        background: linear-gradient(90deg, transparent 0%, #ffffffb8 51%, transparent 100%);
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffffb8 51%, rgba(255, 255, 255, 0) 80%);
         width: 90px;
         position: absolute;
         top: -60px;
@@ -2972,17 +2998,17 @@
     }
 
     .animation-border-block {
-        display: block;
         position: absolute;
         width: 95px;
         height: 3px;
         background: #4400FF;
-        left: 32%;
+        left: 36%;
     }
 
     .lesson-section-titleBox {
         width: 85%;
-        margin-top: 105px;
+        margin-top: 50px;
+        margin-bottom: 30px;
     }
 
     .lesson-section-title-back-text {
@@ -2991,7 +3017,7 @@
     }
 
     .lesson-section-title {
-        font-size: 25px;
+        font-size: 27px;
         text-align: center;
     }
 
@@ -3003,6 +3029,10 @@
         margin-top: 40px;
     }
 
+    .LessonBox:first-child {
+        margin-top: 0;
+    }
+
     .LessonBox:nth-child(3) {
         width: 100%;
     }
@@ -3010,18 +3040,26 @@
     .lesson-box-width {
         width: 100%;
         flex-direction: column;
-        transform: translateY(-55px);
     }
 
     .LessonBoxImg {
-        width: 15%;
-        height: 15%;
+        width: 13%;
+        height: 13%;
         margin-bottom: 17px;
+    }
+
+    .yes-learing {
+        font-size: 25px;
+        text-align: center;
     }
 
     .Numbers .animation-border-block {
         left: 24%;
         margin-top: 5%;
+    }
+
+    .Numbers .lesson-section-title {
+        font-size: 27px;
     }
 
     .NumbersBoxBG {
@@ -3054,6 +3092,7 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
+        margin-top: 40px;
     }
 
     .NumbersBox {
@@ -3064,6 +3103,7 @@
     .problems {
         overflow: hidden;
         padding-bottom: 45px;
+        padding-top: 0;
 
     }
 
@@ -3091,9 +3131,9 @@
     }
 
     .problems .LessonBox {
-        width: 40%;
+        width: 85%;
         margin-right: 5%;
-        border: 1px solid #b3b3b3;
+        border: unset;
         border-radius: 20px;
         padding-top: 10px;
         height: 186px;
@@ -3109,7 +3149,7 @@
     .problems .LessonBox:nth-child(1),
     .problems .LessonBox:nth-child(3),
     .problems .LessonBox:nth-child(5) {
-        margin-right: 5%;
+        margin-right: 0;
     }
 
     .problems .LessonBox:last-child .lesson-box-text {
@@ -3121,21 +3161,22 @@
         font-family: "Roboto", sans-serif;
         text-align: center;
         line-height: 1.2;
-        font-weight: 500;
-        font-size: 11px;
+        font-weight: 400;
+        font-size: 20px;
         height: 80px;
         width: 100%;
         padding: 30px 3px 0 3px;
     }
 
     .problems .LessonBox:nth-child(1) .animation-box-img, .problems .LessonBox:nth-child(2) .animation-box-img, .problems .LessonBox:nth-child(5) .animation-box-img {
-        width: 70px;
-        height: 50px;
+        width: 90px;
+        height: 70px;
     }
 
     .problems .LessonBox:nth-child(1), .problems .LessonBox:nth-child(2), .problems .LessonBox:nth-child(3) {
         margin-bottom: -20px;
     }
+
 
     .problems .LessonBox:nth-child(5),
     .problems .LessonBox:nth-child(6) {
@@ -3143,8 +3184,8 @@
     }
 
     .problems .animation-box-img {
-        width: 60px;
-        height: 60px;
+        width: 80px;
+        height: 80px;
         margin-bottom: 0;
     }
 
@@ -3152,9 +3193,9 @@
     .lesson-box-text {
         font-family: "Roboto-med", sans-serif;
         text-align: left;
-        line-height: 1.6;
+        line-height: 1.2;
         font-weight: 500;
-        font-size: 16px;
+        font-size: 18px;
         width: 60%;
         padding-left: 30px;
     }
@@ -3179,12 +3220,20 @@
         font-family: "Roboto-med", sans-serif;
         margin-bottom: 0;
         font-weight: 600;
-        font-size: 15px;
+        font-size: 18px;
+        line-height: 21px;
     }
 
     .ProductSectionTextSpan {
         font-family: "Arial", sans-serif;
-        font-size: 13px;
+        font-size: 15px;
+        line-height: 19px;
+    }
+
+    .button-order {
+        width: 230px;
+        height: 40px;
+        font-size: 21px;
     }
 
     .ProductSectionFlexBox {
@@ -3192,9 +3241,9 @@
     }
 
     .ProductSectionTextBoxRound {
-        width: 30px;
-        height: 30px;
-        font-size: 20px;
+        width: 40px;
+        height: 40px;
+        font-size: 30px;
     }
 
     .ProductSectionWidthBox {
@@ -3213,39 +3262,39 @@
 
     .CupImg {
         position: absolute;
-        bottom: 0;
-        left: 0;
+        bottom: -2px;
+        left: -25px;
         width: 130px;
     }
 
     .CupBoxRandomImgBox {
-        width: 41px;
-        height: 70px;
-        top: -55%;
-        left: -14%;
+        width: 20px;
+        height: 55px;
+        top: -58%;
+        left: -13%;
     }
 
     .CupBoxTitleBox {
-        width: 62%;
+        width: 72%;
     }
 
     .CupBoxTitle {
-        font-size: 16px;
+        font-size: 21px;
         margin-bottom: 0;
     }
 
     .CupBoxTitleSpan {
-        font-size: 15px;
+        font-size: 19px;
         margin-bottom: 0;
     }
 
     .Product .animation-border-block {
         width: 120px;
-        left: 32%;
+        left: 36%;
     }
 
     .ProductIcons {
-        margin: 0px 0;
+        margin: 0;
     }
 
     .ProductIconsBoxWidth {
@@ -3265,14 +3314,21 @@
         height: 175px;
     }
 
-    .ProductIconsBox:nth-child(6) .ProductIconsBoxImg {
-        width: 110px;
-    }
 
     .ProductIconsBox:nth-child(5) .ProductIconsBoxImg {
-        width: 90px;
+        width: 85px;
         margin-bottom: 0;
         height: 110px;
+    }
+
+    .ProductIconsBox:nth-child(6) .ProductIconsBoxImg {
+        width: 100px;
+    }
+
+    .ProductIconsBox:nth-child(7) .ProductIconsBoxImg {
+        width: 70px;
+        margin-bottom: 20px;
+        height: 65px;
     }
 
     .ProductIconsBoxWidth .ProductIconsBox:nth-child(4) {
@@ -3284,9 +3340,9 @@
     .ProductIconsBox:nth-child(2) .ProductIconsBoxText,
     .ProductIconsBox:nth-child(3) .ProductIconsBoxText,
     .ProductIconsBox:nth-child(4) .ProductIconsBoxText {
-        width: 90%;
+        width: 80%;
         margin-right: 0;
-        font-size: 15px;
+        font-size: 19px;
         font-weight: 500;
     }
 
@@ -3306,6 +3362,18 @@
         margin-right: 25px;
     }
 
+    .ProductIconsBoxWidth .ProductIconsBox:nth-child(5) {
+        margin-top: 20px;
+    }
+
+    .ProductIconsBox:nth-child(3) .ProductIconsBoxImg {
+        margin-top: 0;
+    }
+
+    .ProductIconsBox:nth-child(4) .ProductIconsBoxImg {
+        margin-top: 0;
+    }
+
     .ProductIconsBoxWidth .ProductIconsBox:nth-child(7) {
         width: 100%;
         margin-right: 0;
@@ -3314,14 +3382,14 @@
     .ProductIconsBox:nth-child(5) .ProductIconsBoxText,
     .ProductIconsBox:nth-child(6) .ProductIconsBoxText,
     .ProductIconsBox:nth-child(7) .ProductIconsBoxText {
-        width: 90%;
+        width: 80%;
         margin-right: 0;
-        font-size: 15px;
+        font-size: 19px;
         font-weight: 500;
     }
 
     .ProductIconsBoxImg {
-        width: 75px;
+        width: 80px;
         margin-bottom: 20px;
         height: 65px;
     }
@@ -3337,12 +3405,12 @@
     }
 
     .Steps .lesson-section-title {
-        font-size: 22px;
+        font-size: 27px;
     }
 
     .Steps .animation-border-block {
         width: 120px;
-        left: 32%;
+        left: 36%;
     }
 
     .StepBoxFlex .StepBox:nth-child(3) {
@@ -3355,12 +3423,13 @@
         display: block;
         width: 12px;
         position: absolute;
-        height: 205px;
+        height: 159px;
         background: #e2e2e2;
-        top: -52%;
+        top: -31%;
+        opacity: 1;
         left: 17%;
-        -webkit-animation: StepBoxNumrow1 1.5s linear;
-        animation: StepBoxNumrow1 1.5s linear;
+        -webkit-animation: StepBoxNumrow3 1.5s linear;
+        animation: StepBoxNumrow3 1.5s linear;
     }
 
     .StepBox {
@@ -3372,6 +3441,27 @@
         width: 350px;
         height: 300px;
         margin-bottom: 80px;
+    }
+
+    .form-box {
+        border-radius: 25px;
+    }
+
+    .form-box-in {
+        border-radius: 25px;
+    }
+
+    .blue-text {
+        margin-top: 30px;
+        font-size: 27px;
+        line-height: 32px;
+        text-align: center;
+    }
+
+    .blue-text-black {
+        font-size: 23px;
+        text-align: center;
+        line-height: 25px;
     }
 
     .StepBoxImg {
@@ -3406,6 +3496,18 @@
         overflow: hidden;
     }
 
+    .sentence-bg {
+        background-image: url(../images/Frags/triangle.png);
+        background-repeat: no-repeat;
+        padding-top: 130px;
+        padding-bottom: 60px;
+        width: 100%;
+        height: 100%;
+        -webkit-background-size: 100%;
+        background-size: 100%;
+        background-position: 100%;
+    }
+
     .SentenceBox {
         width: 82%;
         margin-top: 20px;
@@ -3424,12 +3526,51 @@
         margin-right: 0;
     }
 
+    .text-70 {
+        font-size: 27px;
+        margin-top: 30px;
+    }
+
+    .text-40 {
+        font-size: 22px;
+        text-align: center;
+        line-height: 24px;
+    }
+
+    .banner {
+        display: none;
+    }
+
+    .banner-mobile {
+        margin-top: 40px;
+        display: flex;
+        position: relative;
+        left: -35px;
+    }
+
+    .first-banner {
+        position: absolute;
+        z-index: 5;
+    }
+
+    .two-banner{
+        position: relative;
+        top: 50px;
+        z-index: 3;
+        filter: blur(1px);
+    }
+
+    .banner-mobile img {
+        width: 120%;
+    }
+
+
     .SentenceBoxGrafica {
         margin-bottom: 20px;
     }
 
     .SentenceBoxImg {
-        width: 55px;
+        width: 53px;
         margin-bottom: 10px;
     }
 
@@ -3440,6 +3581,10 @@
     .SentenceBox .SentenceBoxGrafica:nth-child(2),
     .SentenceBox .SentenceBoxGrafica:nth-child(4) {
         margin-right: 10px;
+    }
+
+    .SentenceBox .SentenceBoxGrafica:nth-child(4) {
+        margin-right: 0;
     }
 
     .SentencePriceBox {
@@ -3458,40 +3603,59 @@
     }
 
     .SentencePriceBox:nth-child(3) {
+        margin-top: 20px;
         width: 100%;
         text-align: center;
     }
 
     .SentencePriceBoxText {
-        font-size: 16px;
+        font-size: 17px;
         font-family: "Roboto", sans-serif;
-        color: #181A96;
+        text-align: center;
+        display: block;
+        width: 100%;
+        position: unset;
+    }
+
+    .SentencePriceBox:nth-child(1) .SentencePriceBoxText {
+        position: unset;
     }
 
     .SentencePriceBoxWidth {
         width: 82%;
         flex-direction: column;
-        padding-bottom: 20px;
+        padding-bottom: 0;
+        margin-top: 35px;
     }
 
     .PriceRubil {
-        font-size: 40px;
+        font-size: 30px;
         font-family: "Roboto-li", sans-serif;
     }
 
     .PriceRubilSpan {
-        font-size: 40px;
+        font-size: 30px;
         margin-left: 0;
     }
+
 
     .SentencePriceBox:nth-child(1) .PriceRubil:after {
         content: "";
         position: absolute;
-        background: #212529;
-        width: 75px;
-        height: 3px;
-        left: 0;
-        top: 29px;
+        background: #FF0000;
+        width: 150%;
+        height: 2px;
+        transform: translateY(-15px);
+    }
+
+    .SentencePriceBoxWidth .SentencePriceBox:nth-child(1) .PriceRubilSpan,
+    .SentencePriceBoxWidth .SentencePriceBox:nth-child(1) .PriceRubil {
+        opacity: 0.7;
+    }
+
+    .SentencePriceBoxWidth .SentencePriceBox:nth-child(3) .PriceRubilSpan,
+    .SentencePriceBoxWidth .SentencePriceBox:nth-child(3) .PriceRubil {
+        opacity: 0.7;
     }
 
     .SentencePriceBox:nth-child(1) .PriceRubilSpan {
@@ -3499,33 +3663,48 @@
     }
 
     .SentencePriceBox:nth-child(2) .PriceRubil {
-        font-size: 60px;
+        font-size: 50px;
     }
 
     .SentencePriceBox:nth-child(2) .PriceRubilSpan {
-        font-size: 60px;
+        font-size: 35px;
+    }
+
+    .SentencePriceBox:nth-child(2) .SentencePriceBoxText {
+        margin-top: -30px;
+        font-size: 19px;
+        width: 100%;
+    }
+
+    .SentencePriceBox:nth-child(2) .PriceRubilSpan {
+        transform: translateY(-5px);
     }
 
     .SentencePriceBox:nth-child(3) .PriceRubil {
         font-family: "Roboto-li", sans-serif;
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .SentencePriceBox:nth-child(3) .PriceRubilSpan {
-        font-size: 40px;
+        font-size: 30px;
+    }
+
+    .SentencePriceBox:nth-child(3) .SentencePriceBoxText {
+        position: unset;
     }
 
     .NowOrderTextWidth {
-        width: 95%;
+        width: 110%;
         background: linear-gradient(69deg, rgba(48, 132, 200, 1) 14%, rgba(70, 189, 219, 1) 100%);
         border-bottom-left-radius: 50px;
         border-top-left-radius: 50px;
         border-top-right-radius: 50px;
         border-bottom-right-radius: 50px;
-        height: 85px;
+        height: 52px;
         display: flex;
         align-items: center;
         justify-content: flex-start;
+        margin-bottom: 40px;
     }
 
     .NowOrderTextSpan {
@@ -3537,8 +3716,8 @@
         width: 100px;
         height: 100px;
         position: absolute;
-        right: 0px;
-        top: -8px;
+        right: -5px;
+        top: -23px;
     }
 
     .NowOrderBox input:nth-child(2) {
@@ -3551,7 +3730,7 @@
         border-radius: 8px;
         height: 50px;
         border: 1px solid #a1a1a1;
-        width: 78%;
+        width: 90%;
         padding: 0 10px;
     }
 
@@ -3561,7 +3740,7 @@
         border-radius: 7px;
         width: 238px;
         height: 45px;
-        padding-bottom: 5px;
+        padding-bottom: 0;
         border: 1px solid #56f470;
         font-weight: 600;
         font-size: 25px;
@@ -3569,8 +3748,20 @@
         z-index: 100;
     }
 
-    .NowOrderTitle {
-        font-size: 22px;
+    .NowOrderTitle.text-nowrap {
+        font-size: 23px;
+        white-space: unset !important;
+        text-align: center;
+    }
+
+    .radio-label {
+        font-size: 25px;
+    }
+
+    .radio-check {
+        top: 4px;
+        height: 25px;
+        width: 25px;
     }
 
     .NowOrderBox .button-order {
@@ -3579,13 +3770,13 @@
 
     .NowOrderText {
         font-family: "Roboto", sans-serif;
-        font-size: 12px;
+        font-size: 14px;
         color: white;
-        padding-left: 10px;
-        padding-right: 10px;
-        margin-bottom: 0px;
-        margin-top: 5px;
-        width: 78%;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 0;
+        margin-top: 0;
+        width: 83%;
         text-align: center;
         transform: translateX(-10px);
     }
@@ -3598,10 +3789,11 @@
     .StepBoxText {
         width: 100%;
         text-align: left;
-        font-size: 16px;
+        font-size: 18px;
         margin-bottom: 0;
         margin-left: 15px;
-        font-weight: 500;
+        font-weight: 400;
+        padding: 0;
     }
 
 
@@ -3610,12 +3802,18 @@
         width: 100%;
     }
 
+    .text-33 {
+        font-size: 27px;
+        font-weight: 500;
+        text-align: center;
+    }
+
     .StepsPriceText {
-        font-size: 25px;
+        font-size: 30px;
     }
 
     .NowOrderBox {
-        margin-top: 40px;
+        margin-top: 10px;
         width: 100%;
     }
 
@@ -3625,10 +3823,16 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-bottom: 80px;
+        padding-bottom: 0px;
         margin-bottom: 20px;
         position: relative;
         z-index: 999;
+    }
+
+    .NowOrderBox-footer {
+        width: 100%;
+        padding-bottom: 0;
+        position: relative;
     }
 
     .QuestionBg {
@@ -3637,6 +3841,12 @@
 
     .QuestionBoxWidth {
         width: 95%;
+    }
+
+    .QuestionBox:nth-child(3) .QuestionTextBox,
+    .QuestionBox:nth-child(5) .QuestionTextBox,
+    .QuestionBox:nth-child(7) .QuestionTextBox {
+        width: 72%;
     }
 
     .QuestionBoxImg {
@@ -3654,7 +3864,7 @@
     }
 
     .QuestionBoxText {
-        font-size: 11px;
+        font-size: 13px;
     }
 
     .Question .animation-border-block {
@@ -3662,13 +3872,10 @@
         left: 37%;
     }
 
+    .QuestionBox:nth-child(2) .QuestionTextBox,
     .QuestionBox:nth-child(4) .QuestionTextBox,
     .QuestionBox:nth-child(8) .QuestionTextBox {
         width: 72%;
-    }
-
-    .QuestionBox:nth-child(7) .QuestionTextBox {
-        width: 54%;
     }
 
     .owl-item.active.center {
@@ -3704,6 +3911,7 @@
 
     .FooterSocialBoxWidth {
         width: 85%;
+        padding-top: 30px;
     }
 
     .FooterSocialBox {
@@ -3713,18 +3921,41 @@
 
     .FooterTextBox {
         width: 92%;
+        position: relative;
+        margin-top: 10px;
+    }
+
+    .FooterTextBox .lesson-section-title{
+        margin-top: 40px;
+    }
+
+    .FooterTextBox:before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        height: 2px;
+        background: linear-gradient(40.82deg, #00DDFF 0%, #4400FF 46.48%, #F600E7 90.06%);
+        background-size: 300% 100%;
+        -webkit-animation: AnimationPhone 10s linear infinite;
+        animation: AnimationPhone 10s linear infinite;
     }
 
     .FooterText {
         font-family: "Roboto", sans-serif;
         text-align: center;
-        font-size: 14px;
+        font-size: 16px;
         color: #4d4d4d;
     }
 
     .FooterSocialBoxImg {
-        width: 30px;
+        width: 45px;
         margin: 0 10px;
+    }
+
+    .FooterSocialBoxTitle {
+        font-size: 27px;
     }
 
     .FooterMobileStore {
@@ -3738,7 +3969,7 @@
     }
 
     .FooterEndTitle {
-        font-size: 10px;
+        font-size: 14px;
         color: #4d4d4d;
         font-family: "Roboto", sans-serif;
     }
@@ -3747,6 +3978,1202 @@
         font-size: 27px;
         margin-top: 17px;
         text-align: center;
+    }
+
+    .partners-img{
+        padding: 0 10px;
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .completed-box-body{
+        overflow-x: hidden;
+    }
+
+    .text-back {
+        font-size: 20px;
+        color: black;
+        text-decoration: none;
+    }
+
+    .completed-box-header-title {
+        font-family: "Gilroy ExtraBold", sans-serif;
+        font-size: 40px;
+        font-weight: 900;
+        text-align: center;
+        margin-bottom: 0;
+        margin-top: 35px;
+    }
+
+    .completed-box-header-text {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .completed-box {
+        background: transparent linear-gradient(246deg, #E2F2FF 0%, #F0C4F5 100%);
+        height: 570px;
+        overflow-x: hidden;
+    }
+
+    .completed-box-body .FooterSocialBoxWidth {
+        padding: 20px 0;
+    }
+
+    .completed-box-logo {
+        width: 28px;
+        height: 30px;
+    }
+
+    .completed-box-logo-text {
+        font-size: 20px;
+    }
+
+    .completed-box .first-banner{
+        overflow: hidden;
+    }
+
+    .completed-box .banner-mobile {
+        margin-top: 50px;
+    }
+
+
+    .language-choose-title {
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+        color: white;
+    }
+
+    .white-button {
+        border: 2px solid white;
+        border-radius: 28px;
+        color: white;
+        padding: 10px 60px;
+        font-size: 18px;
+    }
+
+    .language-choose-logo {
+        position: absolute;
+        bottom: 130px;
+        width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    header {
+        background: url(../images/Mobile.jpg);
+        display: block;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 650px;
+        width: 100%;
+        background-position: 100%;
+        position: relative;
+        z-index: 99999;
+    }
+
+    .margin-top-3 {
+        margin-top: 0;
+    }
+
+    .form-control.language-box-text {
+        font-size: 16px;
+    }
+
+    .language-box {
+        width: 110px;
+        height: 35px;
+    }
+
+    .logo-img-box {
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 7%;
+    }
+
+
+    .ling-box-img-icon {
+        width: 60px;
+        margin-left: 20px;
+    }
+
+
+    .header-box {
+        width: 90%;
+    }
+
+    .header-text-box {
+        padding-top: 18px;
+        margin-top: 0;
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+    .header-text-box:before {
+        content: '';
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 2px;
+        border-top: 1px solid #ffffff;
+        position: absolute;
+        top: 5px;
+    }
+
+    .header-big-text {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+
+    .header-text {
+        font-size: 18px;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+
+    .header-title-box {
+        margin-top: 0;
+        flex-direction: column;
+    }
+
+    .header-title {
+        font-size: 30px;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+
+    .PhoneImgBox {
+        position: absolute;
+        right: -15%;
+        opacity: 0;
+        bottom: -255%;
+    }
+
+    .PhoneImg {
+        width: 90px;
+    }
+
+    .lesson-section .button-order {
+        width: 230px;
+        height: 40px;
+        font-size: 21px;
+    }
+
+    .button-order {
+        padding-bottom: 0;
+    }
+
+    .lesson-section {
+        margin-top: 15px;
+        overflow: hidden;
+        margin-bottom: 0;
+    }
+
+    .anim-window {
+        display: block;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffffb8 51%, rgba(255, 255, 255, 0) 80%);
+        width: 90px;
+        position: absolute;
+        top: -60px;
+        height: 445%;
+        z-index: 5;
+    }
+
+    .animation-border-block {
+        position: absolute;
+        width: 95px;
+        height: 3px;
+        background: #4400FF;
+        left: 36%;
+    }
+
+    .lesson-section-titleBox {
+        width: 85%;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .lesson-section-title-back-text {
+        font-size: 100px;
+        display: none;
+    }
+
+    .lesson-section-title {
+        font-size: 27px;
+        text-align: center;
+    }
+
+    .LessonBox {
+        width: 100%;
+        margin-right: 0;
+        flex-direction: unset;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    .LessonBox:first-child {
+        margin-top: 0;
+    }
+
+    .LessonBox:nth-child(3) {
+        width: 100%;
+    }
+
+    .lesson-box-width {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .LessonBoxImg {
+        width: 13%;
+        height: 13%;
+        margin-bottom: 17px;
+    }
+
+    .yes-learing {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .Numbers .animation-border-block {
+        left: 24%;
+        margin-top: 5%;
+    }
+
+    .Numbers .lesson-section-title {
+        font-size: 27px;
+    }
+
+    .NumbersBoxBG {
+        width: 100%;
+        padding: 40px 0;
+    }
+
+    .NumbersBoxTitleSyb {
+        font-family: "Gilroy ExtraBold", sans-serif;
+        font-size: 50px;
+        color: #4d4d4d;
+        transform: translateY(10px);
+    }
+
+    .NumbersBoxTitle {
+        font-family: "Gilroy ExtraBold", sans-serif;
+        font-size: 50px;
+        color: #4d4d4d;
+        margin-bottom: 0;
+        transform: translateY(10px);
+    }
+
+    .NumbersSectionTitleBackText {
+        width: 100%;
+        display: none;
+    }
+
+    .NumbersBoxWidth {
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    .NumbersBox {
+        width: 80%;
+        margin-right: 2%;
+    }
+
+    .problems {
+        overflow: hidden;
+        padding-bottom: 45px;
+        padding-top: 0;
+
+    }
+
+    .problems-section-title-box {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .problems .animation-border-block {
+        width: 120px;
+        left: 32%;
+    }
+
+    .problems .lesson-section-title {
+        font-size: 28px;
+    }
+
+    .problems .lesson-box-width {
+        justify-content: center;
+        width: 100%;
+        flex-direction: unset;
+        margin-top: 10px;
+    }
+
+    .problems .LessonBox {
+        width: 85%;
+        margin-right: 5%;
+        border: unset;
+        border-radius: 20px;
+        padding-top: 10px;
+        height: 186px;
+        box-sizing: content-box;
+    }
+
+    .problems .LessonBox:nth-child(2),
+    .problems .LessonBox:nth-child(4),
+    .problems .LessonBox:nth-child(6) {
+        margin-right: 0;
+    }
+
+    .problems .LessonBox:nth-child(1),
+    .problems .LessonBox:nth-child(3),
+    .problems .LessonBox:nth-child(5) {
+        margin-right: 0;
+    }
+
+    .problems .LessonBox:last-child .lesson-box-text {
+        padding-left: 10px;
+    }
+
+
+    .problems .lesson-box-text {
+        font-family: "Roboto", sans-serif;
+        text-align: center;
+        line-height: 1.2;
+        font-weight: 400;
+        font-size: 20px;
+        height: 80px;
+        width: 100%;
+        padding: 30px 3px 0 3px;
+    }
+
+    .problems .LessonBox:nth-child(1) .animation-box-img, .problems .LessonBox:nth-child(2) .animation-box-img, .problems .LessonBox:nth-child(5) .animation-box-img {
+        width: 90px;
+        height: 70px;
+    }
+
+    .problems .LessonBox:nth-child(1), .problems .LessonBox:nth-child(2), .problems .LessonBox:nth-child(3) {
+        margin-bottom: -20px;
+    }
+
+
+    .problems .LessonBox:nth-child(5),
+    .problems .LessonBox:nth-child(6) {
+        margin-top: 20px;
+    }
+
+    .problems .animation-box-img {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 0;
+    }
+
+
+    .lesson-box-text {
+        font-family: "Roboto-med", sans-serif;
+        text-align: left;
+        line-height: 1.2;
+        font-weight: 500;
+        font-size: 18px;
+        width: 60%;
+        padding-left: 30px;
+    }
+
+    .LessonBox:last-child .lesson-box-text {
+        padding-left: 30px;
+    }
+
+    .ProductBoxBG {
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    .ProductBoxBGImg {
+        background-position: right 97%;
+        height: 830px;
+        display: none;
+        background-size: 40%;
+    }
+
+    .ProductSectionText {
+        font-family: "Roboto-med", sans-serif;
+        margin-bottom: 0;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .ProductSectionTextSpan {
+        font-family: "Arial", sans-serif;
+        font-size: 15px;
+        line-height: 19px;
+    }
+
+    .button-order {
+        width: 230px;
+        height: 40px;
+        font-size: 21px;
+    }
+
+    .ProductSectionFlexBox {
+        margin-bottom: 70px;
+    }
+
+    .ProductSectionTextBoxRound {
+        width: 40px;
+        height: 40px;
+        font-size: 30px;
+    }
+
+    .ProductSectionWidthBox {
+        width: 85%;
+        align-items: flex-start;
+    }
+
+    .Product .lesson-section-title {
+        font-size: 25px;
+    }
+
+    .CupBox {
+        height: 115px;
+        background-size: 100%;
+    }
+
+    .CupImg {
+        position: absolute;
+        bottom: -2px;
+        left: -25px;
+        width: 130px;
+    }
+
+    .CupBoxRandomImgBox {
+        width: 20px;
+        height: 55px;
+        top: -58%;
+        left: -13%;
+    }
+
+    .CupBoxTitleBox {
+        width: 72%;
+    }
+
+    .CupBoxTitle {
+        font-size: 21px;
+        margin-bottom: 0;
+    }
+
+    .CupBoxTitleSpan {
+        font-size: 19px;
+        margin-bottom: 0;
+    }
+
+    .Product .animation-border-block {
+        width: 120px;
+        left: 36%;
+    }
+
+    .ProductIcons {
+        margin: 0;
+    }
+
+    .ProductIconsBoxWidth {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .ProductIconsBoxWidth .ProductIconsBox:nth-child(1),
+    .ProductIconsBoxWidth .ProductIconsBox:nth-child(2),
+    .ProductIconsBoxWidth .ProductIconsBox:nth-child(3),
+    .ProductIconsBoxWidth .ProductIconsBox:nth-child(4),
+    .ProductIconsBoxWidth .ProductIconsBox:nth-child(5),
+    .ProductIconsBoxWidth .ProductIconsBox:nth-child(6),
+    .ProductIconsBoxWidth .ProductIconsBox:nth-child(7) {
+        width: 100%;
+        margin-right: 2%;
+        height: 175px;
+    }
+
+
+    .ProductIconsBox:nth-child(5) .ProductIconsBoxImg {
+        width: 85px;
+        margin-bottom: 0;
+        height: 110px;
+    }
+
+    .ProductIconsBox:nth-child(6) .ProductIconsBoxImg {
+        width: 100px;
+    }
+
+    .ProductIconsBox:nth-child(7) .ProductIconsBoxImg {
+        width: 70px;
+        margin-bottom: 20px;
+        height: 65px;
+    }
+
+    .ProductIconsBoxWidth .ProductIconsBox:nth-child(4) {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .ProductIconsBox:nth-child(1) .ProductIconsBoxText,
+    .ProductIconsBox:nth-child(2) .ProductIconsBoxText,
+    .ProductIconsBox:nth-child(3) .ProductIconsBoxText,
+    .ProductIconsBox:nth-child(4) .ProductIconsBoxText {
+        width: 80%;
+        margin-right: 0;
+        font-size: 19px;
+        font-weight: 500;
+    }
+
+    .ProductIconsBox:nth-child(1) .ProductIconsBoxImg,
+    .ProductIconsBox:nth-child(2) .ProductIconsBoxImg,
+    .ProductIconsBox:nth-child(3) .ProductIconsBoxImg,
+    .ProductIconsBox:nth-child(4) .ProductIconsBoxImg,
+    .ProductIconsBox:nth-child(5) .ProductIconsBoxImg,
+    .ProductIconsBox:nth-child(6) .ProductIconsBoxImg,
+    .ProductIconsBox:nth-child(7) .ProductIconsBoxImg {
+        margin-bottom: 20px;
+    }
+
+    .ProductIconsBoxWidth .ProductIconsBox:nth-child(5),
+    .ProductIconsBoxWidth .ProductIconsBox:nth-child(6) {
+        width: 100%;
+        margin-right: 25px;
+    }
+
+    .ProductIconsBoxWidth .ProductIconsBox:nth-child(5) {
+        margin-top: 20px;
+    }
+
+    .ProductIconsBox:nth-child(3) .ProductIconsBoxImg {
+        margin-top: 0;
+    }
+
+    .ProductIconsBox:nth-child(4) .ProductIconsBoxImg {
+        margin-top: 0;
+    }
+
+    .ProductIconsBoxWidth .ProductIconsBox:nth-child(7) {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .ProductIconsBox:nth-child(5) .ProductIconsBoxText,
+    .ProductIconsBox:nth-child(6) .ProductIconsBoxText,
+    .ProductIconsBox:nth-child(7) .ProductIconsBoxText {
+        width: 80%;
+        margin-right: 0;
+        font-size: 19px;
+        font-weight: 500;
+    }
+
+    .ProductIconsBoxImg {
+        width: 80px;
+        margin-bottom: 20px;
+        height: 65px;
+    }
+
+    .ProductIconsBox:nth-child(6) .ProductIconsBoxImg,
+    .ProductIconsBox:nth-child(7) .ProductIconsBoxImg {
+        margin-top: 30px;
+    }
+
+    .StepBoxFlex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Steps .lesson-section-title {
+        font-size: 27px;
+    }
+
+    .Steps .animation-border-block {
+        width: 120px;
+        left: 36%;
+    }
+
+    .StepBoxFlex .StepBox:nth-child(3) {
+        position: relative;
+        overflow: unset;
+    }
+
+    .StepBoxFlex .StepBox:nth-child(3)::after {
+        content: "";
+        display: block;
+        width: 12px;
+        position: absolute;
+        height: 159px;
+        background: #e2e2e2;
+        top: -31%;
+        opacity: 1;
+        left: 17%;
+        -webkit-animation: StepBoxNumrow3 1.5s linear;
+        animation: StepBoxNumrow3 1.5s linear;
+    }
+
+    .StepBox {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        overflow: unset;
+        width: 350px;
+        height: 300px;
+        margin-bottom: 80px;
+    }
+
+    .form-box {
+        border-radius: 25px;
+    }
+
+    .form-box-in {
+        border-radius: 25px;
+    }
+
+    .blue-text {
+        margin-top: 30px;
+        font-size: 27px;
+        line-height: 32px;
+        text-align: center;
+    }
+
+    .blue-text-black {
+        font-size: 23px;
+        text-align: center;
+        line-height: 25px;
+    }
+
+    .StepBoxImg {
+        width: 110px;
+        margin-bottom: 0;
+        position: relative;
+        z-index: 7;
+    }
+
+    .StepBoxText {
+        width: 100%;
+        text-align: left;
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+
+    .StepBoxArrow {
+        margin-top: 105px;
+        width: 100px;
+        display: none;
+        height: 50px;
+    }
+
+    .StepBox {
+        height: 98px;
+        margin-bottom: 25px;
+        flex-direction: unset;
+        width: 300px;
+    }
+
+    .Sentence {
+        overflow: hidden;
+    }
+
+    .sentence-bg {
+        background-image: url(../images/Frags/triangle.png);
+        background-repeat: no-repeat;
+        padding-top: 130px;
+        padding-bottom: 60px;
+        width: 100%;
+        height: 100%;
+        -webkit-background-size: 100%;
+        background-size: 100%;
+        background-position: 100%;
+    }
+
+    .SentenceBox {
+        width: 82%;
+        margin-top: 20px;
+        padding-bottom: 10px;
+        position: relative;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .SentenceBoxText {
+        font-size: 14px;
+    }
+
+    .SentenceBox .SentenceBoxGrafica:nth-child(2),
+    .SentenceBox .SentenceBoxGrafica:nth-child(4) {
+        margin-right: 0;
+    }
+
+    .text-70 {
+        font-size: 27px;
+        margin-top: 30px;
+    }
+
+    .text-40 {
+        font-size: 22px;
+        text-align: center;
+        line-height: 24px;
+    }
+
+    .banner {
+        display: none;
+    }
+
+    .banner-mobile {
+        margin-top: 40px;
+        display: flex;
+        position: relative;
+        left: -35px;
+    }
+
+    .first-banner {
+        position: absolute;
+        z-index: 5;
+    }
+
+    .two-banner{
+        position: relative;
+        top: 50px;
+        z-index: 3;
+        filter: blur(1px);
+    }
+
+    .banner-mobile img {
+        width: 120%;
+    }
+
+
+    .SentenceBoxGrafica {
+        margin-bottom: 20px;
+    }
+
+    .SentenceBoxImg {
+        width: 53px;
+        margin-bottom: 10px;
+    }
+
+    .SentenceBoxGrafica {
+        margin-right: 10px;
+    }
+
+    .SentenceBox .SentenceBoxGrafica:nth-child(2),
+    .SentenceBox .SentenceBoxGrafica:nth-child(4) {
+        margin-right: 10px;
+    }
+
+    .SentenceBox .SentenceBoxGrafica:nth-child(4) {
+        margin-right: 0;
+    }
+
+    .SentencePriceBox {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .SentencePriceBox:nth-child(2) {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .SentencePriceBox:nth-child(3) {
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .SentencePriceBoxText {
+        font-size: 17px;
+        font-family: "Roboto", sans-serif;
+        text-align: center;
+        display: block;
+        width: 100%;
+        position: unset;
+    }
+
+    .SentencePriceBox:nth-child(1) .SentencePriceBoxText {
+        position: unset;
+    }
+
+    .SentencePriceBoxWidth {
+        width: 82%;
+        flex-direction: column;
+        padding-bottom: 0;
+        margin-top: 35px;
+    }
+
+    .PriceRubil {
+        font-size: 30px;
+        font-family: "Roboto-li", sans-serif;
+    }
+
+    .PriceRubilSpan {
+        font-size: 30px;
+        margin-left: 0;
+    }
+
+
+    .SentencePriceBox:nth-child(1) .PriceRubil:after {
+        content: "";
+        position: absolute;
+        background: #FF0000;
+        width: 150%;
+        height: 2px;
+        transform: translateY(-15px);
+    }
+
+    .SentencePriceBoxWidth .SentencePriceBox:nth-child(1) .PriceRubilSpan,
+    .SentencePriceBoxWidth .SentencePriceBox:nth-child(1) .PriceRubil {
+        opacity: 0.7;
+    }
+
+    .SentencePriceBoxWidth .SentencePriceBox:nth-child(3) .PriceRubilSpan,
+    .SentencePriceBoxWidth .SentencePriceBox:nth-child(3) .PriceRubil {
+        opacity: 0.7;
+    }
+
+    .SentencePriceBox:nth-child(1) .PriceRubilSpan {
+        margin-left: 0;
+    }
+
+    .SentencePriceBox:nth-child(2) .PriceRubil {
+        font-size: 50px;
+    }
+
+    .SentencePriceBox:nth-child(2) .PriceRubilSpan {
+        font-size: 35px;
+    }
+
+    .SentencePriceBox:nth-child(2) .SentencePriceBoxText {
+        margin-top: -30px;
+        font-size: 19px;
+        width: 100%;
+    }
+
+    .SentencePriceBox:nth-child(2) .PriceRubilSpan {
+        transform: translateY(-5px);
+    }
+
+    .SentencePriceBox:nth-child(3) .PriceRubil {
+        font-family: "Roboto-li", sans-serif;
+        font-size: 30px;
+    }
+
+    .SentencePriceBox:nth-child(3) .PriceRubilSpan {
+        font-size: 30px;
+    }
+
+    .SentencePriceBox:nth-child(3) .SentencePriceBoxText {
+        position: unset;
+    }
+
+    .NowOrderTextWidth {
+        width: 110%;
+        background: linear-gradient(69deg, rgba(48, 132, 200, 1) 14%, rgba(70, 189, 219, 1) 100%);
+        border-bottom-left-radius: 50px;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        height: 52px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 40px;
+    }
+
+    .NowOrderTextSpan {
+        font-family: "Arial", sans-serif;
+        font-weight: 600;
+    }
+
+    .NowOrderPriceImg {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        right: -5px;
+        top: -23px;
+    }
+
+    .NowOrderBox input:nth-child(2) {
+        margin: 5px 0;
+        margin-top: 0;
+    }
+
+    .NowOrderBox input {
+        margin: 25px 0;
+        border-radius: 8px;
+        height: 50px;
+        border: 1px solid #a1a1a1;
+        width: 90%;
+        padding: 0 10px;
+    }
+
+    .NowOrderBox .button-order {
+        background: linear-gradient(69deg, #10c02d 14%, #56f470 100%);
+        color: white;
+        border-radius: 7px;
+        width: 238px;
+        height: 45px;
+        padding-bottom: 0;
+        border: 1px solid #56f470;
+        font-weight: 600;
+        font-size: 25px;
+        position: relative;
+        z-index: 100;
+    }
+
+    .NowOrderTitle.text-nowrap {
+        font-size: 23px;
+        white-space: unset !important;
+        text-align: center;
+    }
+
+    .radio-label {
+        font-size: 25px;
+    }
+
+    .radio-check {
+        top: 4px;
+        height: 25px;
+        width: 25px;
+    }
+
+    .NowOrderBox .button-order {
+        margin-left: 0;
+    }
+
+    .NowOrderText {
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+        color: white;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 0;
+        margin-top: 0;
+        width: 83%;
+        text-align: center;
+        transform: translateX(-10px);
+    }
+
+    .StepsPriceTextSpan {
+        font-family: "Arial", sans-serif;
+        font-weight: 700;
+    }
+
+    .StepBoxText {
+        width: 100%;
+        text-align: left;
+        font-size: 18px;
+        margin-bottom: 0;
+        margin-left: 15px;
+        font-weight: 400;
+        padding: 0;
+    }
+
+
+    .StepsPrice {
+        height: 80px;
+        width: 100%;
+    }
+
+    .text-33 {
+        font-size: 27px;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .StepsPriceText {
+        font-size: 30px;
+    }
+
+    .NowOrderBox {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .NowOrder {
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 0px;
+        margin-bottom: 20px;
+        position: relative;
+        z-index: 999;
+    }
+
+    .NowOrderBox-footer {
+        width: 100%;
+        padding-bottom: 0;
+        position: relative;
+    }
+
+    .QuestionBg {
+        width: 100%;
+    }
+
+    .QuestionBoxWidth {
+        width: 95%;
+    }
+
+    .QuestionBox:nth-child(3) .QuestionTextBox,
+    .QuestionBox:nth-child(5) .QuestionTextBox,
+    .QuestionBox:nth-child(7) .QuestionTextBox {
+        width: 72%;
+    }
+
+    .QuestionBoxImg {
+        width: 40px;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .swiper-button-next {
+        display: none;
+    }
+
+    .swiper-button-prev {
+        display: none;
+    }
+
+    .QuestionBoxText {
+        font-size: 13px;
+    }
+
+    .Question .animation-border-block {
+        width: 100px;
+        left: 37%;
+    }
+
+    .QuestionBox:nth-child(2) .QuestionTextBox,
+    .QuestionBox:nth-child(4) .QuestionTextBox,
+    .QuestionBox:nth-child(8) .QuestionTextBox {
+        width: 72%;
+    }
+
+    .owl-item.active.center {
+        opacity: 1;
+        transform: translateX(-40px);
+        transition: all 0.5s;
+    }
+
+    .reviews {
+        margin-left: 50px;
+    }
+
+    .owl-item.active.center .reviews {
+        height: 550px;
+        width: 300px;
+    }
+
+    .owl-item.active.center .reviewsBox {
+        -webkit-line-clamp: 13;
+        height: 420px;
+        width: 300px;
+
+    }
+
+    .carouselBox {
+        background-size: 100% 100%;
+    }
+
+    .SentenceTitle {
+        font-size: 17px;
+        margin-top: 20px;
+    }
+
+    .FooterSocialBoxWidth {
+        width: 85%;
+        padding-top: 30px;
+    }
+
+    .FooterSocialBox {
+        width: 85%;
+        align-items: baseline;
+    }
+
+    .FooterTextBox {
+        width: 92%;
+        position: relative;
+        margin-top: 10px;
+    }
+
+    .FooterTextBox .lesson-section-title{
+        margin-top: 40px;
+    }
+
+    .FooterTextBox:before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        height: 2px;
+        background: linear-gradient(40.82deg, #00DDFF 0%, #4400FF 46.48%, #F600E7 90.06%);
+        background-size: 300% 100%;
+        -webkit-animation: AnimationPhone 10s linear infinite;
+        animation: AnimationPhone 10s linear infinite;
+    }
+
+    .FooterText {
+        font-family: "Roboto", sans-serif;
+        text-align: center;
+        font-size: 16px;
+        color: #4d4d4d;
+    }
+
+    .FooterSocialBoxImg {
+        width: 45px;
+        margin: 0 10px;
+    }
+
+    .FooterSocialBoxTitle {
+        font-size: 27px;
+    }
+
+    .FooterMobileStore {
+        width: 150px;
+        margin: 0 25px;
+        margin-top: 20px;
+    }
+
+    .FootterFlex {
+        flex-direction: column;
+    }
+
+    .FooterEndTitle {
+        font-size: 14px;
+        color: #4d4d4d;
+        font-family: "Roboto", sans-serif;
+    }
+
+    .carouselBox .lesson-section-title {
+        font-size: 27px;
+        margin-top: 17px;
+        text-align: center;
+    }
+
+    .partners-img{
+        padding: 0 10px;
+        margin: 20px 0;
     }
 }
 
@@ -3791,11 +5218,24 @@
         top: -100%;
         opacity: 0;
     }
-    50%{
+    50% {
         opacity: 0.7;
     }
     100% {
         top: -40%;
         opacity: 1;
+    }
+}
+
+
+@-webkit-keyframes AnimationName {
+    0% {
+        background-position: 0 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0 50%
     }
 }

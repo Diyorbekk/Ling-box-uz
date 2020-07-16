@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,31 +6,38 @@
     list-style: none;
 }
 
-body{
-    font-family: "Roboto",sans-serif;
+body {
+    font-family: "Roboto", sans-serif;
 }
 
-.language-choose{
-    background: url("../images/language-choose-bg.png");
+.completed-box {
+    background: transparent linear-gradient(246deg, #E2F2FF 0%, #F0C4F5 100%);
+    height: 100vh;
+}
+
+
+.language-choose {
     display: flex;
     align-items: center;
     justify-content: center;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background: linear-gradient(20.82deg, #00DDFF 0%, #4400FF 46.48%, #F600E7 90.06%);
+    background-size: 300% 100%;
+    animation: AnimationName 8s linear infinite;
     width: 100%;
     height: 100vh;
     position: relative;
     z-index: 99999;
 }
 
-.language-choose-title{
+.language-choose-title {
     font-size: 37px;
     font-weight: 500;
     text-align: center;
     color: white;
 }
 
-.white-button{
+.white-button {
     border: 2px solid white;
     border-radius: 28px;
     color: white;
@@ -38,7 +45,7 @@ body{
     font-size: 32px;
 }
 
-.language-choose-logo{
+.language-choose-logo {
     position: absolute;
     bottom: 100px;
     display: flex;
@@ -47,59 +54,60 @@ body{
 }
 
 
-header{
-    background: url("../images/Header girl.jpg");
+header {
+    background: url("../images/background.jpg");
     display: block;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100%;
     width: 100%;
     height: 850px;
     position: relative;
+    background-attachment: fixed;
     z-index: 99999;
 }
 
-.margin-top-3{
+.margin-top-3 {
     margin-top: 3rem;
 }
 
-.ling-box-img-icon{
+.ling-box-img-icon {
     width: 150px;
 }
 
-.header-box{
-    width: 85%;
+.header-box {
+    width: 90%;
 }
 
-.language-box{
+.language-box {
     width: 155px;
     height: 35px;
 }
 
-.form-control.language-box-text{
+.form-control.language-box-text {
     font-size: 25px;
 }
 
-.form-control option{
+.form-control option {
     background: #000;
 }
 
-.logo-img-box{
+.logo-img-box {
     justify-content: space-between;
-    margin-top: 60px;
+    margin-bottom: 13%;
 }
 
-.header-title-box{
+.header-title-box {
     margin-top: 150px;
     flex-direction: column;
 }
 
-.header-text-box{
+.header-text-box {
     margin-top: 33px;
-    width: 42%;
+    width: 48%;
 }
 
-.header-title{
-    font-family: "Gilroy ExtraBold" ,sans-serif;
+.header-title {
+    font-family: "Gilroy ExtraBold", sans-serif;
     font-weight: bold;
     font-size: 63px;
     color: white;
@@ -108,13 +116,13 @@ header{
     letter-spacing: 2px;
 }
 
-.header-big-text{
+.header-big-text {
     font-size: 50px;
 }
 
-.header-text{
-    font-size: 45px;
-    font-family: "Roboto" ,sans-serif;
+.header-text {
+    font-size: 36px;
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
     color: white;
     margin-bottom: 0;
@@ -123,10 +131,9 @@ header{
 }
 
 
-
-.lesson-section{
-    margin-top: 50px;
-    margin-bottom: 150px;
+.lesson-section {
+    margin-top: 30px;
+    margin-bottom: 70px;
 }
 
 .button-order {
@@ -142,20 +149,20 @@ header{
     z-index: 100;
 }
 
-.button-order:focus{
+.button-order:focus {
     box-shadow: none;
     outline: none;
     border: 1px solid #10c02d;
 }
 
-.button-order-text{
+.button-order-text {
     z-index: 99999;
     position: relative;
 }
 
 .anim-window {
     display: block;
-    background: linear-gradient(90deg , transparent 0%, #ffffffb8 51%, transparent 100%);
+    background: linear-gradient(90deg, transparent 0%, #ffffffb8 51%, transparent 100%);
     width: 90px;
     position: absolute;
     top: -60px;
@@ -163,50 +170,56 @@ header{
     z-index: 5;
     transform: rotate(45deg);
     -webkit-animation: AnimationButton 4s ease-in-out infinite;
-            animation: AnimationButton 4s ease-in-out infinite;
+    animation: AnimationButton 4s ease-in-out infinite;
 }
 
-.lesson-section-titleBox{
-    margin-top: 200px;
-    margin-bottom: 70px;
+.lesson-section-titleBox {
+    margin-top: 150px;
+    margin-bottom: 100px;
     position: relative;
     width: 60%;
     display: flex;
     justify-content: center;
 }
 
-.lesson-section-title{
-    font-family: "Roboto",sans-serif;
-    font-size: 40px;
+.lesson-section-title {
+    font-family: "Roboto", sans-serif;
+    font-size: 50px;
     position: relative;
 }
 
-.animation-border-block{
+.animation-border-block {
     display: block;
     position: absolute;
+    border-radius: 5px;
     width: 95px;
     height: 3px;
     background: #4400FF;
 }
 
 .lesson-section-title-back-text {
-    font-family: "Gilroy ExtraBold",sans-serif;
+    font-family: "Gilroy ExtraBold", sans-serif;
     color: darkgray;
     font-size: 125px;
     opacity: 0.1;
     margin-bottom: 0;
     position: absolute;
-    bottom: -25%;
+    bottom: -43%;
     right: 2%;
 }
 
-.LessonBoxImg{
-    width: 120px;
-    height: 120px;
+.yes-learing {
+    font-size: 36px;
+    text-align: center;
+}
+
+.LessonBoxImg {
+    width: 115px;
+    height: 115px;
     margin-bottom: 30px;
 }
 
-.lesson-box-width{
+.lesson-box-width {
     width: 60%;
     display: flex;
 }
@@ -217,11 +230,11 @@ header{
     flex-direction: column;
 }
 
-.LessonBox:nth-child(3){
+.LessonBox:nth-child(3) {
     width: 320px;
 }
 
-.line-height-medium{
+.line-height-medium {
     line-height: 0.2;
 }
 
@@ -229,19 +242,19 @@ header{
     margin-right: 0;
 }
 
-.LessonBox:last-child .lesson-box-text{
+.LessonBox:last-child .lesson-box-text {
     padding-left: 30px;
 }
 
 .lesson-box-text {
-    font-family: "Roboto",sans-serif;
+    font-family: "Roboto", sans-serif;
     text-align: center;
     line-height: 1.5;
     font-weight: 400;
-    font-size: 17px;
+    font-size: 19px;
 }
 
-.Numbers{
+.Numbers {
     display: flex;
     justify-content: center;
 }
@@ -253,18 +266,18 @@ header{
     width: 100%;
 }
 
-.Numbers .lesson-section-title{
+.Numbers .lesson-section-title {
     font-size: 50px;
 }
 
-.NumbersSectionTitleBox{
+.NumbersSectionTitleBox {
     position: relative;
     width: 60%;
     display: flex;
     justify-content: center;
 }
 
-.NumbersSectionTitleBackText{
+.NumbersSectionTitleBackText {
     width: 60%;
     margin-bottom: 0;
     position: absolute;
@@ -274,113 +287,122 @@ header{
     opacity: 0;
 }
 
-.NumbersBoxWidth{
+.NumbersBoxWidth {
     width: 70%;
     display: flex;
+    justify-content: center;
     position: relative;
     z-index: 5;
-    margin-top: 60px;
+    margin-top: 100px;
 }
 
 
-.Numbers .animation-border-block{
-    left: 2%;
+.Numbers .animation-border-block {
+    left: 0;
     margin-top: 5%;
 }
 
-.NumbersBoxTitle{
-    font-family: "Gilroy ExtraBold",sans-serif;
-    font-size: 60px;
-    color: #4d4d4d;
-}
-.NumbersBoxTitleSyb{
-    font-family: "Gilroy ExtraBold",sans-serif;
+.NumbersBoxTitle {
+    font-family: "Gilroy ExtraBold", sans-serif;
     font-size: 60px;
     color: #4d4d4d;
 }
 
-.NumbersBoxText{
-    font-family: "Roboto",sans-serif;
+.NumbersBoxTitleSyb {
+    font-family: "Gilroy ExtraBold", sans-serif;
+    font-size: 60px;
+    color: #4d4d4d;
+}
+
+.NumbersBoxText {
+    font-family: "Roboto", sans-serif;
     text-align: center;
     line-height: 1.5;
-    font-size: 17px;
+    font-size: 19px;
 }
 
-.NumbersBox{
+.NumbersBox {
     width: 255px;
     margin-right: 5%;
 }
 
-.NumbersBox:last-child{
+.NumbersBox:last-child {
     margin-right: 0;
 }
 
-.problems{
+.problems {
     overflow: hidden;
 }
 
-.lesson-section{
+.lesson-section {
     overflow: hidden;
 }
-.Numbers{
+
+.Numbers {
     overflow: hidden;
 }
-.problems{
+
+.problems {
     overflow: hidden;
 }
-.Product{
+
+.Product {
     overflow: hidden;
 }
-.ProductIcons{
+
+.ProductIcons {
     overflow: hidden;
 }
-.Steps{
+
+.Steps {
     overflow: hidden;
 }
-.Sentence{
+
+.Sentence {
     overflow: hidden;
 }
-.Question{
+
+.Question {
     overflow: hidden;
 }
-.Footer{
+
+.Footer {
     overflow: hidden;
 }
 
 
-
-.problems{
+.problems {
     padding: 70px 0;
 }
 
-.problems-section-title-box{
+.problems-section-title-box {
     position: relative;
     width: 60%;
     display: flex;
     justify-content: center;
 }
 
-.problems .lesson-section-title{
+.problems .lesson-section-title {
     font-size: 50px;
 }
 
-.problems .animation-border-block{
+.problems .animation-border-block {
     width: 120px;
-    left: 1%;
+    left: 0;
 }
 
-.problems .lesson-box-width{
+.problems .lesson-box-width {
     flex-wrap: wrap;
     margin-top: 50px;
 }
 
-.problems .LessonBox{
+.problems .LessonBox {
     width: 28%;
     margin-right: 8%;
 }
 
 .problems .LessonBox:nth-child(3),
-.problems .LessonBox:nth-child(6){
+.problems .LessonBox:nth-child(6) {
     margin-right: 0;
 }
 
@@ -392,23 +414,23 @@ header{
 
 .problems .LessonBox:nth-child(1) .animation-box-img,
 .problems .LessonBox:nth-child(2) .animation-box-img,
-.problems .LessonBox:nth-child(5) .animation-box-img{
+.problems .LessonBox:nth-child(5) .animation-box-img {
     width: 135px;
     height: 100px;
 }
 
 .problems .LessonBox:nth-child(1),
 .problems .LessonBox:nth-child(2),
-.problems .LessonBox:nth-child(3){
-    margin-bottom: 30px;
+.problems .LessonBox:nth-child(3) {
+    margin-bottom: 80px;
 }
 
-.Product{
+.Product {
     display: flex;
     justify-content: center;
 }
 
-.ProductBoxBG{
+.ProductBoxBG {
     background: #fafafa;
     padding-top: 100px;
     position: relative;
@@ -416,11 +438,12 @@ header{
     overflow: hidden;
 
 }
-.ProductBoxBGImg{
+
+.ProductBoxBGImg {
     background: url(../images/SVG/ProductBackFone.png);
     position: absolute;
     width: 100%;
-    height: 1295px;
+    height: 1600px;
     background-repeat: no-repeat;
     right: -4px;
     background-size: 22%;
@@ -428,23 +451,23 @@ header{
     background-position: right 87%;
 }
 
-.Product .lesson-section-title{
+.Product .lesson-section-title {
     font-size: 50px;
 }
 
-.Product .animation-border-block{
+.Product .animation-border-block {
     width: 120px;
-    left: 1%;
+    left: 0;
 }
 
-.ProductSectionTitleBox{
+.ProductSectionTitleBox {
     position: relative;
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.ProductSectionTextBoxRound{
+.ProductSectionTextBoxRound {
     width: 50px;
     height: 50px;
     display: flex;
@@ -454,47 +477,47 @@ header{
     border-radius: 50%;
     color: white;
     font-size: 35px;
-    font-family: "Roboto",sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 300;
     position: relative;
     opacity: 0;
 }
 
-.ProductSectionWidthBox{
+.ProductSectionWidthBox {
     width: 65%;
-    margin-top: 25px;
+    margin-top: 45px;
     align-items: flex-start;
 }
 
-.ProductSectionFlexBox .ProductSectionWidthBox:nth-child(11){
+.ProductSectionFlexBox .ProductSectionWidthBox:nth-child(11) {
     margin-bottom: 80px;
 }
 
-.ProductSectionFlexBox{
+.ProductSectionFlexBox {
     margin-bottom: 100px;
 }
 
-.ProductSectionText{
-    font-family: "Roboto",sans-serif;
+.ProductSectionText {
+    font-family: "Roboto", sans-serif;
     margin-bottom: 0;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 21px;
 }
 
-.ProductSectionTextSpan{
-    font-family: "Roboto Light",sans-serif;
+.ProductSectionTextSpan {
+    font-family: "Roboto Light", sans-serif;
     width: 100%;
-    font-size: 18px;
+    font-size: 19px;
 }
 
-.ProductSectionWidthBox:first-child .ProductSectionTextSpan{
+.ProductSectionWidthBox:first-child .ProductSectionTextSpan {
     width: 76%;
 }
 
-.CupBox{
+.CupBox {
     background: transparent linear-gradient(270deg, #59E3F3 0%, #558CF9 100%) 0 0 no-repeat padding-box;
     width: 100%;
-    height: 400px;
+    height: 350px;
     position: relative;
     z-index: 6;
     display: flex;
@@ -502,28 +525,29 @@ header{
     align-items: center;
 }
 
-.CupImg{
+.CupImg {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 400px;
 }
 
-.CupBoxTitleBox{
-    width: 70%;
+.CupBoxTitleBox {
+    width: 75%;
 }
 
-.CupBoxTitle{
-    font-family: "Arial",sans-serif;
+.CupBoxTitle {
+    font-family: "Gilroy ExtraBold", sans-serif;
     color: white;
-    font-size: 60px;
+    font-size: 65px;
     font-weight: 600;
+    margin-bottom: 0;
 }
 
-.CupBoxTitleSpan{
-    font-family: "Roboto",sans-serif;
-    margin-bottom: 10px;
-    font-size: 60px;
+.CupBoxTitleSpan {
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 0;
+    font-size: 50px;
     color: white;
 }
 
@@ -531,129 +555,133 @@ header{
     width: 100px;
     height: 150px;
     position: relative;
-    top: -49%;
-    left: -13%;
+    top: -65%;
+    left: -8%;
 }
 
-.CupBoxRandomImg{
+.CupBoxRandomImg {
     position: absolute;
     width: 20px;
     opacity: 0;
 }
 
-.ProductIcons{
+.ProductIcons {
     margin: 60px 0;
 }
 
-.ProductIconsBox{
+.ProductIconsBox {
     width: 40%;
     margin-right: 15%;
 }
 
-.ProductIconsBoxWidth{
+.ProductIconsBoxWidth {
     width: 60%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.ProductIconsBoxText{
-    font-family: "Roboto",sans-serif;
+
+.ProductIconsBoxText {
+    font-family: "Roboto", sans-serif;
     text-align: center;
     line-height: 1.5;
-    font-size: 17px;
+    font-size: 19px;
 }
 
-.ProductIconsBoxImg{
+.ProductIconsBoxImg {
     width: 120px;
     margin-bottom: 20px;
     height: 100px;
 }
-.ProductIconsBox:nth-child(3) .ProductIconsBoxImg{
+
+.ProductIconsBox:nth-child(3) .ProductIconsBoxImg {
     margin-top: 50px;
 }
 
-.ProductIconsBox:nth-child(4) .ProductIconsBoxImg{
+.ProductIconsBox:nth-child(4) .ProductIconsBoxImg {
     width: 160px;
     margin-top: 50px;
 }
-.ProductIconsBox:nth-child(5) .ProductIconsBoxImg{
+
+.ProductIconsBox:nth-child(5) .ProductIconsBoxImg {
     width: 120px;
     margin-bottom: 20px;
     height: 150px;
 }
 
-.ProductIconsBox:nth-child(6) .ProductIconsBoxImg{
+.ProductIconsBox:nth-child(6) .ProductIconsBoxImg {
     width: 160px;
 }
 
 
-.ProductIconsBoxWidth .ProductIconsBox:nth-child(1){
+.ProductIconsBoxWidth .ProductIconsBox:nth-child(1) {
     width: 32%;
     margin-right: 1%;
 }
 
-.ProductIconsBoxWidth .ProductIconsBox:nth-child(2){
+.ProductIconsBoxWidth .ProductIconsBox:nth-child(2) {
     width: 36%;
     margin-right: 0;
 }
 
-.ProductIconsBoxWidth .ProductIconsBox:nth-child(3){
+.ProductIconsBoxWidth .ProductIconsBox:nth-child(3) {
     width: 25%;
     margin-right: 120px;
     height: 275px;
     justify-content: flex-start;
 }
 
-.ProductIconsBoxWidth .ProductIconsBox:nth-child(4){
+.ProductIconsBoxWidth .ProductIconsBox:nth-child(4) {
     width: 25%;
     margin-right: 120px;
     height: 275px;
     justify-content: flex-start;
 }
-.ProductIconsBoxWidth .ProductIconsBox:nth-child(5){
+
+.ProductIconsBoxWidth .ProductIconsBox:nth-child(5) {
     width: 25%;
     margin-right: 0;
     height: 275px;
     justify-content: flex-start;
 }
 
-.ProductIconsBoxWidth .ProductIconsBox:nth-child(6){
+.ProductIconsBoxWidth .ProductIconsBox:nth-child(6) {
     width: 32%;
     margin-right: 1%;
 }
 
-.ProductIconsBoxWidth .ProductIconsBox:nth-child(7){
+.ProductIconsBoxWidth .ProductIconsBox:nth-child(7) {
     width: 36%;
     margin-right: 0;
 }
 
 
-.ProductIconsBox:nth-child(1) .ProductIconsBoxText{
+.ProductIconsBox:nth-child(1) .ProductIconsBoxText {
     width: 55%;
     margin-right: 60px;
 }
 
-.ProductIconsBox:nth-child(2) .ProductIconsBoxText{
+.ProductIconsBox:nth-child(2) .ProductIconsBoxText {
     width: 55%;
     margin-right: 0;
 }
 
-.ProductIconsBox:nth-child(5) .ProductIconsBoxText{
+.ProductIconsBox:nth-child(5) .ProductIconsBoxText {
     width: 65%;
     margin-right: 0;
 }
 
-.ProductIconsBox:nth-child(6) .ProductIconsBoxText{
+.ProductIconsBox:nth-child(6) .ProductIconsBoxText {
     width: 65%;
     margin-right: 0;
 }
 
-.ProductIconsBox:nth-child(7) .ProductIconsBoxText{
+.ProductIconsBox:nth-child(7) .ProductIconsBoxText {
     width: 65%;
     margin-right: 0;
 }
 
-.Steps{
+.Steps {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -661,16 +689,16 @@ header{
 }
 
 
-.Steps .lesson-section-title{
+.Steps .lesson-section-title {
     font-size: 50px;
 }
 
-.Steps .animation-border-block{
+.Steps .animation-border-block {
     width: 120px;
-    left: 1%;
+    left: 0;
 }
 
-.StepBox{
+.StepBox {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -681,35 +709,37 @@ header{
     margin-bottom: 80px;
 }
 
-.StepBoxImg{
-    width: 200px;
+.StepBoxImg {
+    width: 185px;
     margin-bottom: 30px;
     position: relative;
     z-index: 7;
 }
 
-.StepBoxFlex{
+.StepBoxFlex {
     align-items: flex-start;
+    margin-top: 20px;
 }
 
-.StepBoxText{
-    font-family: "Roboto",sans-serif;
+.StepBoxText {
+    font-family: "Roboto", sans-serif;
     width: 100%;
     text-align: center;
     position: relative;
     z-index: 6;
-    font-size: 16px;
-    color: #4d4d4d;
-    font-weight: 600;
+    color: rgba(77, 77, 77, 0.71);
+    font-weight: 400;
+    font-size: 21px;
+    padding: 0 40px;
 }
 
-.StepBoxArrow{
+.StepBoxArrow {
     margin-top: 92px;
     width: 100px;
     height: 50px;
 }
 
-.StepsPrice{
+.StepsPrice {
     background: linear-gradient(40.82deg, #00DDFF 0%, #4400FF 46.48%, #F600E7 90.06%);
     background-size: 300% 100%;
     z-index: 1;
@@ -722,68 +752,70 @@ header{
     align-items: center;
 }
 
-.StepsPriceText{
+.StepsPriceText {
     font-size: 70px;
     color: white;
-    font-family: "Roboto",sans-serif;
+    font-family: "Roboto", sans-serif;
     margin-bottom: 0;
 
 }
 
-.StepsPriceTextSpan{
-    font-family: "Arial",sans-serif;
+.StepsPriceTextSpan {
+    font-family: "Arial", sans-serif;
     font-weight: 600;
 }
 
-.Sentence{
+.Sentence {
     background: transparent linear-gradient(207deg, #E2F2FF 0%, #F0C4F5 100%) 0 0;
 }
 
-.sentence-bg{
-    background-image: url("../images/Frags/triangle.png");
+.sentence-bg {
+    background-image: url(../images/Frags/triangle.png);
     background-repeat: no-repeat;
     padding: 130px 0;
     width: 100%;
     height: 100%;
     -webkit-background-size: 100%;
-    background-size: 100%;
-    background-position: 100%;
-
+    background-size: 110% 102%;
+    background-position: 45% 150%;
 }
 
-.text-70{
-    font-family: "Gilroy ExtraBold",sans-serif;
+.text-70 {
+    font-family: "Gilroy ExtraBold", sans-serif;
     font-size: 70px;
     font-weight: 900;
     text-align: center;
 }
 
-.text-40{
+.text-40 {
     font-size: 40px;
     text-align: center;
     line-height: 48px;
 }
 
-.img-1{
+/*.img-1{
     position: relative;
-    right: 130px;
+    right: 90px;
+    transition: all 1s ease-in-out;
 }
 
 .img-2{
     position: relative;
-    top: 40px;
+    top: 0;
     right: 200px;
+    transition: all 1s ease-in-out;
 }
 
 .img-3{
     position: relative;
-    right: 260px;
-}
+    transition: all 1s ease-in-out;
+}*/
 
-.blur-filter{
+/*.blur-filter{
     filter: blur(2px);
     width: 900px;
     height: 450px;
+    transition: all 1s ease-in-out;
 }
 
 .no-blur{
@@ -791,25 +823,70 @@ header{
     height: 650px;
     position: relative;
     right: 200px;
+    transition: all 1s ease-in-out;
+}*/
+
+.img-carousel.active {
+    transition: all 1s ease-in-out;
 }
 
-.SentenceTitle{
-    font-family: "Roboto",sans-serif;
+.owl-carousel-2 .owl-stage-outer {
+    width: 100%;
+    height: 1200px;
+}
+
+.owl-carousel.owl-carousel-2 .owl-stage {
+    height: 100%;
+}
+
+.owl-carousel.owl-carousel-2 .owl-nav {
+    display: none;
+}
+
+.owl-carousel-2 .owl-item.active.center .blur-filter {
+    position: relative;
+    right: 230px;
+    top: 100px;
+    transform: scale(1.4);
+}
+
+.owl-carousel.owl-carousel-2 .owl-item {
+    -webkit-animation-duration: 3s !important;
+    animation-duration: 3s !important;
+}
+
+.owl-carousel-2 .owl-item.cloned .blur-filter {
+    position: relative;
+    right: 200px;
+}
+
+.owl-carousel-2 .owl-item .blur-filter {
+    position: relative;
+    right: 200px;
+}
+
+.owl-carousel-2 .owl-item.active .blur-filter {
+    position: relative;
+    right: 330px;
+}
+
+.SentenceTitle {
+    font-family: "Roboto", sans-serif;
     color: #808080;
     font-size: 30px;
 }
 
-.form-box{
+.form-box {
     background: rgba(255, 255, 255, 0.25);
     border-radius: 162px;
 }
 
-.form-box-in{
+.form-box-in {
     background: white;
     border-radius: 162px;
 }
 
-.blue-text{
+.blue-text {
     margin-top: 60px;
     color: #0181FF;
     font-size: 55px;
@@ -818,39 +895,40 @@ header{
     line-height: 66px;
 }
 
-.blue-text-black{
+.blue-text-black {
     font-size: 38px;
 }
 
-.SentenceBox{
-    width: 58%;
+.SentenceBox {
+    width: 71%;
     margin-top: 60px;
     padding-bottom: 60px;
     position: relative;
 }
-.SentenceBox
 
-.SentenceBoxGrafica{
+.SentenceBoxGrafica {
     margin-right: 100px;
 }
 
-.SentenceBoxImg{
+.SentenceBoxImg {
     width: 200px;
     margin-bottom: 20px;
 }
-.SentenceBoxText{
-    font-family: "Roboto",sans-serif;
+
+.SentenceBoxText {
+    font-family: "Roboto", sans-serif;
     font-size: 20px;
     color: #808080;
 }
 
-.SentencePriceBoxWidth{
+.SentencePriceBoxWidth {
     width: 90%;
     margin-top: 60px;
     padding-bottom: 100px;
     position: relative;
 }
-.SentencePriceBoxWidth:before{
+
+.SentencePriceBoxWidth:before {
     content: "";
     display: flex;
     align-items: center;
@@ -865,49 +943,67 @@ header{
     -webkit-animation: AnimationPhone 10s linear infinite;
     animation: AnimationPhone 10s linear infinite;
 }
-.SentencePriceBox{
+
+.SentencePriceBox {
     width: 30%;
 }
 
-.PriceRubil{
-    font-family: "Roboto",sans-serif;
-    font-size: 60px;
+.PriceRubil {
+    font-family: "Roboto", sans-serif;
+    font-size: 45px;
     font-weight: 500;
     margin-bottom: 0;
     position: relative;
 }
 
-.SentencePriceBox:nth-child(1) .PriceRubil:after{
+.SentencePriceBox:nth-child(1),
+.SentencePriceBox:nth-child(3) {
+    position: relative;
+    bottom: 20px;
+}
+
+.SentencePriceBox:nth-child(1) .PriceRubil:after {
     content: "";
     position: absolute;
-    background: #FF0000;;
-    width: 425px;
+    background: #FF0000;
+    width: 335px;
     height: 2px;
     left: 0;
-    top: 47px;
+    top: 36px;
 }
 
 
-.PriceRubilSpan{
-    font-family: "Gilroy",sans-serif;
-    font-size: 60px;
+.PriceRubilSpan {
+    font-family: "Gilroy", sans-serif;
+    font-size: 45px;
     font-weight: 400;
     margin-left: 20px;
 }
-.SentencePriceBoxText{
-    font-size: 30px;
-    font-family: "Gilroy",sans-serif;
+
+.SentencePriceBoxText {
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
     color: #484848;
     text-align: center;
 }
 
-.SentencePriceBox:nth-child(2){
+.SentencePriceBox:nth-child(1) .SentencePriceBoxText {
+    position: relative;
+    right: 30px;
+}
+
+.SentencePriceBox:nth-child(3) .SentencePriceBoxText {
+    position: relative;
+    left: 30px;
+}
+
+.SentencePriceBox:nth-child(2) {
     width: 40%;
     text-align: center;
 }
 
-.SentencePriceBox:nth-child(2) .PriceRubil{
-    font-family: "Gilroy ExtraBold",sans-serif;
+.SentencePriceBox:nth-child(2) .PriceRubil {
+    font-family: "Gilroy ExtraBold", sans-serif;
     font-size: 93px;
     text-decoration: none;
     font-weight: 700;
@@ -915,8 +1011,8 @@ header{
     transform: translateY(-20px);
 }
 
-.SentencePriceBox:nth-child(2) .PriceRubilSpan{
-    font-family: "Gilroy",sans-serif;
+.SentencePriceBox:nth-child(2) .PriceRubilSpan {
+    font-family: "Gilroy", sans-serif;
     font-size: 93px;
     text-decoration: none;
     font-weight: 400;
@@ -924,28 +1020,32 @@ header{
     transform: translateY(-20px);
 }
 
-.SentencePriceBox:nth-child(2) .SentencePriceBoxText{
+.SentencePriceBox:nth-child(2) .SentencePriceBoxText {
     margin-top: -30px;
-    font-size: 24px;
+    font-size: 26px;
     width: 102%;
 }
-.SentencePriceBox:nth-child(3){
+
+.SentencePriceBox:nth-child(3) {
     text-align: right;
+    position: relative;
+
 }
 
 
-.SentencePriceBox:nth-child(3) .PriceRubil{
-    font-family: "Gilroy",sans-serif;
-    font-size: 60px;
-    text-decoration: none;
-}
-.SentencePriceBox:nth-child(3) .PriceRubilSpan{
-    font-family: "Gilroy",sans-serif;
-    font-size: 60px;
+.SentencePriceBox:nth-child(3) .PriceRubil {
+    font-family: "Gilroy", sans-serif;
+    font-size: 45px;
     text-decoration: none;
 }
 
-.NowOrder{
+.SentencePriceBox:nth-child(3) .PriceRubilSpan {
+    font-family: "Gilroy", sans-serif;
+    font-size: 45px;
+    text-decoration: none;
+}
+
+.NowOrder {
     width: 85%;
     display: flex;
     flex-direction: column;
@@ -956,15 +1056,15 @@ header{
     z-index: 999;
 }
 
-.NowOrderTitle{
+.NowOrderTitle {
     color: #222222;
     font-size: 45px;
-    font-family: "Roboto",sans-serif;
+    font-family: "Roboto", sans-serif;
     margin-bottom: 0;
 }
 
-.NowOrderTextWidth{
-    width: 80%;
+.NowOrderTextWidth {
+    width: 85%;
     display: flex;
     background: transparent linear-gradient(270deg, #4DE0FF 0%, #0080FF 100%) 0% 0% no-repeat padding-box;
     position: relative;
@@ -973,20 +1073,20 @@ header{
     margin-bottom: 80px;
 }
 
-.NowOrderText{
-    font-family: "Roboto",sans-serif;
+.NowOrderText {
+    font-family: "Roboto", sans-serif;
     font-size: 38px;
     color: white;
     padding: 0 20px;
     margin-bottom: 5px;
 }
 
-.NowOrderTextSpan{
-    font-family: "Arial",sans-serif;
+.NowOrderTextSpan {
+    font-family: "Arial", sans-serif;
     font-weight: 600;
 }
 
-.NowOrderPriceImg{
+.NowOrderPriceImg {
     width: 144px;
     height: 144px;
     position: absolute;
@@ -1063,10 +1163,7 @@ header{
 }
 
 
-
-
-
-.NowOrderBox{
+.NowOrderBox {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1075,7 +1172,7 @@ header{
     width: 30%;
 }
 
-.NowOrderBox input{
+.NowOrderBox input {
     margin: 25px 0;
     border-radius: 47px;
     height: 50px;
@@ -1084,68 +1181,69 @@ header{
     padding: 0 25px;
 }
 
-.NowOrderBox input:focus{
+.NowOrderBox input:focus {
     outline: none;
     box-shadow: none;
     border: 1px solid cornflowerblue;
 }
-.NowOrderBox input:nth-child(2){
+
+.NowOrderBox input:nth-child(2) {
     margin: 20px 0;
     margin-top: 0;
 }
 
-.NowOrderBox input:focus::-webkit-input-placeholder{
+.NowOrderBox input:focus::-webkit-input-placeholder {
     color: cornflowerblue;
 }
 
-.NowOrderBox input:focus::-moz-placeholder{
+.NowOrderBox input:focus::-moz-placeholder {
     color: cornflowerblue;
 }
 
-.NowOrderBox input:focus:-ms-input-placeholder{
+.NowOrderBox input:focus:-ms-input-placeholder {
     color: cornflowerblue;
 }
 
-.NowOrderBox input:focus::-ms-input-placeholder{
+.NowOrderBox input:focus::-ms-input-placeholder {
     color: cornflowerblue;
 }
 
-.NowOrderBox input:focus::placeholder{
+.NowOrderBox input:focus::placeholder {
     color: cornflowerblue;
 }
 
-.NowOrderBox input::-webkit-input-placeholder{
-    font-family: "Roboto",sans-serif;
+.NowOrderBox input::-webkit-input-placeholder {
+    font-family: "Roboto", sans-serif;
     color: #808080;
 }
 
-.NowOrderBox input::-moz-placeholder{
-    font-family: "Roboto",sans-serif;
+.NowOrderBox input::-moz-placeholder {
+    font-family: "Roboto", sans-serif;
     color: #808080;
 }
 
-.NowOrderBox input:-ms-input-placeholder{
-    font-family: "Roboto",sans-serif;
+.NowOrderBox input:-ms-input-placeholder {
+    font-family: "Roboto", sans-serif;
     color: #808080;
 }
 
-.NowOrderBox input::-ms-input-placeholder{
-    font-family: "Roboto",sans-serif;
+.NowOrderBox input::-ms-input-placeholder {
+    font-family: "Roboto", sans-serif;
     color: #808080;
 }
 
-.NowOrderBox input::placeholder{
-    font-family: "Roboto",sans-serif;
+.NowOrderBox input::placeholder {
+    font-family: "Roboto", sans-serif;
     color: #808080;
 }
 
-.NowOrderBox-footer{
+.NowOrderBox-footer {
     width: 100%;
     padding-bottom: 40px;
     position: relative;
 }
 
-.NowOrderBox-footer:before{
+.NowOrderBox-footer:before {
     content: "";
     display: flex;
     align-items: center;
@@ -1161,38 +1259,39 @@ header{
     animation: AnimationPhone 10s linear infinite;
 }
 
-.text-33{
+.text-33 {
     color: #828282;
     font-size: 33px;
     font-weight: 500;
 }
 
-.text-blue{
+.text-blue {
     color: #26AFFF;
 }
 
-.Question{
+.Question {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.QuestionBg{
+.QuestionBg {
     background: #FAFAFA;
     width: 100%;
     padding: 70px 0;
     padding-bottom: 0;
 }
 
-.Question .animation-border-block{
+.Question .animation-border-block {
     width: 100px;
     left: 0;
 }
-.QuestionBoxWidth{
+
+.QuestionBoxWidth {
     width: 50%;
 }
 
-.QuestionBox{
+.QuestionBox {
     margin-top: 15px;
     width: 100%;
     display: flex;
@@ -1200,82 +1299,94 @@ header{
     justify-content: flex-start;
 }
 
-.QuestionBox:nth-child(even){
+.QuestionBox:nth-child(even) {
     justify-content: flex-end;
 }
 
 
-.QuestionBoxImg{
+.QuestionBoxImg {
     width: 40px;
     margin-right: 15px;
 }
 
-.QuestionBoxImg:nth-child(even){
+.QuestionBoxImg:nth-child(even) {
     margin-left: 15px;
 }
 
-.QuestionTextBox{
+.QuestionTextBox {
     border: 1px solid #cccccc;
     border-radius: 14px;
     padding: 6px 20px;
     background: #ffffff;
     color: #808080;
 }
-.QuestionBox:nth-child(2) .QuestionTextBox{
+
+.QuestionBox:nth-child(2) .QuestionTextBox {
     width: 60%;
 }
-.QuestionBox:nth-child(3) .QuestionTextBox{
+
+.QuestionBox:nth-child(3) .QuestionTextBox {
     width: 50%;
 }
-.QuestionBox:nth-child(4) .QuestionTextBox{
+
+.QuestionBox:nth-child(4) .QuestionTextBox {
     width: 72%;
 }
-.QuestionBox:nth-child(5) .QuestionTextBox{
+
+.QuestionBox:nth-child(5) .QuestionTextBox {
     width: 50%;
 }
-.QuestionBox:nth-child(6) .QuestionTextBox{
+
+.QuestionBox:nth-child(6) .QuestionTextBox {
     width: 55%;
 }
-.QuestionBox:nth-child(7) .QuestionTextBox{
+
+.QuestionBox:nth-child(7) .QuestionTextBox {
     width: 50%;
 }
-.QuestionBox:nth-child(8) .QuestionTextBox{
+
+.QuestionBox:nth-child(8) .QuestionTextBox {
     width: 72%;
 }
-.QuestionBox:nth-child(9) .QuestionTextBox{
+
+.QuestionBox:nth-child(9) .QuestionTextBox {
     width: 55%;
 }
-.QuestionBox:nth-child(10) .QuestionTextBox{
+
+.QuestionBox:nth-child(10) .QuestionTextBox {
     width: 55%;
 }
-.QuestionBox:nth-child(11) .QuestionTextBox{
+
+.QuestionBox:nth-child(11) .QuestionTextBox {
     width: 48%;
 }
-.QuestionBox:nth-child(12) .QuestionTextBox{
+
+.QuestionBox:nth-child(12) .QuestionTextBox {
     width: 70%;
 }
 
-.QuestionTextBox:nth-child(odd){
+.QuestionTextBox:nth-child(odd) {
     background: #3de359;
     color: #ffffff;
     border: 1px solid #3de359;
     border-radius: 20px;
 }
 
-.QuestionBoxText{
-    font-family: "Roboto",sans-serif;
+.QuestionBoxText {
+    font-family: "Roboto", sans-serif;
     margin-bottom: 0;
+    font-size: 19px;
 }
 
-.carouselBox .lesson-section-title{
+.carouselBox .lesson-section-title {
     color: white;
 }
 
-.carouselBox .animation-border-block{
+.carouselBox .animation-border-block {
     background: #ff0084;
 }
 
-.carouselBox{
+.carouselBox {
     width: 100%;
     margin-top: 60px;
     background: url("../images/SVG/carouselBG.jpg");
@@ -1284,11 +1395,11 @@ header{
     padding: 25px 0;
 }
 
-.carouselButtonImg{
+.carouselButtonImg {
     width: 40px;
 }
 
-.reviews{
+.reviews {
     background: #ffffff;
     border-radius: 20px;
     height: 500px;
@@ -1297,26 +1408,26 @@ header{
     transition: all 0.5s;
 }
 
-.reviewsTitle{
-    font-family: Arial,sans-serif;
+.reviewsTitle {
+    font-family: Arial, sans-serif;
 }
 
-.reviewsImg{
+.reviewsImg {
     width: 80px;
     height: 80px;
     margin-right: 10px;
 }
 
-.reviewsTitle{
+.reviewsTitle {
     margin-bottom: 0;
     font-size: 25px;
     font-weight: 600;
 }
 
-.reviewsText{
+.reviewsText {
     width: 110px;
     line-height: 1;
-    font-family: "Roboto",sans-serif;
+    font-family: "Roboto", sans-serif;
     margin-bottom: 0;
 
 }
@@ -1324,7 +1435,7 @@ header{
 .reviewsBox {
     padding: 0 30px;
     margin-top: 10px;
-    font-family: "Roboto",sans-serif;
+    font-family: "Roboto", sans-serif;
     height: 370px;
     width: 310px;
     overflow-y: scroll;
@@ -1360,25 +1471,25 @@ header{
 }
 
 
-.owl-item{
+.owl-carousel-1 .owl-item {
     opacity: 0.5;
     transition: opacity 0.5s;
     margin-right: 50px;
 }
 
-.owl-item.active.center{
+.owl-carousel-1 .owl-item.active.center {
     opacity: 1;
     transform: translateX(-40px);
     transition: all 0.5s;
     margin-left: 40px;
 }
 
-.owl-item.active.center .reviews{
+.owl-carousel-1 .owl-item.active.center .reviews {
     height: 550px;
     width: 350px;
 }
 
-.owl-item.active.center .scroll_style::-webkit-scrollbar-thumb{
+.owl-carousel-1 .owl-item.active.center .scroll_style::-webkit-scrollbar-thumb {
     background: #999999;
     width: 5px;
     height: 1px;
@@ -1386,38 +1497,38 @@ header{
     border-radius: 20px;
 }
 
-.owl-item.active.center .reviewsBox{
+.owl-carousel-1 .owl-item.active.center .reviewsBox {
     margin-top: 10px;
     height: 365px;
     width: 340px;
 
 }
 
-.owl-nav .owl-prev{
+.owl-carousel-1 .owl-nav .owl-prev {
     margin-left: 40px;
 }
 
-.owl-nav .owl-next{
+.owl-carousel-1 .owl-nav .owl-next {
     margin-right: 40px;
 }
 
-.Footer{
+.Footer {
     display: flex;
     flex-direction: column;
 }
 
-.FooterTextBox{
+.FooterTextBox {
     width: 42%;
 }
 
-.FooterText{
-    font-family: "Roboto",sans-serif;
+.FooterText {
+    font-family: "Roboto", sans-serif;
     text-align: center;
     font-size: 20px;
     color: #4d4d4d;
 }
 
-.FooterSocialBoxWidth{
+.FooterSocialBoxWidth {
     width: 35%;
     display: flex;
     justify-content: center;
@@ -1426,7 +1537,8 @@ header{
     padding-top: 50px;
     position: relative;
 }
-.FooterSocialBoxWidth:before{
+
+.FooterSocialBoxWidth:before {
     content: "";
     display: block;
     position: absolute;
@@ -1440,104 +1552,196 @@ header{
 }
 
 
-.FooterSocialBoxTitle{
-    font-family: "Roboto",sans-serif;
+.FooterSocialBoxTitle {
+    font-family: "Roboto", sans-serif;
     color: #4d4d4d;
     margin-bottom: 25px;
 }
 
-.FooterSocialBox{
+.FooterSocialBox {
     display: flex;
     width: 80%;
     justify-content: center;
     align-items: center;
 }
 
-.FooterSocialBoxImg{
+.FooterSocialBoxImg {
     width: 35px;
     margin: 0 20px;
 }
 
-.FooterMobileStore{
+.FooterMobileStore {
     width: 150px;
     margin: 0 25px;
     margin-top: 30px;
 }
 
 
-
-.completed-box{
+.completed-box {
     background: transparent linear-gradient(246deg, #E2F2FF 0%, #F0C4F5 100%);
 }
 
-.text-back{
+.text-back {
     font-size: 25px;
     color: black;
     text-decoration: none;
 }
 
-.text-back:hover{
+.text-back:hover {
     text-decoration: none;
     color: black;
 }
 
 
-.completed-box-logo{
+.completed-box-logo {
     width: 37px;
     height: 40px;
 }
 
-.completed-box-logo-text{
-    font-family: "Gilroy ExtraBold",sans-serif;
+.completed-box-logo-text {
+    font-family: "Gilroy ExtraBold", sans-serif;
     font-size: 29px;
     font-weight: 900;
 }
 
-.completed-box-header-title{
-    font-family: "Gilroy ExtraBold",sans-serif;
+.completed-box-header-title {
+    font-family: "Gilroy ExtraBold", sans-serif;
     font-size: 65px;
     font-weight: 900;
     text-align: center;
     margin-bottom: 0;
 }
 
-.completed-box-header-text{
+.completed-box-header-text {
     font-size: 35px;
     text-align: center;
 }
 
-.completed-box-body .FooterSocialBoxWidth:before{
+.completed-box-body .FooterSocialBoxWidth:before {
     display: none;
 }
 
-.completed-box-body .FooterSocialBoxWidth{
+.completed-box-body .FooterSocialBoxWidth {
     padding: 50px 0;
 }
-
-
-
-
-
-
-
-
 
 
 @font-face {
     font-family: "Segoe Print";
     src: url("../fonts/Segoe Print V2.ttf") format('ttf');
 }
+
 @font-face {
     font-family: "Arial Black";
     src: url("../fonts/Arial Black.ttf") format('ttf');
 }
+
 @font-face {
     font-family: "Arial";
     src: url("../fonts/Arial.ttf") format('ttf');
 }
+
 @font-face {
     font-family: "Gilroy ExtraBold";
     src: url("../fonts/Gilroy-ExtraBold.woff") format('woff');
+}
+
+.banner-mobile{
+    display: none;
+}
+
+
+.banner {
+    position: relative;
+    height: 600px;
+    padding: 11px 0 16px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.dg-container {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+.dg-wrapper {
+    width: 1000px;
+    height: 600px;
+    margin: 0 auto;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    left: 25px;
+}
+
+.dg-wrapper a {
+    width: 100%;
+    height: 600px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.dg-wrapper a:first-child {
+    z-index: 2;
+}
+
+.dg-wrapper a img {
+    display: block;
+    width: 100%;
+}
+
+.dg-wrapper a.dg-transition {
+    transition: all 0.5s ease-in-out;
+}
+
+.dg-wrapper a.dg-transition-fast {
+    transition: all 0.2s ease-in-out;
+}
+
+.dg-container nav {
+    display: none;
+}
+
+.dg-container ol {
+    display: none;
+}
+
+.dg-container nav span:hover {
+    opacity: 1;
+}
+
+.dg-container nav span.dg-next {
+    background-position: top right;
+    margin-left: 10px;
+}
+
+.dg-container #lightButton2 {
+    bottom: 20px;
+}
+
+.dg-container .button {
+    position: relative;
+    z-index: 5;
+}
+
+.dg-container .button li {
+    cursor: pointer;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-right: 5px;
+    background: rgba(255, 255, 255, 0.30);
+    border: 1px solid rgba(0, 0, 0, 0.20);
+}
+
+.dg-container .button .light {
+    background: #01BDFF;
 }
 
 
