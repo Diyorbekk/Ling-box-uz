@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/Animation.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/TimeCircles.css"/>
 
 
     <!-- Title -->
@@ -380,27 +381,61 @@
 
                     <div class="d-flex SentenceBox">
 
+                        <div class="countdown countdown-container container">
+                            <div class="clock row">
+                                <div class="clock-item clock-days countdown-time-value col-sm-6 col-md-3">
+                                    <div class="wrap">
+                                        <div class="inner">
+                                            <div id="canvas-days" class="clock-canvas"></div>
 
-                        <div class="d-flex flex-column align-items-center justify-content-center SentenceBoxGrafica">
-                            <img src="images/SVG/SentersDay.png" class="SentenceBoxImg" alt="">
+                                            <div class="text">
+                                                <p class="val">0</p>
+                                                <p class="type-days type-time">DAYS</p>
+                                            </div><!-- /.text -->
+                                        </div><!-- /.inner -->
+                                    </div><!-- /.wrap -->
+                                </div><!-- /.clock-item -->
 
-                            <p class="SentenceBoxText">kun</p>
-                        </div>
-                        <div class="d-flex flex-column align-items-center justify-content-center SentenceBoxGrafica">
-                            <img src="images/SVG/SentersO'clock.png" class="SentenceBoxImg" alt="">
+                                <div class="clock-item clock-hours countdown-time-value col-sm-6 col-md-3">
+                                    <div class="wrap">
+                                        <div class="inner">
+                                            <div id="canvas-hours" class="clock-canvas"></div>
 
-                            <p class="SentenceBoxText">soat</p>
-                        </div>
-                        <div class="d-flex flex-column align-items-center justify-content-center SentenceBoxGrafica">
-                            <img src="images/SVG/SentersMinut.png" class="SentenceBoxImg" alt="">
+                                            <div class="text">
+                                                <p class="val">0</p>
+                                                <p class="type-hours type-time">HOURS</p>
+                                            </div><!-- /.text -->
+                                        </div><!-- /.inner -->
+                                    </div><!-- /.wrap -->
+                                </div><!-- /.clock-item -->
 
-                            <p class="SentenceBoxText">daqiqa</p>
-                        </div>
-                        <div class="d-flex flex-column align-items-center justify-content-center SentenceBoxGrafica">
-                            <img src="images/SVG/SentersSecond.png" class="SentenceBoxImg" alt="">
+                                <div class="clock-item clock-minutes countdown-time-value col-sm-6 col-md-3">
+                                    <div class="wrap">
+                                        <div class="inner">
+                                            <div id="canvas-minutes" class="clock-canvas"></div>
 
-                            <p class="SentenceBoxText">soniya</p>
-                        </div>
+                                            <div class="text">
+                                                <p class="val">0</p>
+                                                <p class="type-minutes type-time">MINUTES</p>
+                                            </div><!-- /.text -->
+                                        </div><!-- /.inner -->
+                                    </div><!-- /.wrap -->
+                                </div><!-- /.clock-item -->
+
+                                <div class="clock-item clock-seconds countdown-time-value col-sm-6 col-md-3">
+                                    <div class="wrap">
+                                        <div class="inner">
+                                            <div id="canvas-seconds" class="clock-canvas"></div>
+
+                                            <div class="text">
+                                                <p class="val">0</p>
+                                                <p class="type-seconds type-time">SECONDS</p>
+                                            </div><!-- /.text -->
+                                        </div><!-- /.inner -->
+                                    </div><!-- /.wrap -->
+                                </div><!-- /.clock-item -->
+                            </div><!-- /.clock -->
+                        </div><!-- /.countdown-wrapper -->
                     </div>
 
 
@@ -829,6 +864,8 @@
 <!-- production version, optimized for size and speed Vue Js-->
 <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+
 <script src="Bootstrap Js/jQuery.min.js"></script>
 <script src="Bootstrap Js/popper.js"></script>
 <script src="Bootstrap Js/bootstrap.js"></script>
@@ -836,6 +873,500 @@
 <script src="Js/animated.js"></script>
 <script src="Js/owl.carousel.min.js"></script>
 <script src="Js/swiper.min.js"></script>
+<script>
+    $(".owl-carousel-1").owlCarousel({
+        autoplay: true,
+        center: true,
+        nav: true,
+        autoplayTimeout: 4000,
+        autoplayHoverPause: true,
+        loop: true,
+        margin: 15,
+
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1,
+                nav: true,
+                dots: true,
+                margin: 25
+            },
+            600: {
+                items: 2,
+                nav: true,
+                dots: true,
+                margin: 25
+            },
+            768: {
+                items: 2.3,
+                nav: true,
+                dots: true,
+                margin: 120
+            },
+            1024: {
+                items: 3,
+                nav: true,
+                dots: true,
+                margin: 120
+            },
+
+            1366: {
+                items: 3.8,
+                nav: true,
+                dots: true,
+                margin: 40
+            },
+            1600: {
+                items: 4.8,
+                nav: true,
+                dots: true,
+                margin: 40
+            }
+        },
+    });
+    $(".owl-carousel-2").owlCarousel({
+        autoplay: 3000,
+        center: true,
+        nav: true,
+        loop: true,
+        smartSpeed: 1000,
+        /*autoplayTimeout: 4000,*/
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1,
+                nav: true,
+                dots: true,
+                margin: 25
+            },
+            600: {
+                items: 2,
+                nav: true,
+                dots: true,
+                margin: 25
+            },
+            768: {
+                items: 2.3,
+                nav: true,
+                dots: true,
+                margin: 120
+            },
+            1024: {
+                items: 3,
+                nav: true,
+                dots: true,
+                margin: 120
+            },
+
+            1366: {
+                items: 3,
+                nav: true,
+                dots: true,
+                margin: 0
+            },
+            1600: {
+                items: 2.8,
+                nav: true,
+                dots: true,
+                margin: 0
+            }
+        },
+    });
+</script>
+
+<script>
+    $(document).ready(function () {
+        $('.PhoneImgBox').animate({
+            opacity: 1,
+            right: '2%',
+        }, 1000, function () {
+        });
+
+
+        // $('#myId').click(function() {
+        //     $.scrollTo($('.NowOrderBox'), 1000);
+        // });
+
+        $("#myId").click(function () {
+            if ($(window).height() == 640 && $(window).width() == 360) {
+                $('html, body').animate({
+                    scrollTop: $(".NowOrderBox").offset().top + -350
+                }, 2000)
+            }
+
+            if ($(window).height() <= 650) {
+                $('html, body').animate({
+                    scrollTop: $(".NowOrderBox").offset().top + -120
+                }, 2000)
+            }
+
+            if ($(window).height() >= 651) {
+                $('html, body').animate({
+                    scrollTop: $(".NowOrderBox").offset().top + -120
+                }, 2000)
+            }
+            $('.Focus').focus();
+        });
+
+        $("#myId2").click(function () {
+            if ($(window).height() == 640 && $(window).width() == 360) {
+                $('html, body').animate({
+                    scrollTop: $(".NowOrderBox").offset().top + -350
+                }, 2000)
+            }
+
+            if ($(window).height() <= 650) {
+                $('html, body').animate({
+                    scrollTop: $(".NowOrderBox").offset().top + -120
+                }, 2000)
+            }
+
+            if ($(window).height() >= 651) {
+                $('html, body').animate({
+                    scrollTop: $(".NowOrderBox").offset().top + -120
+                }, 2000)
+            }
+            $('.Focus').focus();
+        });
+
+        $(".owl-prev").html('    <div class="swiper-button-prev">\n' +
+            '            <img src="images/SVG/buttun_prev_img.png" class="carouselButtonImg" alt=""></div>');
+        $(".owl-next").html('<div class="swiper-button-next">\n' +
+            '            <img src="images/SVG/button_next_img.png" class="carouselButtonImg" alt=""></div>');
+
+
+        /* Animation Cup */
+
+
+        function animations(ClassAnim) {
+
+
+            $('.CupBoxRandomImg').animate({
+                width: '30px',
+                opacity: '0',
+                left: '10%',
+                bottom: '70%',
+            }, {duration: 500, queue: true});
+
+            $('.CupBoxRandomImg').animate({
+                width: '30px',
+                opacity: '1',
+                left: '10%',
+                bottom: '70%',
+            }, {duration: 500, queue: true});
+
+            $('.CupBoxRandomImg').animate({
+                width: '30px',
+                opacity: '0',
+                left: '10%',
+                bottom: '70%',
+            }, {duration: 500, queue: true});
+
+
+            $('.CupBoxRandomImg').animate({
+                width: '30px',
+                opacity: '0',
+                bottom: '10%'
+            }, {duration: 500, queue: true});
+
+            $('.CupBoxRandomImg').animate({
+                width: '30px',
+                opacity: '1',
+                bottom: '10%'
+            }, {duration: 500, queue: true});
+
+            $('.CupBoxRandomImg').animate({
+                width: '30px',
+                opacity: '0',
+                bottom: '10%'
+            }, {duration: 500, queue: true});
+
+
+            $('.CupBoxRandomImg').animate({
+                width: '30px',
+                opacity: '0',
+                left: '75%',
+                bottom: '10%'
+            }, {duration: 500, queue: true});
+
+            $('.CupBoxRandomImg').animate({
+                width: '30px',
+                opacity: '1',
+                bottom: '10%',
+                left: '75%',
+            }, {duration: 500, queue: true});
+
+            $('.CupBoxRandomImg').animate({
+                width: '30px',
+                opacity: '0',
+                bottom: '10%',
+                left: '75%',
+            }, {duration: 500, queue: true})
+        }
+
+        setInterval(function () {
+            $('.CupBoxRandomImg').animate({
+                width: '30px',
+                opacity: '0',
+                left: '10%',
+                bottom: '70%',
+            }, {duration: 500, queue: true});
+
+            $('.CupBoxRandomImg').animate({
+                width: '30px',
+                opacity: '1',
+                left: '10%',
+                bottom: '70%',
+            }, {duration: 500, queue: true});
+
+            $('.CupBoxRandomImg').animate({
+                width: '30px',
+                opacity: '0',
+                left: '10%',
+                bottom: '70%',
+            }, {duration: 500, queue: true});
+
+
+            $('.CupBoxRandomImg').animate({
+                width: '30px',
+                opacity: '0',
+                bottom: '10%'
+            }, {duration: 500, queue: true});
+
+            $('.CupBoxRandomImg').animate({
+                width: '30px',
+                opacity: '1',
+                bottom: '10%'
+            }, {duration: 500, queue: true});
+
+            $('.CupBoxRandomImg').animate({
+                width: '30px',
+                opacity: '0',
+                bottom: '10%'
+            }, {duration: 500, queue: true});
+
+
+            $('.CupBoxRandomImg').animate({
+                width: '30px',
+                opacity: '0',
+                left: '75%',
+                bottom: '10%'
+            }, {duration: 500, queue: true});
+
+            $('.CupBoxRandomImg').animate({
+                width: '30px',
+                opacity: '1',
+                bottom: '10%',
+                left: '75%',
+            }, {duration: 500, queue: true});
+
+            $('.CupBoxRandomImg').animate({
+                width: '30px',
+                opacity: '0',
+                bottom: '10%',
+                left: '75%',
+            }, {duration: 500, queue: true})
+        }, 5000);
+
+    });
+</script>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            LessonBox: [
+                {
+                    LessonBoxImg: `images/SVG/Bookmark.png`,
+                    LessonBoxText: `hech qanday grammatika va so\`z yodlashlarsiz`
+                },
+                {LessonBoxImg: `images/SVG/HeadPhones.png`, LessonBoxText: `doimiy eshitish metodi bilan`},
+                {
+                    LessonBoxImg: `images/SVG/Books.png`,
+                    LessonBoxText: `odatiy usulda, kitob va audiomaterillar yordamida`
+                },
+                {LessonBoxImg: `images/SVG/HeadPhone.png`, LessonBoxText: `innovatsion usulda, mobil ilova orqali`},
+            ],
+        },
+    })
+    var app2 = new Vue({
+        el: '#app2',
+        data: {
+            problemsBox: [
+                {
+                    problemsBoxImg: `images/Frags/icon-down.svg`,
+                    problemsBoxText: `xorijiy tillarni bilmaslik tufayli yuqori lavozimga ko\`tarila olmaslik`
+                },
+                {
+                    problemsBoxImg: `images/Frags/icon-book.svg`,
+                    problemsBoxText: `zerikarli grammatik qoidalar va ko\`plab so\`z yodlash`
+                },
+                {
+                    problemsBoxImg: `images/Frags/icon-time.svg`,
+                    problemsBoxText: `repetitor va qo\`shimcha kurslarga borishga vaqt yo\`qligi`
+                },
+                {
+                    problemsBoxImg: `images/Frags/icon-sad.svg`,
+                    problemsBoxText: `til o\`rganish jarayonida qiyinchiliklarga uchrab, tushkunlikka tushish`
+                },
+                {
+                    problemsBoxImg: `images/Frags/icon-audiobook.svg`,
+                    problemsBoxText: `tillarni mustaqil o\`rganish uchun aniq va qulay metodika yo\`qligi`
+                },
+                {
+                    problemsBoxImg: `images/Frags/icon-dislike.svg`,
+                    problemsBoxText: `xorijiy tillarni uzoq vaqt o\`rganib, gapira olmaslik`
+                },
+            ],
+        }
+    })
+    var app3 = new Vue({
+        el: '#app3',
+        data: {
+            ProductSectionTextBox: [
+                {
+                    ProductSectionTextBoxRound: `1`,
+                    ProductSectionText: `Til o\`rganishning eng oson va zamonaviy metodi`,
+                    ProductSectionTextSpan: `(bilimlarning ong ostiga avtomatik tarzda joylanishi, bunda so\`z yodlash hamda grammatikani o\`rganish talab etilmaydi)`,
+                },
+                {
+                    ProductSectionTextBoxRound: `2`,
+                    ProductSectionText: ` Tillarni istalgan usulda o\`rganish imkoniyati`,
+                    ProductSectionTextSpan: ` (siz tillarni progressiv kitob va audioqo\`llanma hamda innovatsion mobil ilova orqali o\`rgana olasiz)`,
+                },
+                {
+                    ProductSectionTextBoxRound: `3`,
+                    ProductSectionText: `Boshlang\`ich bilimga ega bo\`lish shart emas`,
+                    ProductSectionTextSpan: `(siz tillarni boshlang\`ich bilim bazasiga ega bo\`lmay turib ham, noldan boshlab o\`rgana olasiz)`,
+                },
+                {
+                    ProductSectionTextBoxRound: `4`,
+                    ProductSectionText: `Qulay grafik. Tillarni istalgan joyda va istalgan vaqtda o\`rganish imkoniyati`,
+                    ProductSectionTextSpan: `(metroda, uyda, ishda, ko\`chada, ertalab, sayr vaqtida, kechqurun, dam olish kunlari va hokazo)`,
+                },
+
+                {
+                    ProductSectionTextBoxRound: `5`,
+                    ProductSectionText: `Eng qisqa muddatda chet tilida erkin gaplasha olish `,
+                    ProductSectionTextSpan: `(bor yo\`g\`i 6 oyda siz xuddi native speaker kabi gapirasiz)`,
+                },
+                {
+                    ProductSectionTextBoxRound: `6`,
+                    ProductSectionText: `99,9% gaplashish amaliyoti`,
+                    ProductSectionTextSpan: ``,
+                },
+
+
+                {
+                    ProductSectionTextBoxRound: `7`,
+                    ProductSectionText: `Bor yo\`g\`i 2 soat eshitish va kuzatish`,
+                    ProductSectionTextSpan: `(tillarni o\`rganishingiz uchun hech qanday qiyinchiliklarsiz va uy vazifalarisiz kuniga bor yo\`g\`i 2 soat eshitib kuzatishingiz kifoya)`,
+                },
+
+                {
+                    ProductSectionTextBoxRound: `8`,
+                    ProductSectionText: `"0" TRAFIK `,
+                    ProductSectionTextSpan: `(sizga taqdim etilgan ilovadan foydalanganingizda umuman trafik sarflamaysiz)`,
+                },
+
+                {
+                    ProductSectionTextBoxRound: `9`,
+                    ProductSectionText: `Yuqori sifatli audiodarslar`,
+                    ProductSectionTextSpan: `(barcha audiodarslar professional ovoz yozish studiyasida dublyaj qilingan)`,
+                },
+
+
+                {
+                    ProductSectionTextBoxRound: `10`,
+                    ProductSectionText: `Speaking, Listening, Reading`,
+                    ProductSectionTextSpan: `(asosiy ko\`nikmalarni rivojlantirish va mustahkamlash imkoniyati)`,
+                },
+
+
+                {
+                    ProductSectionTextBoxRound: `11`,
+                    ProductSectionText: `Audio effektlar `,
+                    ProductSectionTextSpan: `(yuqori sifatga ega bo\`lgan qiziqarli audio effektlar)`,
+                },
+
+
+            ],
+        }
+    })
+    var app4 = new Vue({
+        el: '#app4',
+        data: {
+            ProductIcons: [
+                {
+                    problemsBoxImg: `images/Frags/icon-talk.svg`,
+                    problemsBoxText: `istalgan tilda o\`z ona tilingizday gaplasha olish`
+                },
+                {
+                    problemsBoxImg: `images/Frags/icon-marshmallow.svg`,
+                    problemsBoxText: `chet tilidagi so\`zlashuvni tushunish va gaplashish qo\`rquvidan halos bo\`lish`
+                },
+                {
+                    problemsBoxImg: `images/Frags/icon-books.svg`,
+                    problemsBoxText: `xorijiy tildagi kitoblarni bemalol o\`qiy olish`
+                },
+                {
+                    problemsBoxImg: `images/Frags/icon-plane.svg`,
+                    problemsBoxText: `dunyo bo\`ylab erkin sayohat qila olish, chet elda o\`qish va ishlash`
+                },
+                {
+                    problemsBoxImg: `images/Frags/icon-building.svg`, problemsBoxText: `yuqori daromadli ishda ishlash`
+                },
+                {
+                    problemsBoxImg: `images/Frags/icon-group.svg`,
+                    problemsBoxText: `chet eldan do\`stlar orttirish va keng dunyoqarashga ega bo\`lish`,
+                },
+                {
+                    problemsBoxImg: `images/Frags/icon-star.svg`, problemsBoxText: `ijtimoiy statusga ega bo\`lish`,
+                },
+            ],
+        }
+    })
+
+</script>
+
+<!-- New script -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="Js/kinetic.js"></script>
+<script type="text/javascript" src="Js/jquery.final-countdown.js"></script>
+<script>
+    $('document').ready(function () {
+        'use strict';
+
+        // $('.countdown').final_countdown({
+        //     'start': 1362139200,
+        //     'end': 1388461320,
+        //     'now': 1387461319
+        // });
+        $('.countdown').final_countdown({
+            start: '1362139200',
+            end: '1388461320',
+            now: '1387461319',
+            seconds: {
+                borderColor: '#4400FF',
+                borderWidth: '6'
+            },
+            minutes: {
+                borderColor: '#4400FF',
+                borderWidth: '6'
+            },
+            hours: {
+                borderColor: '#4400FF',
+                borderWidth: '6'
+            },
+            days: {
+                borderColor: '#4400FF',
+                borderWidth: '6'
+            }
+        }, function () {
+// Finish callback
+        });
+    });
+
+</script>
 <script>
 
     $(function () {
@@ -1462,464 +1993,133 @@
 
     })(jQuery);
 </script>
+<style>
+    .countdown-container {
+        position: relative;
+        top: 50%;
+        /*-webkit-transform: translateY(-50%);*/
+        /*-moz-transform: translateY(-50%);*/
+        /*transform: translateY(-50%);*/
 
+    }
 
-<script>
-    $(".owl-carousel-1").owlCarousel({
-        autoplay: true,
-        center: true,
-        nav: true,
-        autoplayTimeout: 4000,
-        autoplayHoverPause: true,
-        loop: true,
-        margin: 15,
+    .kineticjs-content {
+        background: url("images/Timer-01.svg");
+    }
 
-        responsiveClass: true,
-        responsive: {
-            0: {
-                items: 1,
-                nav: true,
-                dots: true,
-                margin: 25
-            },
-            600: {
-                items: 2,
-                nav: true,
-                dots: true,
-                margin: 25
-            },
-            768: {
-                items: 2.3,
-                nav: true,
-                dots: true,
-                margin: 120
-            },
-            1024: {
-                items: 3,
-                nav: true,
-                dots: true,
-                margin: 120
-            },
+    .clock-item .inner {
+        height: 0px;
+        padding-bottom: 100%;
+        position: relative;
+        width: 100%;
+    }
 
-            1366: {
-                items: 3.8,
-                nav: true,
-                dots: true,
-                margin: 40
-            },
-            1600: {
-                items: 4.8,
-                nav: true,
-                dots: true,
-                margin: 40
-            }
-        },
-    });
-    $(".owl-carousel-2").owlCarousel({
-        autoplay: 3000,
-        center: true,
-        nav: true,
-        loop: true,
-        smartSpeed: 1000,
-        /*autoplayTimeout: 4000,*/
-        responsiveClass: true,
-        responsive: {
-            0: {
-                items: 1,
-                nav: true,
-                dots: true,
-                margin: 25
-            },
-            600: {
-                items: 2,
-                nav: true,
-                dots: true,
-                margin: 25
-            },
-            768: {
-                items: 2.3,
-                nav: true,
-                dots: true,
-                margin: 120
-            },
-            1024: {
-                items: 3,
-                nav: true,
-                dots: true,
-                margin: 120
-            },
+    .clock-canvas {
+        background-color: rgba(255, 255, 255, .1);
+        border-radius: 50%;
+        height: 0px;
+        padding-bottom: 100%;
+    }
 
-            1366: {
-                items: 3,
-                nav: true,
-                dots: true,
-                margin: 0
-            },
-            1600: {
-                items: 2.8,
-                nav: true,
-                dots: true,
-                margin: 0
-            }
-        },
-    });
-</script>
+    .text {
+        color: #0181FF;
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: -50px;
+        position: absolute;
+        top: 40%;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 0;
+    }
 
-<script>
-    $(document).ready(function () {
-        $('.PhoneImgBox').animate({
-            opacity: 1,
-            right: '2%',
-        }, 1000, function () {
-        });
+    .text .val {
+        font-size: 75px;
+        margin-bottom: 0;
+    }
 
+    .text .type-time {
+        font-size: 20px;
+        color: #808080;
+        margin-bottom: 0;
+    }
 
-
-        // $('#myId').click(function() {
-        //     $.scrollTo($('.NowOrderBox'), 1000);
-        // });
-
-        $("#myId").click(function () {
-            if ($(window).height() == 640 && $(window).width() == 360) {
-                $('html, body').animate({
-                    scrollTop: $(".NowOrderBox").offset().top + -350
-                }, 2000)
-            }
-
-            if ($(window).height() <= 650) {
-                $('html, body').animate({
-                    scrollTop: $(".NowOrderBox").offset().top + -120
-                }, 2000)
-            }
-
-            if ($(window).height() >= 651) {
-                $('html, body').animate({
-                    scrollTop: $(".NowOrderBox").offset().top + -120
-                }, 2000)
-            }
-            $('.Focus').focus();
-        });
-
-        $("#myId2").click(function () {
-            if ($(window).height() == 640 && $(window).width() == 360) {
-                $('html, body').animate({
-                    scrollTop: $(".NowOrderBox").offset().top + -350
-                }, 2000)
-            }
-
-            if ($(window).height() <= 650) {
-                $('html, body').animate({
-                    scrollTop: $(".NowOrderBox").offset().top + -120
-                }, 2000)
-            }
-
-            if ($(window).height() >= 651) {
-                $('html, body').animate({
-                    scrollTop: $(".NowOrderBox").offset().top + -120
-                }, 2000)
-            }
-            $('.Focus').focus();
-        });
-
-        $(".owl-prev").html('    <div class="swiper-button-prev">\n' +
-            '            <img src="images/SVG/buttun_prev_img.png" class="carouselButtonImg" alt=""></div>');
-        $(".owl-next").html('<div class="swiper-button-next">\n' +
-            '            <img src="images/SVG/button_next_img.png" class="carouselButtonImg" alt=""></div>');
-
-
-        /* Animation Cup */
-
-
-        function animations(ClassAnim) {
-
-
-            $('.CupBoxRandomImg').animate({
-                width: '30px',
-                opacity: '0',
-                left: '10%',
-                bottom: '70%',
-            }, {duration: 500, queue: true});
-
-            $('.CupBoxRandomImg').animate({
-                width: '30px',
-                opacity: '1',
-                left: '10%',
-                bottom: '70%',
-            }, {duration: 500, queue: true});
-
-            $('.CupBoxRandomImg').animate({
-                width: '30px',
-                opacity: '0',
-                left: '10%',
-                bottom: '70%',
-            }, {duration: 500, queue: true});
-
-
-            $('.CupBoxRandomImg').animate({
-                width: '30px',
-                opacity: '0',
-                bottom: '10%'
-            }, {duration: 500, queue: true});
-
-            $('.CupBoxRandomImg').animate({
-                width: '30px',
-                opacity: '1',
-                bottom: '10%'
-            }, {duration: 500, queue: true});
-
-            $('.CupBoxRandomImg').animate({
-                width: '30px',
-                opacity: '0',
-                bottom: '10%'
-            }, {duration: 500, queue: true});
-
-
-            $('.CupBoxRandomImg').animate({
-                width: '30px',
-                opacity: '0',
-                left: '75%',
-                bottom: '10%'
-            }, {duration: 500, queue: true});
-
-            $('.CupBoxRandomImg').animate({
-                width: '30px',
-                opacity: '1',
-                bottom: '10%',
-                left: '75%',
-            }, {duration: 500, queue: true});
-
-            $('.CupBoxRandomImg').animate({
-                width: '30px',
-                opacity: '0',
-                bottom: '10%',
-                left: '75%',
-            }, {duration: 500, queue: true})
+    @media (max-width: 1600px) {
+        .text {
+            top: 50%;
         }
 
-        setInterval(function () {
-            $('.CupBoxRandomImg').animate({
-                width: '30px',
-                opacity: '0',
-                left: '10%',
-                bottom: '70%',
-            }, {duration: 500, queue: true});
-
-            $('.CupBoxRandomImg').animate({
-                width: '30px',
-                opacity: '1',
-                left: '10%',
-                bottom: '70%',
-            }, {duration: 500, queue: true});
-
-            $('.CupBoxRandomImg').animate({
-                width: '30px',
-                opacity: '0',
-                left: '10%',
-                bottom: '70%',
-            }, {duration: 500, queue: true});
-
-
-            $('.CupBoxRandomImg').animate({
-                width: '30px',
-                opacity: '0',
-                bottom: '10%'
-            }, {duration: 500, queue: true});
-
-            $('.CupBoxRandomImg').animate({
-                width: '30px',
-                opacity: '1',
-                bottom: '10%'
-            }, {duration: 500, queue: true});
-
-            $('.CupBoxRandomImg').animate({
-                width: '30px',
-                opacity: '0',
-                bottom: '10%'
-            }, {duration: 500, queue: true});
-
-
-            $('.CupBoxRandomImg').animate({
-                width: '30px',
-                opacity: '0',
-                left: '75%',
-                bottom: '10%'
-            }, {duration: 500, queue: true});
-
-            $('.CupBoxRandomImg').animate({
-                width: '30px',
-                opacity: '1',
-                bottom: '10%',
-                left: '75%',
-            }, {duration: 500, queue: true});
-
-            $('.CupBoxRandomImg').animate({
-                width: '30px',
-                opacity: '0',
-                bottom: '10%',
-                left: '75%',
-            }, {duration: 500, queue: true})
-        }, 5000);
-
-    });
-</script>
-<script>
-    var app = new Vue({
-        el: '#app',
-        data: {
-            LessonBox: [
-                {
-                    LessonBoxImg: `images/SVG/Bookmark.png`,
-                    LessonBoxText: `hech qanday grammatika va so\`z yodlashlarsiz`
-                },
-                {LessonBoxImg: `images/SVG/HeadPhones.png`, LessonBoxText: `doimiy eshitish metodi bilan`},
-                {
-                    LessonBoxImg: `images/SVG/Books.png`,
-                    LessonBoxText: `odatiy usulda, kitob va audiomaterillar yordamida`
-                },
-                {LessonBoxImg: `images/SVG/HeadPhone.png`, LessonBoxText: `innovatsion usulda, mobil ilova orqali`},
-            ],
-        },
-    })
-    var app2 = new Vue({
-        el: '#app2',
-        data: {
-            problemsBox: [
-                {
-                    problemsBoxImg: `images/Frags/icon-down.svg`,
-                    problemsBoxText: `xorijiy tillarni bilmaslik tufayli yuqori lavozimga ko\`tarila olmaslik`
-                },
-                {
-                    problemsBoxImg: `images/Frags/icon-book.svg`,
-                    problemsBoxText: `zerikarli grammatik qoidalar va ko\`plab so\`z yodlash`
-                },
-                {
-                    problemsBoxImg: `images/Frags/icon-time.svg`,
-                    problemsBoxText: `repetitor va qo\`shimcha kurslarga borishga vaqt yo\`qligi`
-                },
-                {
-                    problemsBoxImg: `images/Frags/icon-sad.svg`,
-                    problemsBoxText: `til o\`rganish jarayonida qiyinchiliklarga uchrab, tushkunlikka tushish`
-                },
-                {
-                    problemsBoxImg: `images/Frags/icon-audiobook.svg`,
-                    problemsBoxText: `tillarni mustaqil o\`rganish uchun aniq va qulay metodika yo\`qligi`
-                },
-                {
-                    problemsBoxImg: `images/Frags/icon-dislike.svg`,
-                    problemsBoxText: `xorijiy tillarni uzoq vaqt o\`rganib, gapira olmaslik`
-                },
-            ],
+        .text .val {
+            font-size: 50px;
         }
-    })
-    var app3 = new Vue({
-        el: '#app3',
-        data: {
-            ProductSectionTextBox: [
-                {
-                    ProductSectionTextBoxRound: `1`,
-                    ProductSectionText: `Til o\`rganishning eng oson va zamonaviy metodi`,
-                    ProductSectionTextSpan: `(bilimlarning ong ostiga avtomatik tarzda joylanishi, bunda so\`z yodlash hamda grammatikani o\`rganish talab etilmaydi)`,
-                },
-                {
-                    ProductSectionTextBoxRound: `2`,
-                    ProductSectionText: ` Tillarni istalgan usulda o\`rganish imkoniyati`,
-                    ProductSectionTextSpan: ` (siz tillarni progressiv kitob va audioqo\`llanma hamda innovatsion mobil ilova orqali o\`rgana olasiz)`,
-                },
-                {
-                    ProductSectionTextBoxRound: `3`,
-                    ProductSectionText: `Boshlang\`ich bilimga ega bo\`lish shart emas`,
-                    ProductSectionTextSpan: `(siz tillarni boshlang\`ich bilim bazasiga ega bo\`lmay turib ham, noldan boshlab o\`rgana olasiz)`,
-                },
-                {
-                    ProductSectionTextBoxRound: `4`,
-                    ProductSectionText: `Qulay grafik. Tillarni istalgan joyda va istalgan vaqtda o\`rganish imkoniyati`,
-                    ProductSectionTextSpan: `(metroda, uyda, ishda, ko\`chada, ertalab, sayr vaqtida, kechqurun, dam olish kunlari va hokazo)`,
-                },
 
-                {
-                    ProductSectionTextBoxRound: `5`,
-                    ProductSectionText: `Eng qisqa muddatda chet tilida erkin gaplasha olish `,
-                    ProductSectionTextSpan: `(bor yo\`g\`i 6 oyda siz xuddi native speaker kabi gapirasiz)`,
-                },
-                {
-                    ProductSectionTextBoxRound: `6`,
-                    ProductSectionText: `99,9% gaplashish amaliyoti`,
-                    ProductSectionTextSpan: ``,
-                },
-
-
-                {
-                    ProductSectionTextBoxRound: `7`,
-                    ProductSectionText: `Bor yo\`g\`i 2 soat eshitish va kuzatish`,
-                    ProductSectionTextSpan: `(tillarni o\`rganishingiz uchun hech qanday qiyinchiliklarsiz va uy vazifalarisiz kuniga bor yo\`g\`i 2 soat eshitib kuzatishingiz kifoya)`,
-                },
-
-                {
-                    ProductSectionTextBoxRound: `8`,
-                    ProductSectionText: `"0" TRAFIK `,
-                    ProductSectionTextSpan: `(sizga taqdim etilgan ilovadan foydalanganingizda umuman trafik sarflamaysiz)`,
-                },
-
-                {
-                    ProductSectionTextBoxRound: `9`,
-                    ProductSectionText: `Yuqori sifatli audiodarslar`,
-                    ProductSectionTextSpan: `(barcha audiodarslar professional ovoz yozish studiyasida dublyaj qilingan)`,
-                },
-
-
-                {
-                    ProductSectionTextBoxRound: `10`,
-                    ProductSectionText: `Speaking, Listening, Reading`,
-                    ProductSectionTextSpan: `(asosiy ko\`nikmalarni rivojlantirish va mustahkamlash imkoniyati)`,
-                },
-
-
-                {
-                    ProductSectionTextBoxRound: `11`,
-                    ProductSectionText: `Audio effektlar `,
-                    ProductSectionTextSpan: `(yuqori sifatga ega bo\`lgan qiziqarli audio effektlar)`,
-                },
-
-
-            ],
+        .text .type-time {
+            font-size: 16px;
         }
-    })
-    var app4 = new Vue({
-        el: '#app4',
-        data: {
-            ProductIcons: [
-                {
-                    problemsBoxImg: `images/Frags/icon-talk.svg`,
-                    problemsBoxText: `istalgan tilda o\`z ona tilingizday gaplasha olish`
-                },
-                {
-                    problemsBoxImg: `images/Frags/icon-marshmallow.svg`,
-                    problemsBoxText: `chet tilidagi so\`zlashuvni tushunish va gaplashish qo\`rquvidan halos bo\`lish`
-                },
-                {
-                    problemsBoxImg: `images/Frags/icon-books.svg`,
-                    problemsBoxText: `xorijiy tildagi kitoblarni bemalol o\`qiy olish`
-                },
-                {
-                    problemsBoxImg: `images/Frags/icon-plane.svg`,
-                    problemsBoxText: `dunyo bo\`ylab erkin sayohat qila olish, chet elda o\`qish va ishlash`
-                },
-                {
-                    problemsBoxImg: `images/Frags/icon-building.svg`, problemsBoxText: `yuqori daromadli ishda ishlash`
-                },
-                {
-                    problemsBoxImg: `images/Frags/icon-group.svg`,
-                    problemsBoxText: `chet eldan do\`stlar orttirish va keng dunyoqarashga ega bo\`lish`,
-                },
-                {
-                    problemsBoxImg: `images/Frags/icon-star.svg`, problemsBoxText: `ijtimoiy statusga ega bo\`lish`,
-                },
-            ],
+    }
+
+    @media (max-width: 1024px) {
+        .text .val {
+            font-size: 45px;
         }
-    })
 
-</script>
+        .text .type-time {
+            font-size: 16px;
+        }
+    }
 
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        .clock-item {
+            margin-bottom: 30px;
+        }
+        .text {
+            top: 60%;
+        }
+
+        .text .val {
+            font-size: 35px;
+        }
+
+        .text .type-time {
+            font-size: 13px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .text {
+            top: 40%;
+        }
+
+        .clock-item {
+            margin: 18px 0;
+        }
+        .text .val {
+            font-size: 75px;
+        }
+
+        .text .type-time {
+            font-size: 20px;
+        }
+    }
+    @media (max-width: 321px) {
+        .text {
+            top: 50%;
+        }
+
+        .clock-item {
+            margin: 18px 0;
+        }
+        .text .val {
+            font-size: 50px;
+        }
+
+        .text .type-time {
+            font-size: 18px;
+        }
+    }
+
+</style>
 
 </body>
 </html>
